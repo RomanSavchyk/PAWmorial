@@ -4,6 +4,13 @@ body {
   box-sizing: border-box;
 }
 
+.title-brown {
+  color: #C79C74;
+  font-size: 45px;
+  letter-spacing: 1.8px;
+  font-weight: 500;
+}
+
 .btn {
   border: none;
   background: #D6B394;
@@ -114,5 +121,70 @@ body {
 
 .main-about__example_btn:hover {
   color: #D6B394;
+}
+
+.home-line {
+  background: #e8e8e8;
+  height: 3px;
+}
+
+.mission {
+  margin-top: 80px;
+}
+
+.mission-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-info__text {
+  text-align: center;
+  line-height: 2.3;
+  font-size: 17px;
+}
+
+.mission-info__tldr {
+  text-align: center;
+  font-weight: 700;
+  font-size: 17px;
+  width: 70%;
+  padding-bottom: 55px;
+}
+
+.mission-info__background img {
+  display: block;
+  width: 100%;
+}
+
+.features {
+  background-color: #F9F4EF;
+  padding-bottom: 60px;
+}
+
+.features-heading {
+  margin: 20px 0 42px 0;
+}
+
+.features-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features-item__image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+.features-item__title {
+  text-transform: uppercase;
+  padding-top: 26px;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */

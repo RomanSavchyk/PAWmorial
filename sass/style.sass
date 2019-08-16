@@ -3,11 +3,19 @@ $logo-red: #e42947
 $button-brown: #D6B394
 $title-brown: #C79C74
 $title-black: #4C4C51
+$background-coffe: #F9F4EF
   
 body 
   font-family: 'Montserrat', sans-serif
   color: $regular-black
   box-sizing: border-box
+
+.title-brown
+  color: $title-brown
+  font-size: 45px
+  letter-spacing: 1.8px
+  font-weight: 500
+
 
 .btn
   border: none
@@ -49,6 +57,7 @@ body
     border-radius: 20px
     border-color: $regular-black
 
+// Home Section
 #home
   margin-top: 20px
 .main-about
@@ -90,4 +99,51 @@ body
     cursor: pointer
     &:hover
       color: $button-brown
-      
+.home-line
+  background: #e8e8e8
+  height: 3px
+// Mission section
+.mission
+  margin-top: 80px
+  &-info
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &__text
+      text-align: center
+      line-height: 2.3
+      font-size: 17px
+    &__tldr
+      text-align: center
+      font-weight: 700
+      font-size: 17px
+      width: 70%
+      padding-bottom: 55px
+    &__background
+      & img
+        display: block
+        width: 100%
+// Features section
+.features
+  background-color: $background-coffe
+  padding-bottom: 60px
+  &-heading
+    margin: 20px 0 42px 0
+  &-item
+    margin-top: 
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    &__image
+      & img
+        width: 150px
+        height: 150px
+        object-fit: cover
+        border-radius: 50%
+        opacity: 0.85
+    &__title
+      text-transform: uppercase
+      padding-top: 26px
+      font-weight: 500
