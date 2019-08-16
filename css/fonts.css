@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "San Francisco Text Bold";
+  src: url("/fonts/SFProText/SFUIText-Bold/SFUIText-Bold.eot");
+  src: url("/fonts/SFProText/SFUIText-Bold/SFUIText-Bold.woff") format("woff");
+  src: url("/fonts/SFProText/SFUIText-Bold/SFUIText-Bold.ttf") format("truetype");
+}
