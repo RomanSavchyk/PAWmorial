@@ -15,6 +15,13 @@ body {
 .btn {
   border: none;
   background: #D6B394;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  border: 2px solid #D6B394;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .header {
@@ -93,15 +100,8 @@ body {
 }
 
 .main-about__btn {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 18px;
-  border: 2px solid #D6B394;
-  border-radius: 5px;
   padding: 4px 65px;
   margin-top: 50px;
-  transition: all 0.3s ease;
 }
 
 .main-about__btn:hover {
@@ -126,7 +126,7 @@ body {
 
 .home-line {
   background: #e8e8e8;
-  height: 3px;
+  height: 2px;
 }
 
 .mission {
@@ -196,22 +196,56 @@ body {
 }
 
 .gallery {
-  margin: 60px 0;
+  margin: 70px 0;
+}
+
+.gallery-btn {
+  padding: 7px 55px;
+}
+
+.gallery-btn:hover {
+  background: #ffffff;
+  color: #D6B394;
+}
+
+.gallery-wrapper {
+  max-width: 1920px;
+  margin: 70px auto;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.gallery-wrapper:after {
+  box-shadow: 1px 184px 85px 166px rgba(251, 251, 251, 0.8);
+  content: '';
+  position: absolute;
+  left: -50%;
+  width: 150%;
+  transform: rotate(180deg);
+  z-index: 8;
+}
+
+.gallery-wrapper__btn {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 200px;
+  z-index: 10;
 }
 
 .gallery-container {
-  max-width: 1920px;
-  margin: 0 auto;
+  column-count: 5;
+  column-gap: 20px;
 }
 
 .gallery-item {
-  margin: 0 20px;
+  margin-bottom: 30px;
+  display: inline-block;
+  width: 100%;
 }
 
 .gallery-item__title {
-  padding: 10px 0;
+  padding: 10px 35px 0 0;
   position: relative;
-  max-width: 200px;
 }
 
 .gallery-item__dots {
@@ -222,15 +256,46 @@ body {
   right: 0;
   cursor: pointer;
   font-size: 20px;
+  transition: all 0.4s ease;
+}
+
+.gallery-item__dots:hover {
+  transform: scale(1.4);
 }
 
 .gallery-item__image {
   width: 262px;
+  display: block;
+  width: 100%;
 }
 
 .gallery-item__image img {
   display: block;
   width: 100%;
   border-radius: 5px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1440px) {
+  .gallery-container {
+    column-count: 4;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .gallery-container {
+    column-count: 3;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+  .gallery-container {
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  .gallery-container {
+    column-count: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
