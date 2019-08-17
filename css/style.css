@@ -228,7 +228,6 @@ body {
 .gallery-wrapper__btn {
   max-width: 1920px;
   margin: 0 auto;
-  height: 200px;
   z-index: 10;
 }
 
@@ -273,6 +272,39 @@ body {
   display: block;
   width: 100%;
   border-radius: 5px;
+}
+
+.articles {
+  margin-top: 70px;
+}
+
+.articles-item {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.15);
+  max-width: 350px;
+  margin: 15px 15px;
+  padding: 0;
+}
+
+.articles-item__image img {
+  display: block;
+  width: 100%;
+}
+
+.articles-item__title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #4C4C51;
+  max-width: 75%;
+  padding: 15px 15px 25px 15px;
+}
+
+.articles-item__text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #88939E;
+  padding: 0 15px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1440px) {
