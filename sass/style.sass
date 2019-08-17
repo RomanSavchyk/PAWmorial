@@ -1,7 +1,7 @@
 $regular-black: #58585D
 $regular: #88939E
 $logo-red: #e42947
-$button-brown: #D6B394
+$button-brown: #D6B495
 $title-brown: #C79C74
 $title-black: #4C4C51
 $background-coffe: #F9F4EF
@@ -30,6 +30,20 @@ body
   border-radius: 5px
   transition: all 0.3s ease
   
+.no-bg-btn
+  border: none
+  color: $button-brown
+  background: #fff
+  text-transform: uppercase
+  font-weight: 700
+  font-size: 18px
+  transition: all 0.3s ease
+  cursor: pointer
+  &:hover
+    color: #E2CBB6
+
+
+
 .header
   height: 90px
   display: flex
@@ -90,16 +104,9 @@ body
       background: #ffffff
       color: $button-brown
   &__example_btn
-    color: #E2CBB6
-    background: #fff
-    text-transform: uppercase
-    font-weight: 700
-    font-size: 18px
     margin-top: 25px
-    transition: all 0.3s ease
-    cursor: pointer
     &:hover
-      color: $button-brown
+      
 .home-line
   background: #e8e8e8
   height: 2px
@@ -210,6 +217,8 @@ body
 // Articles Section
 .articles
   margin-top: 70px
+  &-btn
+    margin: 30px 0 60px 0
   &-item
     border: 2px solid transparent
     border-radius: 5px
@@ -231,9 +240,43 @@ body
       font-weight: 400
       color: $regular
       padding: 0 15px
-
-
-
+// Testimonials section
+.testimonials 
+  background-color: $background-coffe
+  padding-top: 70px
+.slider
+  &-item
+    &__info
+      &_text
+        font-size: 20px
+        font-weight: 400
+        padding: 20px
+      &_author
+        color: #D6B495
+        font-size: 18px
+        position: absolute
+        bottom: 30px
+        right: 30px
+.slider-nav
+  margin: 0 auto
+  max-width: 240px
+  &__item img
+    width: 110px
+.slick-next, .slick-prev
+  background: url('../images/arrow-right.png')
+  width: 40px
+  height: 40px
+  right: -60px
+  &:before
+    content: ''
+  &:after
+    content: ''
+  &:focus
+    outline: none
+    
+.slick-prev
+  left: -60px
+  background: url('../images/arrow-left.png')
 
 
 

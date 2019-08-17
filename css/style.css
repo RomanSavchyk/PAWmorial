@@ -14,14 +14,29 @@ body {
 
 .btn {
   border: none;
-  background: #D6B394;
+  background: #D6B495;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
-  border: 2px solid #D6B394;
+  border: 2px solid #D6B495;
   border-radius: 5px;
   transition: all 0.3s ease;
+}
+
+.no-bg-btn {
+  border: none;
+  color: #D6B495;
+  background: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.no-bg-btn:hover {
+  color: #E2CBB6;
 }
 
 .header {
@@ -106,22 +121,11 @@ body {
 
 .main-about__btn:hover {
   background: #ffffff;
-  color: #D6B394;
+  color: #D6B495;
 }
 
 .main-about__example_btn {
-  color: #E2CBB6;
-  background: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 18px;
   margin-top: 25px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.main-about__example_btn:hover {
-  color: #D6B394;
 }
 
 .home-line {
@@ -205,7 +209,7 @@ body {
 
 .gallery-btn:hover {
   background: #ffffff;
-  color: #D6B394;
+  color: #D6B495;
 }
 
 .gallery-wrapper {
@@ -278,6 +282,10 @@ body {
   margin-top: 70px;
 }
 
+.articles-btn {
+  margin: 30px 0 60px 0;
+}
+
 .articles-item {
   border: 2px solid transparent;
   border-radius: 5px;
@@ -305,6 +313,58 @@ body {
   font-weight: 400;
   color: #88939E;
   padding: 0 15px;
+}
+
+.testimonials {
+  background-color: #F9F4EF;
+  padding-top: 70px;
+}
+
+.slider-item__info_text {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px;
+}
+
+.slider-item__info_author {
+  color: #D6B495;
+  font-size: 18px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.slider-nav {
+  margin: 0 auto;
+  max-width: 240px;
+}
+
+.slider-nav__item img {
+  width: 110px;
+}
+
+.slick-next, .slick-prev {
+  background: url("../images/arrow-right.png");
+  width: 40px;
+  height: 40px;
+  right: -60px;
+}
+
+.slick-next:before, .slick-prev:before {
+  content: '';
+}
+
+.slick-next:after, .slick-prev:after {
+  content: '';
+}
+
+.slick-next:focus, .slick-prev:focus {
+  outline: none;
+}
+
+.slick-prev {
+  left: -60px;
+  background: url("../images/arrow-left.png");
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1440px) {
