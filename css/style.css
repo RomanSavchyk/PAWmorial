@@ -812,6 +812,9 @@ body {
   .login-btn {
     margin-top: 25px;
   }
+  .main-about__btn {
+    padding: 4px 44px;
+  }
   .mission-info__tldr {
     width: 100%;
   }
