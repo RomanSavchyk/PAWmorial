@@ -412,6 +412,8 @@ body
     align-items: center
     padding-bottom: 10px
 @media only screen and (max-width: 767px) and (min-width: 576px)
+  .header
+    position: static
   .header-logo__container
     display: flex
     justify-content: center
@@ -452,6 +454,7 @@ body
     margin-top: 20px
 @media only screen and (min-width: 320px) and (max-width: 576px)
   .header
+    position: static
     padding-top: 20px
     &-logo__container
       text-align: center
@@ -489,3 +492,9 @@ body
         width: 100%
   .footer-memorials, .footer-about, .footer-join
     margin-top: 20px
+  .footer-join__input
+    display: flex
+    flex-direction: column
+    & input
+      width: 100%
+      margin-bottom: 20px
