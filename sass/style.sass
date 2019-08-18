@@ -75,10 +75,12 @@ body
   padding: 6px 37px
   border: 2px solid $logo-red
   transition: all 0.3s ease 
+  outline: none
   &:hover
     color: $regular-black
     border-radius: 20px
     border-color: $regular-black
+    outline: none
 
 // Home Section
 #home
@@ -103,10 +105,12 @@ body
     &:hover
       background: #ffffff
       color: $button-brown
+      outline: none
   &__example_btn
     margin-top: 25px
+    outline: none
     &:hover
-      
+      outline: none
 .home-line
   background: #e8e8e8
   height: 2px
@@ -243,7 +247,7 @@ body
 // Testimonials section
 .testimonials 
   background-color: $background-coffe
-  padding-top: 70px
+  padding: 70px 0 45px 0
 .slider
   &-item
     &__info
@@ -255,28 +259,97 @@ body
         color: #D6B495
         font-size: 18px
         position: absolute
-        bottom: 30px
-        right: 30px
+        right: 40px
 .slider-nav
   margin: 0 auto
-  max-width: 240px
-  &__item img
-    width: 110px
+  display: flex
+  justify-content: center
+  &__item 
+    padding: 0 15px
+    & img
+      width: 110px
+    &_active
+      & img
+        opacity: 0.5
+  &__arrow
+    display: flex
+    align-items: center
 .slick-next, .slick-prev
   background: url('../images/arrow-right.png')
   width: 40px
   height: 40px
-  right: -60px
-  &:before
-    content: ''
-  &:after
-    content: ''
-  &:focus
-    outline: none
-    
+  border: none
 .slick-prev
-  left: -60px
   background: url('../images/arrow-left.png')
+// Quote section
+.quote
+  background: url('../images/quote1.png') no-repeat center
+  background-size: cover
+  height: 550px
+  &-container
+    padding-bottom: 40px
+  &-text
+    // max-width: 47%
+    text-align: center
+    font-size: 25
+    font-weight: 400
+  &-author
+    margin-top: 20px
+    font-size: 25
+    font-weight: 400  
+
+// Footer
+.footer
+  padding-top: 30px
+  background: $background-coffe
+  &-link
+    color: $logo-red
+  &-logo
+    &__text
+      padding-top: 10px
+  &-memorials__heading h4, &-about__heading h4, &-join__heading h4
+    color: $button-brown
+    font-weight: 500
+    text-transform: uppercase
+    font-size: 17px
+  &-memorials__list ul, &-about__list ul
+    list-style: none
+    padding: 10px 0 0 0
+    margin: 0
+    & li a
+      color: $title-black
+      text-decoration: none
+      font-size: 16px
+      font-weight: 400
+  &-join
+    padding-bottom: 10px
+  &-join__input 
+    padding-top: 10px
+    & input
+      border: 1px solid #DFE2E6
+      border-radius: 3px
+      width: 210px
+      height: 50px
+      padding-left: 15px
+      margin-right: 10px
+    &_btn
+      font-weight: 500
+      text-transform: none
+      padding: 8px 30px
+      border-radius: 8px
+      &:hover
+        background: #ffffff
+        color: $button-brown
+        outline: none
+.copy
+  background: #efdfd1
+  &-text
+    font-size: 12px
+    color: $regular-black
+    margin: 0
+    padding: 10px
+    text-align: center
+
 
 
 
@@ -286,9 +359,26 @@ body
 @media only screen and (max-width: 991px) and (min-width: 768px)
   .gallery-container
     column-count: 3
+  .footer-logo
+    display: flex
+    flex-direction: column
+    align-items: center
+  .footer-about,
+  .footer-memorials
+    text-align: center
+  .footer-join
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-bottom: 10px
 @media only screen and (max-width: 767px) and (min-width: 576px)
   .gallery-container
     column-count: 2
+  .footer-memorials, .footer-about, .footer-join
+    margin-top: 20px
 @media only screen and (min-width: 320px) and (max-width: 575px)
   .gallery-container
     column-count: 1
+  .footer-memorials, .footer-about, .footer-join
+    margin-top: 20px

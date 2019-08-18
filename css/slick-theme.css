@@ -37,10 +37,9 @@
 .slick-prev:hover, .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
-  /* outline: none;
+  outline: none;
   background: transparent;
-  color: transparent;  */
-  /* THIS IS BAD, NEEDS TO BE FIXED */
+  color: transparent;
 }
 
 .slick-prev:hover:before, .slick-prev:focus:before,

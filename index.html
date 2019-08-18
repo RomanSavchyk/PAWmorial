@@ -4,8 +4,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="css/slick.css" />
-		<link rel="stylesheet" href="css/slick-theme.css" />
+		<!-- <link rel="stylesheet" href="css/slick.css" />
+		<link rel="stylesheet" href="css/slick-theme.css" /> -->
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css" />
 		<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
@@ -351,71 +351,30 @@
 				<div class="row">
 					<div class="col">
 						<div class="slider">
-							<div class="slider-item d-flex align-items-center" data-index="1">
+							<div class="slider-item d-flex align-items-center">
 								<div class="slider-item__image">
 									<img src="images/testimonial1.png" alt="testimonial by someone" />
 								</div>
 								<div class="slider-item__info">
 									<p class="slider-item__info_text">Finally I am now able to organize and commemorate my photos of my dog Colin in a user-friendly platform, where I can look back at my old memories of Colin and be warmed at the fact that I created this in dedication of him.</p>
 									<p class="slider-item__info_author">
-									–  Vanessa
-									</p>
-								</div>
-							</div>
-							<div class="slider-item d-flex align-items-center" data-index="2">
-								<div class="slider-item__image">
-									<img src="images/testimonial2.png" alt="testimonial by someone" />
-								</div>
-								<div class="slider-item__info">
-									<p class="slider-item__info_text">
-										I recently lost my kitty of 18 years, Maggie, and Pawmorial has really helped me get through this difficult time. It's just so beautifully laid out and super easy to use! I love that I can relive these wonderful moments that we shared together.
-									</p>
-									<p class="slider-item__info_author">
-										Kammy
-									</p>
-								</div>
-							</div>
-							<div class="slider-item d-flex align-items-center" data-index="1">
-								<div class="slider-item__image">
-									<img src="images/testimonial1.png" alt="testimonial by someone" />
-								</div>
-								<div class="slider-item__info">
-									<p class="slider-item__info_text">Finally I am now able to organize and commemorate my photos of my dog Colin in a user-friendly platform, where I can look back at my old memories of Colin and be warmed at the fact that I created this in dedication of him.</p>
-									<p class="slider-item__info_author">
-										Vanessa
-									</p>
-								</div>
-							</div>
-							<div class="slider-item d-flex align-items-center" data-index="2">
-								<div class="slider-item__image">
-									<img src="images/testimonial2.png" alt="testimonial by someone" />
-								</div>
-								<div class="slider-item__info">
-									<p class="slider-item__info_text">
-										I recently lost my kitty of 18 years, Maggie, and Pawmorial has really helped me get through this difficult time. It's just so beautifully laid out and super easy to use! I love that I can relive these wonderful moments that we shared together.
-									</p>
-									<p class="slider-item__info_author">
-										Kammy
+										– Vanessa
 									</p>
 								</div>
 							</div>
 						</div>
 						<div class="slider-nav">
-							<div class="slider-nav__item">
-								<img src="images/testimonial1.png" slide="slide_1" />
-							</div>
-							<div class="slider-nav__item">
-								<img src="images/testimonial2.png" slide="slide_2" />
-							</div>
-							<div class="slider-nav__item">
-								<img src="images/testimonial1.png" slide="slide_1" />
-							</div>
-							<div class="slider-nav__item">
-								<img src="images/testimonial2.png" slide="slide_2" />
-							</div>
-							<div class="arrows">
-								<button type="button" class="slick-next"></button>
+							<div class="slider-nav__arrow arrow-left">
 								<button type="button" class="slick-prev"></button>
+							</div>
+							<div class="slider-nav__item slider-nav__item_active">
+								<img src="images/testimonial1.png" />
+							</div>
+							<div class="slider-nav__item">
+								<img src="images/testimonial2.png" />
+							</div>
+							<div class="slider-nav__arrow arrow-right">
+								<button type="button" class="slick-next"></button>
 							</div>
 						</div>
 					</div>
@@ -423,9 +382,80 @@
 			</div>
 		</section>
 		<!-- End Testimonials Section -->
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-		<script src="slick/slick.min.js"></script>
-		<script type="text/javascript" src="/slick/slick.min.js"></script>
+		<!-- Quote Section -->
+		<section class="quote d-flex align-items-end">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="col-lg-6 col-md-9 col-xs-12 d-flex flex-column align-items-center quote-container">
+						<h3 class="quote-text">“When I look into the eyes of an animal I do not see an animal. I see a living being. I see a friend. I feel a soul.”</h3>
+						<h3 class="quote-author">A.D Williams</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Quote Section -->
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12 col-xs-12 footer-logo">
+						<div class="footer-logo__image">
+							<img src="/images/logo.png" alt="Pawmorial" />
+						</div>
+						<div class="footer-logo__text">
+							<p>
+								Looking for additional features? Contact us at <span><a class="footer-link" href="mailto:info@pawmorial.com"> info@pawmorial.com</a></span>
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-xs-12 footer-memorials">
+						<div class="footer-memorials__heading">
+							<h4>Memorials</h4>
+						</div>
+						<div class="footer-memorials__list">
+							<ul>
+								<li><a href="#">Create a memorial</a></li>
+								<li><a href="#">Give a gift</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-xs-12 footer-about">
+						<div class="footer-about__heading">
+							<h4>About Us</h4>
+						</div>
+						<div class="footer-about__list">
+							<ul>
+								<li><a href="#">Our Story</a></li>
+								<li><a href="#">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-5 col-md-12 col-xs-12 footer-join">
+						<div class="footer-join__heading">
+							<h4>Join our community</h4>
+						</div>
+						<div class="footer-join__input">
+							<input type="email" name="email" placeholder="Type your email" />
+							<button class="btn footer-join__input_btn">Sign Up</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="container">
+					<div class="row">
+						<div class="col d-flex justify-content-center align-items-center">
+							<p class="copy-text">Copyright © 2019 Peymorials Ltd. All Rights Reserved. Read our Terms and Conditions & Privacy Policy.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer -->
+
+		<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="slick/slick.min.js"></script> -->
+		<!-- <script type="text/javascript" src="/slick/slick.min.js"></script> -->
 		<script type="text/javascript" src="/js/index.js"></script>
 	</body>
 </html>
