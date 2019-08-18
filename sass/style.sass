@@ -13,6 +13,7 @@ body
 
 .title-brown
   color: $title-brown
+  text-align: center
   font-size: 45px
   font-weight: 400
   letter-spacing: 1.8px
@@ -72,7 +73,7 @@ body
       padding: 10px
       color: $regular-black
       text-decoration: none
-      font-weight: 500
+      font-weight: 400
       font-size: 19px
       transition: all 0.4s ease
       &:hover
@@ -299,12 +300,12 @@ body
   &__arrow
     display: flex
     align-items: center
-.slick-next, .slick-prev
+.slick_next, .slick_prev
   background: url('../images/arrow-right.png')
   width: 40px
   height: 40px
   border: none
-.slick-prev
+.slick_prev
   background: url('../images/arrow-left.png')
 // Quote section
 .quote
@@ -376,7 +377,16 @@ body
     text-align: center
 
 
+.main-image
+  display: flex
+  justify-content: center
+  align-items: center
 
+  // display: flex
+  // justify-content: center
+  // align-items: center
+  & img
+    object-fit: cover
 
 @media only screen and (min-width: 992px) and (max-width: 1440px)
   .menu li a
@@ -386,7 +396,7 @@ body
     font-size: 14px
   .gallery-container
     column-count: 4
-@media only screen and (max-width: 991px) and (min-width: 768px)
+@media only screen and (max-width: 992px) and (min-width: 768px)
   .menu li a
     font-size: 15px
   .login-btn
@@ -403,6 +413,8 @@ body
     display: flex
     justify-content: center
     margin-bottom: 20px
+  .main-about__title 
+    font-size: 24px
   .gallery-container
     column-count: 3
   .slider-item
@@ -430,6 +442,7 @@ body
     justify-content: center
     align-items: center
     padding-bottom: 10px
+
 @media only screen and (max-width: 768px) and (min-width: 576px)
   .header
     display: block
@@ -444,6 +457,8 @@ body
       padding: 10px 20px
     &-container
       padding: 15px
+    &-btn
+      padding: 0
   .menu
     display: block
     margin: 25px 0 0 0
@@ -503,7 +518,9 @@ body
     transform: rotate(45deg)
     top: 0
   .login-btn
-  margin-top: 25px
+    margin-top: 25px
+  .mission-info__tldr
+    width: 100%
   .gallery-container
     column-count: 2
   .slider-item
@@ -544,6 +561,8 @@ body
       padding: 10px 20px
     &-container
       padding: 15px
+    &-btn
+      padding: 0
   .menu
     display: block
     margin: 25px 0 0 0
@@ -603,8 +622,9 @@ body
     transform: rotate(45deg)
     top: 0
   .login-btn
-  margin-top: 25px
-
+    margin-top: 25px
+  .mission-info__tldr
+    width: 100%
   .gallery-container
     column-count: 1
   .slider-item
