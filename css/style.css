@@ -123,11 +123,13 @@ ul {
 
 .hamburger__lines:before {
   top: -10px;
+  transition: all 0.2s;
 }
 
 .hamburger__lines:after {
   bottom: -10px;
   top: -20px;
+  transition: all 0.2s;
 }
 
 .hamburger__active .hamburger__lines {
@@ -225,9 +227,13 @@ ul {
   outline: none;
 }
 
-.main-image img {
+.main-image__item img {
   display: block;
-  width: 100%;
+  margin: 0 auto;
+  width: auto;
+  height: 380px;
+  max-height: 380px;
+  object-fit: cover;
 }
 
 .home-line {
@@ -487,13 +493,13 @@ ul {
 
 .quote-text {
   text-align: center;
-  font-size: 25;
+  font-size: 25px;
   font-weight: 400;
 }
 
 .quote-author {
   margin-top: 20px;
-  font-size: 25;
+  font-size: 25px;
   font-weight: 400;
 }
 
@@ -610,6 +616,13 @@ ul {
   .main-about__title {
     font-size: 24px;
   }
+  .main-image__item img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 230px;
+    max-height: 230px;
+  }
   .gallery-container {
     column-count: 3;
   }
@@ -679,6 +692,7 @@ ul {
   }
   .hamburger {
     display: block;
+    right: 0px;
   }
   .header-nav__active {
     display: block;
@@ -699,11 +713,21 @@ ul {
     border-radius: 5px;
     padding: 6px 9px;
   }
+  .main-about__subtitle {
+    text-align: center;
+  }
   .main-about__btn {
     padding: 4px 44px;
   }
   .mission-info__tldr {
     width: 100%;
+  }
+  .main-image__item img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 150px;
+    max-height: 150px;
   }
   .slider-item {
     flex-direction: column;
@@ -737,6 +761,9 @@ ul {
   }
   .gallery-container {
     column-count: 1;
+  }
+  .quote-text {
+    font-size: 20px;
   }
   .footer-memorials, .footer-about, .footer-join {
     margin-top: 20px;

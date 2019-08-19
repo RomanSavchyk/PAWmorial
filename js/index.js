@@ -17,6 +17,15 @@ $('.slider-nav').slick({
   nextArrow: '<i class="fa fa-angle-left next1"></i>',
   focusOnSelect: true
 });
+
+$('.main-image').slick({
+  arrows: false,
+  dots: false,
+  fade: true,
+  autoplay: true,
+  autoplayspeed: 300
+});
+
 $('a[data-slide]').click(function(e) {
   e.preventDefault();
   var slideno = $(this).data('slide');

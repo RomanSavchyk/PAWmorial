@@ -104,9 +104,11 @@ ul
       background-color: $button-brown
     &:before
       top: -10px
+      transition: all 0.2s
     &:after
       bottom: -10px
       top: -20px
+      transition: all 0.2s
 .hamburger__active .hamburger__lines
     transition: all 0.3s
     background: transparent
@@ -179,9 +181,15 @@ ul
     outline: none
     &:hover
       outline: none
-.main-image img
-  display: block
-  width: 100%
+.main-image 
+  &__item 
+    & img
+      display: block
+      margin: 0 auto
+      width: auto
+      height: 380px
+      max-height: 380px
+      object-fit: cover
 .home-line
   background: #e8e8e8
   height: 2px
@@ -370,11 +378,11 @@ ul
   &-text
     // max-width: 47%
     text-align: center
-    font-size: 25
+    font-size: 25px
     font-weight: 400
   &-author
     margin-top: 20px
-    font-size: 25
+    font-size: 25px
     font-weight: 400  
 // Footer
 .footer
@@ -455,6 +463,14 @@ ul
     margin-right: 60px
   .main-about__title 
     font-size: 24px
+  .main-image 
+    &__item 
+      & img
+        display: block
+        margin: 0 auto
+        width: auto
+        height: 230px
+        max-height: 230px
   .gallery-container
     column-count: 3
   .slider
@@ -506,6 +522,7 @@ ul
     display: none
   .hamburger
     display: block
+    right: 0px
   .header-nav__active
     display: block
   .header-login
@@ -520,10 +537,20 @@ ul
     font-size: 13px
     border-radius: 5px
     padding: 6px 9px
+  .main-about__subtitle
+    text-align: center
   .main-about__btn
     padding: 4px 44px
   .mission-info__tldr
     width: 100%
+  .main-image 
+    &__item 
+      & img
+        display: block
+        margin: 0 auto
+        width: auto
+        height: 150px
+        max-height: 150px
   .slider
     &-item
       flex-direction: column
@@ -551,8 +578,8 @@ ul
     bottom: 10px
   .gallery-container
     column-count: 1
-
-
+  .quote-text
+    font-size: 20px
   .footer-memorials, .footer-about, .footer-join
     margin-top: 20px
   .footer-logo__image, .footer-logo__text
