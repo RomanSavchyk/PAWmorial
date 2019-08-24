@@ -584,6 +584,7 @@ ul
 .login-form__signIn
   display: flex
   justify-content: space-between
+  margin-bottom: 20px
   &_google, &_facebook
     width: 160px
     height: 40px
@@ -610,7 +611,7 @@ ul
 .modal-login_invited
   display: none
   height: 650px
-  top: 8vh
+  top: 16vh
 .login-invited__header
   display: flex
   flex-direction: column
@@ -793,6 +794,9 @@ ul
   .modal-login, .modal-login_invited
     width: 80vw
     margin-left: -40vw
+    overflow: scroll
+    height: 80vh
+
   .login-form__container
     width: 235px
   .login-form__buttons_register, .login-form__buttons_login
