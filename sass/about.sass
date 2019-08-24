@@ -1,0 +1,66 @@
+@import "style"
+// Logo section
+#about-logo
+  min-height: 420px
+  background-color: $background-coffe
+  display: flex
+  align-items: center
+// Our Story section
+.story
+  margin-bottom: 60px
+  &-heading
+    margin-top: 70px
+  &-info
+    & img
+      float: left
+      width: 300px
+      height: 300px
+      border-radius: 50%
+      object-fit: cover
+      margin: 0 30px 30px 0
+  & p
+    font-size: 19px
+    font-weight: 400
+    color: $title-black
+    padding-bottom: 25px
+  &__image
+    text-align: center
+    
+@media only screen and (max-width: 992px) and (min-width: 768px)
+  .about-image
+    & img
+      width: 80%
+  .story-info__image
+    text-align: center
+    & img
+      float: none
+@media only screen and (max-width: 768px) and (min-width: 576px)
+  #about-logo
+    min-height: 270px
+  .about-image
+    & img
+      width: 60%
+  .story-info__image
+    text-align: center
+    & img
+      float: none
+      margin: 0 0 30px 0
+      width: 200px
+      height: 200px
+    & p
+      padding: 0
+@media only screen and (min-width: 320px) and (max-width: 576px)
+  #about-logo
+    min-height: 270px
+  .about-image
+    & img
+      width: 60%
+  .story-info__image
+    text-align: center
+    & img
+      float: none
+      margin: 0 0 30px 0
+      width: 200px
+      height: 200px
+    & p
+      padding: 0

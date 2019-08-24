@@ -1,0 +1,186 @@
+@import "style"
+
+.subheader
+  width: 100%
+  flex-direction: column
+  margin: 0 auto
+  margin-bottom: 70px
+  &-top
+    background: url('../images/memorial/memorial-subheader-bg.png')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    width: 100%
+    max-width: 1920px
+    height: 300px
+    margin: 0 auto
+    &__title 
+      text-align: center
+      & h2
+        color: #fff
+        font-size: 56px
+        font-weight: 400
+        padding-right: 50px
+        margin: 0
+    &__button_link
+      background: rgba(0,0,0,0.2)
+      padding: 9px 14px
+      border-radius: 40%
+  &-bottom
+    display: flex
+    &__image img
+      margin-top: -144px
+      border: 6px solid #fff
+      border-radius: 50%
+    &__info
+      padding-left: 40px
+      margin-top: 10px
+      &_date
+        font-size: 16px
+      &_subtitle
+        font-size: 22px
+      &_description
+        font-size: 18px
+// Content
+.content
+  margin-bottom: 70px
+  &-navbar
+    &__line
+      height: 2px
+      background: #D8D8D8
+  &-nav
+    list-style: none
+    display: flex
+    justify-content: center
+    text-align: center
+    &__link
+      margin: 20px
+      height: 25px
+      position: relative
+      transition: all 0.4s ease
+      & a
+        padding: 20px
+        color: $regular-black
+        text-transform: uppercase
+        text-decoration: none
+        transition: all 0.3s ease     
+        &:hover
+          color: $logo-red
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        top: -22px
+        left: 50%
+        height: 3px
+        width: 0
+        background: transparent
+        transition: width .5s ease, background-color .5s ease, left .5s ease
+      &:hover:after
+        width: 100%
+        left: 0
+        background: $logo-red
+      &_active
+        & a
+          color: $logo-red
+          &:after
+            content: ''
+            height: 3px
+            display: block
+            position: absolute
+            top: -22px
+            width: 100%
+            background: $logo-red
+Content section
+.content-gallery
+  &__item
+    width: 262px
+    display: inline-block
+    margin-bottom: 10px
+    &_title
+    &_image img
+      width: 100%
+      border-radius: 5px
+
+@media only screen and (max-width: 992px)
+  .subheader
+    &-top
+      &__title
+        text-align: right
+        & h2
+          padding: 0
+    &-bottom
+      display: block
+  // .content-gallery
+  //   column-count: 3
+        // padding: 10px 35px 0 0
+      // position: relative
+    // &_dots
+    //   text-decoration: none
+    //   color: $regular-black
+    //   position: absolute
+    //   top: 0
+    //   right: 20px
+    //   cursor: pointer
+    //   font-size: 25px
+    //   transition: all 0.4s ease
+    //   &:hover
+    //     background: #979797
+@media only screen and (max-width: 768px)
+  .subheader
+    &-top
+      &__title h2
+        font-size: 40px
+    &-bottom
+      &__image img
+        width: 40%
+        margin-top: -90px
+      &__info
+        padding: 0
+  // .content-gallery
+  //   column-count: 2
+@media only screen and (max-width: 576px)
+  .subheader-top__button_link
+    padding: 7px 10px
+  .subheader-top__title h2
+    font-size: 30px
+  .subheader-bottom__image img 
+    width: 35%
+    margin-top: -240px
+  .subheader-bottom__image img 
+    width: 140px
+    margin: -196px 0 0 -20px
+  .content-nav
+    flex-direction: column
+    &__link
+      &:after, &:before
+        content: ''
+        display: block
+        position: absolute
+        top: 9px
+        left: 50%
+        height: 3px
+        width: 0
+        background: transparent
+        transition: width .5s ease, background-color .5s ease, left .5s ease
+      &:before 
+        right: 50%
+        background: $logo-red
+        left: 80%
+      &:hover:after, &:hover:before
+        width: 20%
+        left: -10px
+        background: $logo-red
+      &_active
+        & a
+          color: $logo-red
+          &:after
+            content: ''
+            height: 3px
+            display: block
+            position: absolute
+            top: -22px
+            width: 100%
+            background: $logo-red
+  // .content-gallery
+  //   column-count: 1

@@ -38,13 +38,12 @@ ul
   color: $button-brown
   background: #fff
   text-transform: uppercase
-  font-weight: 700
+  font-weight: 400
   font-size: 18px
   transition: all 0.3s ease
   cursor: pointer
   &:hover
     color: #E2CBB6
-
 
 .header
   height: 90px
@@ -55,7 +54,7 @@ ul
   background: rgba(255,255,255,0.9)
   z-index: 999
   &-login
-    margin-left: 12vw
+    margin-left: 0
   &-nav
     display: flex
     list-style: none
@@ -435,14 +434,211 @@ ul
     margin: 0
     padding: 10px
     text-align: center
-
-
 .main-image
   display: flex
   justify-content: center
   align-items: center
   & img
     object-fit: cover
+
+// Modal
+.black-fill
+  width: 100%
+  height: 100vh
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 100
+  background-color: rgba(0,0,0,0.3)
+  display: none
+.modal-login, .modal-login_invited
+  position: fixed
+  width: 500px
+  height: 570px
+  top: 15vh
+  left: 50%
+  margin-left: -250px
+  background: #fff
+  z-index: 1000
+.form-heading
+  text-align: center
+  margin: 40px 0 50px 0
+  &__title
+    font-size: 22px 
+    color: $title-black
+.modal-login__content
+  width: 100%
+
+.login-form
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__container
+    width: 350px
+    margin: 0 auto
+  &__inputs
+    width: 100%
+.login-email, .login-password, .login-email__invalid, .login-password__invalid
+  width: 100%
+  text-align: center
+  position: relative
+  & input
+    padding: 4px 40px
+    margin-bottom: 30px
+    width: 100%
+    height: 40px
+    border-radius: 5px
+    border: 1px solid #dfe2e6
+    color: $title-black
+    &::placeholder
+      color: #DFE2E6
+      font-size: 14px
+.login-email__invalid, .login-password__invalid
+  & input
+    border: 1px solid #CD233E
+.login-email__label, .login-password__label, .login-email__label_invalid, .login-password__label_invalid
+  position: absolute
+  top: -11px
+  left: 32px
+  padding: 0 6px
+  font-size: 12px
+  border: 2px solid #fff
+  background: #fff
+.login-email__label_invalid, .login-password__label_invalid
+  color: #CD233E
+.invalid
+  position: absolute
+  font-size: 10px
+  top: 45px
+  color: #CD233E
+.login-email__mail, .login-password__key, .login-password__eye
+  position: absolute
+.login-email__mail, .login-password__key
+  top: 6px
+  left: 10px
+.login-password__eye
+  right: 10px
+  top: 10px
+.login-form__buttons
+  width: 100%
+  display: flex
+  justify-content: space-between
+  margin-bottom: 30px
+  &_register, &_login
+    width: 160px
+    height: 40px
+    font-weight: 400
+    font-size: 16px
+    text-transform: unset
+    &:hover
+      background: #fff
+      color: $button-brown
+.login-form__checkbox
+  display: flex
+  justify-content: space-between
+  margin-bottom: 25px
+  &_remember
+    & label
+      margin: 0
+      cursor: pointer
+  &_text
+    position: relative
+    padding-left: 30px
+    &:hover
+      color: #2e293a
+  & input[type="checkbox"]
+    display: none 
+    + .login-form__checkbox_text:before
+      content: url('../images/vektor/checkbox.svg')
+      cursor: pointer
+      margin-right: 8px
+      margin-right: 8px
+      position: absolute
+      top: 0
+      left: 0
+    &:checked + .login-form__checkbox_text:before
+      content: url('../images/vektor/checkbox-checked.svg')
+  &_forgotPw
+    & a
+      color: $regular
+      text-decoration: none
+      &:hover
+        color: #555b61
+.login-form__text
+  display: flex
+  justify-content: center
+  position: relative
+  margin-bottom: 15px
+  &:before, &:after
+    content: ''
+    display: block
+    height: 1px
+    width: 100px
+    top: 10px
+    background: #e8e7ec
+    position: absolute
+  &:before
+    left: 0
+  &:after
+    right: 0
+.login-form__signIn
+  display: flex
+  justify-content: space-between
+  &_google, &_facebook
+    width: 160px
+    height: 40px
+    font-weight: 400
+    font-size: 16px
+    border: none
+    padding: 4px 0 0 27px
+    color: #fff
+    border-radius: 5px
+    background-repeat: no-repeat
+    background-position: 25px
+    transition: all 0.3s ease
+  &_google
+    background-image: url('../images/vektor/google-plus.svg')
+    background-color: #E5481D
+    &:hover
+      background-color: #b93916
+  &_facebook
+    background-image: url('../images/vektor/facebook-logo.svg')
+    background-color: #3F51B5
+    &:hover
+      background-color: #303d8a
+
+.modal-login_invited
+  display: none
+  height: 650px
+  top: 8vh
+.login-invited__header
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 25px 0 10px 0
+  &_images
+    position: relative
+  &_text
+    font-size: 20px
+    text-align: center
+    & p
+      margin: 0
+      margin: 10px auto
+      width: 80%
+.login-with-email
+  color: #88939E
+  font-size: 15px
+  font-weight: 400
+.invited_author
+  position: absolute
+  bottom: -2px
+  right: -20px
+
+
+
+
+
+
 
 @media only screen and (min-width: 992px) and (max-width: 1440px)
   .login-btn
@@ -517,6 +713,9 @@ ul
     margin-top: 20px
   .footer-logo__image, .footer-logo__text
     text-align: center
+
+  // modal
+
 @media only screen and (min-width: 320px) and (max-width: 576px)
   .header-nav
     display: none
@@ -590,3 +789,24 @@ ul
     & input
       width: 100%
       margin-bottom: 20px
+
+  .modal-login, .modal-login_invited
+    width: 80vw
+    margin-left: -40vw
+  .login-form__container
+    width: 235px
+  .login-form__buttons_register, .login-form__buttons_login
+    width: 115px
+  .login-form__checkbox
+    flex-direction: column
+    margin-bottom: 20px
+    &_remember
+      margin-bottom: 10px
+  .login-form__text
+    margin-bottom: 15px
+  .login-form__text:before, .login-form__text:after
+    width: 50px
+  .login-form__signIn_google, .login-form__signIn_facebook
+    width: 115px
+    font-size: 14px
+    background-position: 10px
