@@ -455,11 +455,13 @@ ul
   position: fixed
   width: 500px
   height: 570px
-  top: 15vh
+  top: 10vh
   left: 50%
   margin-left: -250px
   background: #fff
   z-index: 200
+  max-height: calc(100vh - 80px)
+  overflow-y: auto
 .form-heading
   text-align: center
   margin: 40px 0 50px 0
@@ -568,7 +570,7 @@ ul
   display: flex
   justify-content: center
   position: relative
-  margin-bottom: 15px
+  margin-bottom: 10px
   &:before, &:after
     content: ''
     display: block
@@ -611,7 +613,6 @@ ul
 .modal-login_invited
   display: none
   height: 650px
-  top: 8vh
 .login-invited__header
   display: flex
   flex-direction: column
@@ -724,7 +725,7 @@ ul
   .modal-login_invited
     overflow: scroll
     height: 600px   
-    top: 12vh
+    top: 13vh
 @media only screen and (min-width: 320px) and (max-width: 576px)
   .header-nav
     display: none
@@ -824,8 +825,8 @@ ul
     background-position: 10px
 
   .login-form__signIn 
-    margin-bottom: 50px
+    margin-bottom: 20px
   .modal-login_invited
     overflow: scroll
     height: 600px   
-    top: 12vh
+    top: 15vh
