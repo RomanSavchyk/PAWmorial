@@ -56,7 +56,7 @@ $(document).ready(function() {
   $('.login-password__eye').click(function() {
     let PWinput = document.getElementById("login-password__field");
     let src = $(this).attr('src');
-    let newsrc = (src=='/images/vektor/eye.svg') ? '/images/vektor/closed-eye.svg' : '/images/vektor/eye.svg';
+    let newsrc = (src=='./images/vektor/eye.svg') ? './images/vektor/closed-eye.svg' : './images/vektor/eye.svg';
     $(this).attr('src', newsrc );
     if (PWinput.type === "password") {
       PWinput.type = "text";

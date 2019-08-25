@@ -647,7 +647,7 @@ ul {
 
 .login-email input, .login-password input, .login-email__invalid input, .login-password__invalid input {
   padding: 4px 40px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   width: 100%;
   height: 40px;
   border-radius: 5px;
@@ -722,7 +722,7 @@ ul {
 .login-form__checkbox {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .login-form__checkbox_remember label {
@@ -770,7 +770,7 @@ ul {
   display: flex;
   justify-content: center;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .login-form__text:before, .login-form__text:after {
@@ -794,6 +794,7 @@ ul {
 .login-form__signIn {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .login-form__signIn_google, .login-form__signIn_facebook {
@@ -829,6 +830,7 @@ ul {
 }
 
 .modal-login_invited {
+  display: none;
   height: 650px;
   top: 8vh;
 }
@@ -837,7 +839,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px 0 25px 0;
+  padding: 25px 0 10px 0;
 }
 
 .login-invited__header_images {
@@ -853,6 +855,12 @@ ul {
   margin: 0;
   margin: 10px auto;
   width: 80%;
+}
+
+.login-with-email {
+  color: #88939E;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .invited_author {
@@ -921,6 +929,11 @@ ul {
     align-items: center;
     padding-bottom: 10px;
   }
+  .modal-login_invited {
+    overflow: scroll;
+    height: 600px;
+    top: 12vh;
+  }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 576px) {
@@ -956,6 +969,14 @@ ul {
   }
   .footer-logo__image, .footer-logo__text {
     text-align: center;
+  }
+  .login-form__signIn {
+    margin-bottom: 50px;
+  }
+  .modal-login_invited {
+    overflow: scroll;
+    height: 600px;
+    top: 12vh;
   }
 }
 
@@ -1052,9 +1073,11 @@ ul {
     width: 100%;
     margin-bottom: 20px;
   }
-  .modal-login {
-    width: 80vw;
-    margin-left: -40vw;
+  .modal-login, .modal-login_invited {
+    width: 88vw;
+    margin-left: -44vw;
+    overflow: scroll;
+    height: 600px;
   }
   .login-form__container {
     width: 235px;
@@ -1079,6 +1102,14 @@ ul {
     width: 115px;
     font-size: 14px;
     background-position: 10px;
+  }
+  .login-form__signIn {
+    margin-bottom: 50px;
+  }
+  .modal-login_invited {
+    overflow: scroll;
+    height: 600px;
+    top: 12vh;
   }
 }
 

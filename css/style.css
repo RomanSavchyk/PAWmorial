@@ -607,7 +607,7 @@ ul {
   left: 50%;
   margin-left: -250px;
   background: #fff;
-  z-index: 1000;
+  z-index: 200;
 }
 
 .form-heading {
@@ -832,7 +832,7 @@ ul {
 .modal-login_invited {
   display: none;
   height: 650px;
-  top: 16vh;
+  top: 8vh;
 }
 
 .login-invited__header {
@@ -929,6 +929,11 @@ ul {
     align-items: center;
     padding-bottom: 10px;
   }
+  .modal-login_invited {
+    overflow: scroll;
+    height: 600px;
+    top: 12vh;
+  }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 576px) {
@@ -964,6 +969,14 @@ ul {
   }
   .footer-logo__image, .footer-logo__text {
     text-align: center;
+  }
+  .login-form__signIn {
+    margin-bottom: 50px;
+  }
+  .modal-login_invited {
+    overflow: scroll;
+    height: 600px;
+    top: 12vh;
   }
 }
 
@@ -1061,10 +1074,10 @@ ul {
     margin-bottom: 20px;
   }
   .modal-login, .modal-login_invited {
-    width: 80vw;
-    margin-left: -40vw;
+    width: 88vw;
+    margin-left: -44vw;
     overflow: scroll;
-    height: 80vh;
+    height: 600px;
   }
   .login-form__container {
     width: 235px;
@@ -1089,6 +1102,14 @@ ul {
     width: 115px;
     font-size: 14px;
     background-position: 10px;
+  }
+  .login-form__signIn {
+    margin-bottom: 50px;
+  }
+  .modal-login_invited {
+    overflow: scroll;
+    height: 600px;
+    top: 12vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
