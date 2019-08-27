@@ -52,7 +52,7 @@ ul
   position: sticky
   top: 0
   background: rgba(255,255,255,0.9)
-  z-index: 999
+  z-index: 10
   &-login
     margin-left: 0
   &-nav
@@ -452,16 +452,14 @@ ul
   background-color: rgba(0,0,0,0.3)
   display: none
 .modal-login, .modal-login_invited
-  position: fixed
-  width: 500px
-  height: 570px
-  top: 10vh
-  left: 50%
-  margin-left: -250px
-  background: #fff
-  z-index: 200
-  max-height: calc(100vh - 80px)
-  overflow-y: auto
+    position: fixed
+    width: 500px
+    background: #fff
+    z-index: 200
+    overflow-y: auto
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
 .form-heading
   text-align: center
   margin: 40px 0 50px 0
@@ -612,7 +610,7 @@ ul
 
 .modal-login_invited
   display: none
-  height: 650px
+  height: 90%
 .login-invited__header
   display: flex
   flex-direction: column
@@ -637,18 +635,13 @@ ul
   right: -20px
 
 
-
-
-
-
-
-@media only screen and (min-width: 992px) and (max-width: 1440px)
+@media only screen and (max-width: 1440px)
   .login-btn
     padding: 6px 25px
     font-size: 14px
   .gallery-container
     column-count: 4
-@media only screen and (max-width: 992px) and (min-width: 768px)
+@media only screen and (max-width: 992px) 
   .header-nav
     display: none
   .header-nav__active
@@ -691,9 +684,8 @@ ul
     padding-bottom: 10px
   .modal-login_invited
     overflow: scroll
-    height: 600px   
-    top: 12vh
-@media only screen and (max-width: 768px) and (min-width: 576px)
+
+@media only screen and (max-width: 768px)
   .header-nav
     display: none
   .header-nav__active
@@ -724,9 +716,7 @@ ul
     margin-bottom: 50px
   .modal-login_invited
     overflow: scroll
-    height: 600px   
-    top: 13vh
-@media only screen and (min-width: 320px) and (max-width: 576px)
+@media only screen and (max-width: 576px)
   .header-nav
     display: none
   .hamburger
@@ -802,9 +792,7 @@ ul
 
   .modal-login, .modal-login_invited
     width: 88vw
-    margin-left: -44vw
     overflow: scroll
-    height: 600px
 
   .login-form__container
     width: 235px
@@ -828,5 +816,3 @@ ul
     margin-bottom: 20px
   .modal-login_invited
     overflow: scroll
-    height: 600px   
-    top: 15vh
