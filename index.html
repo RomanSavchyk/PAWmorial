@@ -16,10 +16,10 @@
 		<header class="header">
 			<div class="container">
 				<div class="row align-items-center justify-content-between">
-					<div class="header-logo justify-content-start align-items-center">
+					<div class="header-logo align-items-center">
 						<img src="./images/main-logo.svg" alt="Pawmorial" />
 					</div>
-					<div class="header-nav__container d-flex justify-content-start align-items-center">
+					<div class="header-nav__container d-flex align-items-center">
 						<ul class="header-nav">
 							<li><a href="#">Home</a></li>
 							<li><a href="#">About Us</a></li>
@@ -46,7 +46,7 @@
 					<div class="col-md-6">
 						<div class="main-image">
 							<div class="main-image__item">
-								<img src="./images/header-image2.png" alt="picture of a dog" />
+								<img src="./images/header-image1.png" alt="picture of a dog" />
 							</div>
 							<div class="main-image__item">
 								<img src="./images/header-image3.png" alt="picture of a cat" />
@@ -57,7 +57,6 @@
 							<div class="main-image__item">
 								<img src="./images/header-image5.png" alt="picture of a lizzard" />
 							</div>
-							<!-- Слайдер не хоче працювати на гітхабі -->
 						</div>
 					</div>
 					<div class="col-md-6">
@@ -86,7 +85,7 @@
 			<div class="container">
 				<div class="col">
 					<div class="mission-info">
-						<h2 class="mission-info__title title-brown">
+						<h2 class="mission-info__title main-page-heading">
 							Mission
 						</h2>
 						<p class="mission-info__text">
@@ -107,69 +106,75 @@
 		<!-- End Mission Section -->
 		<!-- Features Section -->
 		<section class="features">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row d-flex justify-content-center">
 					<div class="features-heading">
-						<h2 class="features-heading__title title-brown">
+						<h2 class="features-heading__title main-page-heading">
 							Features
 						</h2>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="row justify-content-between">
-							<figure class="features-item column">
-								<div class="features-item__image">
-									<img src="images/features-image1.jpg" alt="public and private" />
-								</div>
-								<figcaption class="features-item__title">
-									public & private
-								</figcaption>
-							</figure>
-							<figure class="features-item column">
-								<div class="features-item__image">
-									<img src="images/features-image2.jpg" alt="multiple pets" />
-								</div>
-								<figcaption class="features-item__title">
-									multiple pets
-								</figcaption>
-							</figure>
-							<figure class="features-item column">
-								<div class="features-item__image">
-									<img src="images/features-image3.jpg" alt="photos and videos" />
-								</div>
-								<figcaption class="features-item__title">
-									photos & videos
-								</figcaption>
-							</figure>
-							<figure class="features-item column">
-								<div class="features-item__image">
-									<img src="images/features-image4.jpg" alt="donate to charity" />
-								</div>
-								<figcaption class="features-item__title">
-									donate to charity
-								</figcaption>
-							</figure>
-							<figure class="features-item column">
-								<div class="features-item__image">
-									<img src="images/features-image5.jpg" alt="share memories" />
-								</div>
-								<figcaption class="features-item__title">
-									share memories
-								</figcaption>
-							</figure>
-						</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-15">
+						<figure class="features-item">
+							<div class="features-item__image">
+								<img src="images/features-image1.jpg" alt="public and private" />
+							</div>
+							<figcaption class="features-item__title">
+								public & private
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-15">
+						<figure class="features-item">
+							<div class="features-item__image">
+								<img src="images/features-image2.jpg" alt="multiple pets" />
+							</div>
+							<figcaption class="features-item__title">
+								multiple pets
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-15">
+						<figure class="features-item">
+							<div class="features-item__image">
+								<img src="images/features-image3.jpg" alt="photos and videos" />
+							</div>
+							<figcaption class="features-item__title">
+								photos & videos
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-15">
+						<figure class="features-item">
+							<div class="features-item__image">
+								<img src="images/features-image4.jpg" alt="donate to charity" />
+							</div>
+							<figcaption class="features-item__title">
+								donate to charity
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-15">
+						<figure class="features-item">
+							<div class="features-item__image">
+								<img src="images/features-image5.jpg" alt="share memories" />
+							</div>
+							<figcaption class="features-item__title">
+								share memories
+							</figcaption>
+						</figure>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- End Features Section -->
 		<!-- Gallery Section -->
-		<section class="gallery">
+		<!-- <section class="gallery">
 			<div class="container">
 				<div class="row d-flex justify-content-center">
 					<div class="gallery-heading">
-						<h2 class="gallery-heading__title title-brown">
+						<h2 class="gallery-heading__title main-page-heading">
 							Last Memories
 						</h2>
 					</div>
@@ -298,51 +303,57 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- End Gallery Section -->
 		<!-- Articles Section -->
 		<section class="articles">
 			<div class="container">
 				<div class="row d-flex justify-content-center">
 					<div class="articles-heading">
-						<h2 class="articles-heading__title title-brown">
+						<h2 class="articles-heading__title main-page-heading">
 							Articles
 						</h2>
 					</div>
 				</div>
 				<div class="row d-flex justify-content-center">
-					<div class="articles-item col-lg-4 col-md-6 col-xs-12">
-						<div class="articles-item__image">
-							<img src="./images/article1.png" alt="memory article" />
+					<div class="mb-15 col-lg-4 col-md-6 col-xs-12">
+						<div class="articles-item">
+							<div class="articles-item__image">
+								<img src="./images/doge.jpg" alt="memory article" />
+							</div>
+							<h5 class="articles-item__title">
+								The cure emotions for the children
+							</h5>
+							<p class="articles-item__text">
+								Every day for pets it’s a small life. You are World is here to provide the very best guidance, tips and reviews that we can on a variety of topics and products.
+							</p>
 						</div>
-						<h5 class="articles-item__title">
-							The cure emotions for the children
-						</h5>
-						<p class="articles-item__text">
-							Every day for pets it’s a small life. You are World is here to provide the very best guidance, tips and reviews that we can on a variety of topics and products.
-						</p>
 					</div>
-					<div class="articles-item col-lg-4 col-md-6 col-xs-12">
-						<div class="articles-item__image">
-							<img src="./images/article2.png" alt="memory article" />
+					<div class="mb-15 col-lg-4 col-md-6 col-xs-12">
+						<div class="articles-item">
+							<div class="articles-item__image">
+								<img src="./images/article2.png" alt="memory article" />
+							</div>
+							<h5 class="articles-item__title">
+								Pets life. How to make it happy.
+							</h5>
+							<p class="articles-item__text">
+								Every day for pets it’s a small life. You are World is here to provide the very best guidance, tips and reviews that we can on a variety of topics and products.
+							</p>
 						</div>
-						<h5 class="articles-item__title">
-							Pets life. How to make it happy.
-						</h5>
-						<p class="articles-item__text">
-							Every day for pets it’s a small life. You are World is here to provide the very best guidance, tips and reviews that we can on a variety of topics and products.
-						</p>
 					</div>
-					<div class="articles-item col-lg-4 col-md-6 col-xs-12">
-						<div class="articles-item__image">
-							<img src="./images/article3.png" alt="memory article" />
+					<div class="mb-15 col-lg-4 col-md-6 col-xs-12">
+						<div class="articles-item">
+							<div class="articles-item__image">
+								<img src="./images/article3.png" alt="memory article" />
+							</div>
+							<h5 class="articles-item__title">
+								Make a holiday that you’ll remember forever.
+							</h5>
+							<p class="articles-item__text">
+								Every day for pets it’s a small life. You are World is here to provide the very best guidance, tips and reviews that we can on a variety of topics and products.
+							</p>
 						</div>
-						<h5 class="articles-item__title">
-							Make a holiday that you’ll remember forever.
-						</h5>
-						<p class="articles-item__text">
-							Every day for pets it’s a small life. You are World is here to provide the very best guidance, tips and reviews that we can on a variety of topics and products.
-						</p>
 					</div>
 				</div>
 				<div class="row d-flex justify-content-center">
@@ -358,27 +369,14 @@
 			<div class="container">
 				<div class="row d-flex justify-content-center">
 					<div class="testimonials-heading">
-						<h2 class="testimonials-heading__title title-brown">
+						<h2 class="testimonials-heading__title main-page-heading">
 							Testimonials
 						</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col">
-						<div class="slider slider-for">
-							<div class="slider-item d-flex align-items-center">
-								<div class="slider-item__image">
-									<img src="images/testimonial1.png" alt="Testimonial post" />
-								</div>
-								<div class="slider-item__info d-flex flex-column">
-									<div class="slider-item__info_text">
-										<p>Finally I am now able to organize and commemorate my photos of my dog Colin in a user-friendly platform, where I can look back at my old memories of Colin and be warmed at the fact that I created this in dedication of him.</p>
-									</div>
-									<div class="slider-item__info_author">
-										<p>– Vanessa</p>
-									</div>
-								</div>
-							</div>
+						<div class="testimonials-slider slider-for">
 							<div class="slider-item d-flex align-items-center">
 								<div class="slider-item__image">
 									<img src="images/testimonial2.png" alt="Testimonial post" />
@@ -389,6 +387,19 @@
 									</div>
 									<div class="slider-item__info_author">
 										<p>– Kammy</p>
+									</div>
+								</div>
+							</div>
+							<div class="slider-item d-flex align-items-center">
+								<div class="slider-item__image">
+									<img src="images/doge.jpg" alt="Testimonial post" />
+								</div>
+								<div class="slider-item__info d-flex flex-column">
+									<div class="slider-item__info_text">
+										<p>different pic size, small text</p>
+									</div>
+									<div class="slider-item__info_author">
+										<p>– Vanessa</p>
 									</div>
 								</div>
 							</div>
@@ -419,12 +430,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="slider slider-nav">
-							<div class="slider-nav__item">
-								<img src="images/testimonial1nav.png" alt="Testimonial slide" />
-							</div>
+						<div class="testimonials-slider slider-nav">
 							<div class="slider-nav__item">
 								<img src="images/testimonial2nav.png" alt="Testimonial slide" />
+							</div>
+							<div class="slider-nav__item">
+								<img src="images/doge.jpg" alt="Testimonial slide" />
 							</div>
 							<div class="slider-nav__item">
 								<img src="images/testimonial1nav.png" alt="Testimonial slide" />
@@ -439,12 +450,14 @@
 		</section>
 		<!-- End Testimonials Section -->
 		<!-- Quote Section -->
-		<section class="quote d-flex align-items-end">
+		<section class="home-quote">
 			<div class="container">
-				<div class="row d-flex justify-content-center">
-					<div class="col-lg-6 col-md-9 col-xs-12 d-flex flex-column align-items-center quote-container">
-						<h3 class="quote-text">“When I look into the eyes of an animal I do not see an animal. I see a living being. I see a friend. I feel a soul.”</h3>
-						<h3 class="quote-author">A.D Williams</h3>
+				<div class="row justify-content-center">
+					<div class="col-lg-9 col-md-9 col-xs-12">
+						<div class="home-quote__container">
+							<h3 class="home-quote__text">“When I look into the eyes of an animal I do not see an animal. I see a living being. I see a friend. I feel a soul.”</h3>
+							<h3 class="home-quote__author">A.D Williams</h3>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -560,15 +573,14 @@
 			<div class="modal-login__content">
 				<div class="login-invited__header">
 					<div class="login-invited__header_images">
-						<img src="./images/login-invited_post.svg" alt="memory post" class="invited_post">
-						<img src="./images/login-invited_author.png" alt="author of memory post" class="invited_author">
+						<img src="./images/login-invited_post.svg" alt="memory post" class="invited_post" />
+						<img src="./images/login-invited_author.png" alt="author of memory post" class="invited_author" />
 					</div>
 					<div class="login-invited__header_text">
-						<p>Michael invite you to join
-								Marvel’s page</p>
+						<p>Michael invite you to join Marvel’s page</p>
 					</div>
 					<p class="login-with-email">
-							Login with email
+						Login with email
 					</p>
 				</div>
 				<form action="" class="login-form">

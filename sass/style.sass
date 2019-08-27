@@ -5,7 +5,12 @@ $button-brown: #D6B495
 $title-brown: #C79C74
 $title-black: #4C4C51
 $background-coffe: #F9F4EF
-  
+
+
+.mb-15
+  margin-bottom: 30px 
+
+
 body 
   font-family: 'Roboto', sans-serif 
   color: $regular-black
@@ -14,7 +19,7 @@ ul
   padding: 0
   margin: 0
 
-.title-brown
+.main-page-heading
   color: $title-brown
   text-align: center
   font-size: 45px
@@ -54,7 +59,7 @@ ul
   background: rgba(255,255,255,0.9)
   z-index: 10
   &-login
-    margin-left: 0
+    margin-left: 160px
   &-nav
     display: flex
     list-style: none
@@ -71,10 +76,9 @@ ul
   position: absolute
   display: inline-block
   top: 32px
-  right: 9px
+  right: 5px
   overflow: visible
   margin: 0
-  padding: 0 15px
   background-color: transparent
   display: none
   &__container
@@ -86,9 +90,9 @@ ul
     position: absolute
     display: block
     width: 30px
-    height: 2px
+    height: 3px
     background-color: $button-brown
-    border-radius: 10%
+    border-radius: 10px
     top: auto
     bottom: 0
     transition: all 0.2s
@@ -97,8 +101,8 @@ ul
       display: block
       position: absolute
       width: 30px
-      height: 2px
-      border-radius: 0
+      height: 3px
+      border-radius: 10px
       bottom: 0
       background-color: $button-brown
     &:before
@@ -129,6 +133,7 @@ ul
   top: 90px
   padding: 15px 0
   background-color: rgba(255,255,255,0.9)
+  transition: all 0.3s ease
   & li
     margin: 25px 15px
     & a
@@ -181,6 +186,7 @@ ul
     &:hover
       outline: none
 .main-image 
+  visibility: hidden
   &__item 
     & img
       display: block
@@ -225,7 +231,6 @@ ul
   &-heading
     margin: 20px 0 42px 0
   &-item
-    padding: 15px 15px
     display: flex
     justify-content: center
     flex-direction: column
@@ -233,121 +238,149 @@ ul
     margin: 0 auto
     &__image
       & img
-        width: 150px
-        height: 150px
+        width: 140px
+        height: 140px
         object-fit: cover
         border-radius: 50%
         opacity: 0.85
     &__title
       text-transform: uppercase
       padding-top: 26px
-      font-weight: 500
+      font-size: 18px
+      font-weight: 400
+      text-align: center
+
 // Gallery section
-.gallery
-  margin: 70px 0
-  &-btn
-    padding: 7px 55px
-    &:hover
-      background: #ffffff
-      color: $button-brown
-  &-wrapper
-    max-width: 1920px
-    margin: 70px auto
-    margin-bottom: 0
-    position: relative
-    &:after
-      box-shadow: 1px 184px 85px 166px rgba(251, 251, 251, 0.8)
-      content: ''
-      position: absolute
-      left: -50%
-      width: 150%
-      transform: rotate(180deg)
-      z-index: 8
-    &__btn
-      max-width: 1920px
-      margin: 0 auto
-      z-index: 10
-  &-container
-    column-count: 5
-    column-gap: 20px
-  &-item
-    margin-bottom: 30px
-    display: inline-block
-    width: 100%
-    &__title
-      padding: 10px 35px 0 0
-      position: relative
-    &__dots
-      text-decoration: none
-      color: $regular-black
-      position: absolute
-      top: 0
-      right: 0
-      cursor: pointer
-      font-size: 20px
-      transition: all 0.4s ease
-      &:hover
-        transform: scale(1.4)
-    &__image
-      width: 262px
-      display: block
-      width: 100%
-      & img
-        display: block
-        width: 100%
-        border-radius: 5px
+// .gallery
+//   margin: 70px 0
+//   &-btn
+//     padding: 7px 55px
+//     &:hover
+//       background: #ffffff
+//       color: $button-brown
+//   &-wrapper
+//     max-width: 1920px
+//     margin: 70px auto
+//     margin-bottom: 0
+//     position: relative
+//     &:after
+//       box-shadow: 1px 184px 85px 166px rgba(251, 251, 251, 0.8)
+//       content: ''
+//       position: absolute
+//       left: -50%
+//       width: 150%
+//       transform: rotate(180deg)
+//       z-index: 8
+//     &__btn
+//       max-width: 1920px
+//       margin: 0 auto
+//       z-index: 10
+//   &-container
+//     column-count: 5
+//     column-gap: 20px
+//   &-item
+//     margin-bottom: 30px
+//     display: inline-block
+//     width: 100%
+//     &__title
+//       padding: 10px 35px 0 0
+//       position: relative
+//     &__dots
+//       text-decoration: none
+//       color: $regular-black
+//       position: absolute
+//       top: 0
+//       right: 0
+//       cursor: pointer
+//       font-size: 20px
+//       transition: all 0.4s ease
+//       &:hover
+//         transform: scale(1.4)
+//     &__image
+//       width: 262px
+//       display: block
+//       width: 100%
+//       & img
+//         display: block
+//         width: 100%
+//         border-radius: 5px
 // Articles Section
 .articles
   margin-top: 70px
   &-btn
     margin: 30px 0 60px 0
   &-item
-    border: 2px solid transparent
     border-radius: 5px
     box-shadow: 0 2px 30px rgba(0,0,0,0.15)
-    max-width: 350px
-    margin: 15px 15px
-    padding: 0
-    &__image img
-      display: block
-      width: 100%
+    padding-bottom: 15px
+    &__image 
+      height: 273px
+      & img
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border: 6px solid #fff
     &__title
-      font-size: 22px
+      font-size: 21px
       font-weight: 400
       color: $title-black
-      max-width: 75%
-      padding: 15px 15px 25px 15px
+      max-width: 90%
+      padding: 15px 15px 0 15px
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      -webkit-line-clamp: 2
+      -webkit-box-orient: vertical
     &__text
       font-size: 18px
       font-weight: 400
       color: $regular
-      padding: 0 15px
+      padding: 25px 15px 0 15px
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      -webkit-line-clamp: 3 
+      -webkit-box-orient: vertical
+
 // Testimonials section
 .testimonials 
   background-color: $background-coffe
   padding: 70px 0 45px 0
-.slider
-  &-item
-    &__info
-      padding: 0 40px
-      &_author
-        text-align: right
-        color: $button-brown
-        padding-right: 30px
+  max-width: 1920px
+  margin: 0 auto
+.testimonials-slider
+  visibility: hidden
+.slider-item
+  &__info
+    padding: 0 40px
+    width: 100%
+    &_author
+      text-align: right
+      color: $button-brown
+      padding-right: 30px
+  &__image
+    & img
+      width: 320px
+      height: 320px
+      object-fit: cover
+      border-radius: 50%
 .slider-nav 
   display: flex
   justify-content: center
   width: 250px
   margin: 0 auto
+  visibility: hidden
   &__item
-    width: 80px
-    padding: 0 15px 0 15px
+    padding: 0 15px
     cursor: pointer
     & img
-      width: 100%
+      width: 110px
+      height: 110px
+      object-fit: cover
+      border-radius: 50%
 .slick-track
-  width: 40%
-
+  // width: 40%
 .prev1
   background: url('../images/arrow-left.png')
   width: 40px
@@ -368,18 +401,25 @@ ul
   cursor: pointer
 
 // Quote Section
-.quote
+.home-quote
   background: url('../images/quote1.png') no-repeat center
   background-size: cover
   height: 550px
-  &-container
+  max-width: 1920px
+  margin: 0 auto
+  display: flex
+  align-items: flex-end
+  &__container
     padding-bottom: 40px
-  &-text
-    // max-width: 47%
+    display: flex
+    justify-content: flex-end
+    flex-direction: column
+    align-items: center
+  &__text
     text-align: center
     font-size: 25px
     font-weight: 400
-  &-author
+  &__author
     margin-top: 20px
     font-size: 25px
     font-weight: 400  
@@ -633,25 +673,47 @@ ul
   position: absolute
   bottom: -2px
   right: -20px
-
+.slick-initialized 
+  visibility: visible
 
 @media only screen and (max-width: 1440px)
   .login-btn
     padding: 6px 25px
     font-size: 14px
-  .gallery-container
-    column-count: 4
+  .header-login
+    margin-left: 100px
 @media only screen and (max-width: 992px) 
+  .header-logo
+    z-index: 50
   .header-nav
-    display: none
+    position: absolute
+    display: block
+    text-align: center
+    top: -100vh
+    left: 0
+    padding: 15px 0
+    background-color: rgba(255,255,255,0.9)
+    transition: all 0.6s ease
+    width: 100%
+    & li
+      margin: 25px 15px
+      & a
+        padding: 15px
   .header-nav__active
     display: block
+    top: 90px
+    transition: all 0.4s ease
   .hamburger
     display: block
+  .header-nav__container
+    margin-left: auto
+  .header-login
+    position: absolute
+    top: 27px
+    right: 55px
   .login-btn
     padding: 6px 25px
     font-size: 14px
-    margin-right: 60px
   .main-about__title 
     font-size: 24px
   .main-image 
@@ -662,13 +724,14 @@ ul
         width: auto
         height: 230px
         max-height: 230px
-  .gallery-container
-    column-count: 3
-  .slider
-    &-item
-      flex-direction: column
-      &__info
-        padding-top: 30px
+  .main-about__subtitle
+    text-align: center
+  .home-line
+    margin-top: 30px
+  .slider-item
+    flex-direction: column
+    &__info
+      padding-top: 30px
   .footer-logo
     display: flex
     flex-direction: column
@@ -686,26 +749,14 @@ ul
     overflow: scroll
 
 @media only screen and (max-width: 768px)
-  .header-nav
-    display: none
-  .header-nav__active
-    display: block
   .hamburger
     display: block
   .header-login
     margin: 0
   .login-btn
-    margin: 0 60px 0 0
     font-size: 13px
     border-radius: 5px
     padding: 6px 10px
-  .slider
-    &-item
-      flex-direction: column
-      &__info
-        padding-top: 30px
-  .gallery-container
-    column-count: 2
   .footer-memorials, .footer-about, .footer-join
     margin-top: 20px
   .footer-logo__image, .footer-logo__text
@@ -714,30 +765,24 @@ ul
   // modal
   .login-form__signIn 
     margin-bottom: 50px
-  .modal-login_invited
-    overflow: scroll
+  .modal-login
+    height: auto
+
+
 @media only screen and (max-width: 576px)
-  .header-nav
-    display: none
   .hamburger
-    display: block
-    right: 0px
-  .header-nav__active
     display: block
   .header-login
     margin: 0
   .header-logo
     margin-left: 15px
-    width: 100px
+
     & img
       width: 100%
   .login-btn
-    margin: 0 70px 0 0
     font-size: 13px
     border-radius: 5px
     padding: 6px 9px
-  .main-about__subtitle
-    text-align: center
   .main-about__btn
     padding: 4px 44px
   .mission-info__tldr
@@ -750,23 +795,25 @@ ul
         width: auto
         height: 150px
         max-height: 150px
-  .slider
-    &-item
-      flex-direction: column
-      &__info
-        padding: 30px 20px 0 30px
-      &__image
-        display: flex
-        justify-content: center
-        & img
-          width: 70%
-    &-nav
-      &__item
-        width: 88px
-        & img
-          width: 
-  .slider .slick-list
-    width: 100%
+  .slider-item
+    flex-direction: column
+    &__info
+      padding: 30px 20px 0 30px
+    &__image
+      display: flex
+      justify-content: center
+      & img
+        width: 180px
+        height: 180px
+  .slider-nav__item
+    width: 88px
+    padding: 0
+    & img
+      width: 70px
+      height: 70px
+      margin: 0 auto
+
+
   .slider-nav .slick-list
     width: 70%
   .next1
@@ -775,14 +822,12 @@ ul
   .prev1
     left: -17px
     bottom: 10px
-  .gallery-container
-    column-count: 1
   .quote-text
     font-size: 20px
-  .footer-memorials, .footer-about, .footer-join
-    margin-top: 20px
-  .footer-logo__image, .footer-logo__text
-    text-align: center
+  // .footer-memorials, .footer-about, .footer-join
+  //   margin-top: 20px
+  // .footer-logo__image, .footer-logo__text
+  //   text-align: center
   .footer-join__input
     display: flex
     flex-direction: column
@@ -792,8 +837,7 @@ ul
 
   .modal-login, .modal-login_invited
     width: 88vw
-    overflow: scroll
-
+ 
   .login-form__container
     width: 235px
   .login-form__buttons_register, .login-form__buttons_login
@@ -814,5 +858,7 @@ ul
 
   .login-form__signIn 
     margin-bottom: 20px
-  .modal-login_invited
-    overflow: scroll
+ 
+@media only screen and (max-width: 420px)
+  .header-logo
+    width: 110px

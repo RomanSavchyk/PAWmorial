@@ -19,20 +19,20 @@ $(document).ready(function() {
     focusOnSelect: true
   });
   
-
   $('.main-image').slick({
-    arrows: false,
-    dots: false,
-    fade: true,
-    autoplay: true,
-    autoplayspeed: 300
-  });
+      arrows: false,
+      dots: false,
+      fade: true,
+      autoplay: true,
+      autoplayspeed: 300
+    });
+
   
-  $('a[data-slide]').click(function(e) {
-    e.preventDefault();
-    var slideno = $(this).data('slide');
-    $('.slider-nav').slick('slickGoTo', slideno - 1);
-  });
+  // $('a[data-slide]').click(function(e) {
+  //   e.preventDefault();
+  //   var slideno = $(this).data('slide');
+  //   $('.slider-nav').slick('slickGoTo', slideno - 1);
+  // });
   
   const hamburger = $('.hamburger')
   const headerNav = $('.header-nav')
