@@ -48,7 +48,7 @@ $(document).ready(function() {
       $('.modal-login, .modal-login_invited, .black-fill').show();
   });
 
-  $('.black-fill').click(function() {
+  $('.black-fill, .close-modal').click(function() {
       $('.modal-login, .modal-login_invited, .black-fill').hide();
   });
 

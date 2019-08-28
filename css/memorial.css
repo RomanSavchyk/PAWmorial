@@ -235,11 +235,7 @@ ul {
   visibility: hidden;
 }
 
-.slick-initialized {
-  visibility: visible;
-}
-
-.slick-initialized__item img {
+.main-image__item img {
   display: block;
   margin: 0 auto;
   width: auto;
@@ -374,39 +370,46 @@ ul {
 .testimonials {
   background-color: #F9F4EF;
   padding: 70px 0 45px 0;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
-.testimonials-slider-for .slider-item__info {
+.testimonials-slider {
+  visibility: hidden;
+}
+
+.slider-item__info {
   padding: 0 40px;
   width: 100%;
 }
 
-.testimonials-slider-for .slider-item__info_author {
+.slider-item__info_author {
   text-align: right;
   color: #D6B495;
   padding-right: 30px;
 }
 
-.testimonials-slider-for .slider-item__image img {
+.slider-item__image img {
   width: 320px;
   height: 320px;
   object-fit: cover;
   border-radius: 50%;
 }
 
-.testimonials-slider-nav {
+.slider-nav {
   display: flex;
   justify-content: center;
   width: 250px;
   margin: 0 auto;
+  visibility: hidden;
 }
 
-.testimonials-slider-nav .slider-nav_item {
+.slider-nav__item {
   padding: 0 15px;
   cursor: pointer;
 }
 
-.testimonials-slider-nav .slider-nav_item img {
+.slider-nav__item img {
   width: 110px;
   height: 110px;
   object-fit: cover;
@@ -435,23 +438,31 @@ ul {
   cursor: pointer;
 }
 
-.quote {
+.home-quote {
   background: url("../images/quote1.png") no-repeat center;
   background-size: cover;
   height: 550px;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
 }
 
-.quote-container {
+.home-quote__container {
   padding-bottom: 40px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
 }
 
-.quote-text {
+.home-quote__text {
   text-align: center;
   font-size: 25px;
   font-weight: 400;
 }
 
-.quote-author {
+.home-quote__author {
   margin-top: 20px;
   font-size: 25px;
   font-weight: 400;
@@ -822,6 +833,10 @@ ul {
   right: -20px;
 }
 
+.slick-initialized {
+  visibility: visible;
+}
+
 @media only screen and (max-width: 1440px) {
   .login-btn {
     padding: 6px 25px;
@@ -856,7 +871,7 @@ ul {
   .header-nav__active {
     display: block;
     top: 90px;
-    transition: all 0.6s ease;
+    transition: all 0.4s ease;
   }
   .hamburger {
     display: block;
@@ -928,12 +943,6 @@ ul {
     border-radius: 5px;
     padding: 6px 10px;
   }
-  .slider-item {
-    flex-direction: column;
-  }
-  .slider-item__info {
-    padding-top: 30px;
-  }
   .footer-memorials, .footer-about, .footer-join {
     margin-top: 20px;
   }
@@ -1002,9 +1011,6 @@ ul {
     height: 70px;
     margin: 0 auto;
   }
-  .slider .slick-list {
-    width: 100%;
-  }
   .slider-nav .slick-list {
     width: 70%;
   }
@@ -1018,12 +1024,6 @@ ul {
   }
   .quote-text {
     font-size: 20px;
-  }
-  .footer-memorials, .footer-about, .footer-join {
-    margin-top: 20px;
-  }
-  .footer-logo__image, .footer-logo__text {
-    text-align: center;
   }
   .footer-join__input {
     display: flex;

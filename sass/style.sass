@@ -75,7 +75,8 @@ ul
 .hamburger
   position: absolute
   display: inline-block
-  top: 32px
+  // top: 32px
+  top: 17px
   right: 5px
   overflow: visible
   margin: 0
@@ -491,6 +492,10 @@ ul
   z-index: 100
   background-color: rgba(0,0,0,0.3)
   display: none
+.close-modal
+  position: absolute
+  right: 20px
+  top: 20px
 .modal-login, .modal-login_invited
     position: fixed
     width: 500px
@@ -508,7 +513,6 @@ ul
     color: $title-black
 .modal-login__content
   width: 100%
-
 .login-form
   display: flex
   flex-direction: column
@@ -647,7 +651,6 @@ ul
     background-color: #3F51B5
     &:hover
       background-color: #303d8a
-
 .modal-login_invited
   display: none
   height: 90%
@@ -675,7 +678,6 @@ ul
   right: -20px
 .slick-initialized 
   visibility: visible
-
 @media only screen and (max-width: 1440px)
   .login-btn
     padding: 6px 25px
@@ -683,6 +685,8 @@ ul
   .header-login
     margin-left: 100px
 @media only screen and (max-width: 992px) 
+  .header
+    height: 60px
   .header-logo
     z-index: 50
   .header-nav
@@ -701,7 +705,7 @@ ul
         padding: 15px
   .header-nav__active
     display: block
-    top: 90px
+    top: 60px
     transition: all 0.4s ease
   .hamburger
     display: block
@@ -709,7 +713,8 @@ ul
     margin-left: auto
   .header-login
     position: absolute
-    top: 27px
+    // top: 27px
+    top: 10px
     right: 55px
   .login-btn
     padding: 6px 25px
@@ -747,7 +752,6 @@ ul
     padding-bottom: 10px
   .modal-login_invited
     overflow: scroll
-
 @media only screen and (max-width: 768px)
   .hamburger
     display: block
@@ -761,14 +765,11 @@ ul
     margin-top: 20px
   .footer-logo__image, .footer-logo__text
     text-align: center
-
   // modal
   .login-form__signIn 
     margin-bottom: 50px
   .modal-login
     height: auto
-
-
 @media only screen and (max-width: 576px)
   .hamburger
     display: block
@@ -776,7 +777,6 @@ ul
     margin: 0
   .header-logo
     margin-left: 15px
-
     & img
       width: 100%
   .login-btn
@@ -812,8 +812,6 @@ ul
       width: 70px
       height: 70px
       margin: 0 auto
-
-
   .slider-nav .slick-list
     width: 70%
   .next1
@@ -822,22 +820,16 @@ ul
   .prev1
     left: -17px
     bottom: 10px
-  .quote-text
-    font-size: 20px
-  // .footer-memorials, .footer-about, .footer-join
-  //   margin-top: 20px
-  // .footer-logo__image, .footer-logo__text
-  //   text-align: center
+  .home-quote__text
+    font-size: 19px
   .footer-join__input
     display: flex
     flex-direction: column
     & input
       width: 100%
       margin-bottom: 20px
-
   .modal-login, .modal-login_invited
     width: 88vw
- 
   .login-form__container
     width: 235px
   .login-form__buttons_register, .login-form__buttons_login
@@ -855,10 +847,8 @@ ul
     width: 115px
     font-size: 14px
     background-position: 10px
-
   .login-form__signIn 
     margin-bottom: 20px
- 
 @media only screen and (max-width: 420px)
   .header-logo
     width: 110px
