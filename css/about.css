@@ -49,6 +49,10 @@ ul {
   color: #E2CBB6;
 }
 
+#active-page {
+  color: #e42947;
+}
+
 .header {
   height: 90px;
   display: flex;
@@ -171,7 +175,7 @@ ul {
   margin-top: 0;
   background: #fff;
   color: #e42947;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   border-radius: 5px;
   padding: 6px 37px;
@@ -181,9 +185,8 @@ ul {
 }
 
 .login-btn:hover {
-  color: #58585D;
-  border-radius: 20px;
-  border-color: #58585D;
+  color: #ffffff;
+  background: #e42947;
   outline: none;
 }
 

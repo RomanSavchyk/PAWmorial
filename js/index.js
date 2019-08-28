@@ -65,9 +65,10 @@ $(document).ready(function() {
     }
   })
 
-  // $('.content-gallery').masonry({
-  //   columnWidth: '.content-gallery__item',
-  //   itemSelector: '.content-gallery__item'
-  // })
+  $('.content-gallery').masonry({
+    columnWidth: 262,
+    itemSelector: '.content-gallery__item',
+    isFitWidth: true
+  });
 })
 

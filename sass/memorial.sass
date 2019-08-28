@@ -42,18 +42,18 @@
       &_description
         font-size: 18px
 // Content
-.content
+.memorial-content
   margin-bottom: 70px
-  &-navbar
-    &__line
+  &__navbar
+    &_line
       height: 2px
       background: #D8D8D8
-  &-nav
+  &__nav
     list-style: none
     display: flex
     justify-content: center
     text-align: center
-    &__link
+    &_link
       margin: 20px
       height: 25px
       position: relative
@@ -65,7 +65,7 @@
         text-decoration: none
         transition: all 0.3s ease     
         &:hover
-          color: $logo-red
+          color: $login-red
       &:after
         content: ''
         display: block
@@ -79,10 +79,10 @@
       &:hover:after
         width: 100%
         left: 0
-        background: $logo-red
+        background: $login-red
       &_active
         & a
-          color: $logo-red
+          color: $login-red
           &:after
             content: ''
             height: 3px
@@ -90,18 +90,20 @@
             position: absolute
             top: -22px
             width: 100%
-            background: $logo-red
-Content section
+            background: $login-red
 .content-gallery
+  margin: 0 auto
   &__item
     width: 262px
-    display: inline-block
-    margin-bottom: 10px
-    &_title
+    padding: 10px
     &_image img
-      width: 100%
       border-radius: 5px
+      width: 100%
+      min-height: 200px
+      object-fit: cover
 
+.memorial-new__text p
+  font-size: 32px
 @media only screen and (max-width: 992px)
   .subheader
     &-top
@@ -111,21 +113,6 @@ Content section
           padding: 0
     &-bottom
       display: block
-  // .content-gallery
-  //   column-count: 3
-        // padding: 10px 35px 0 0
-      // position: relative
-    // &_dots
-    //   text-decoration: none
-    //   color: $regular-black
-    //   position: absolute
-    //   top: 0
-    //   right: 20px
-    //   cursor: pointer
-    //   font-size: 25px
-    //   transition: all 0.4s ease
-    //   &:hover
-    //     background: #979797
 @media only screen and (max-width: 768px)
   .subheader
     &-top
@@ -137,8 +124,6 @@ Content section
         margin-top: -90px
       &__info
         padding: 0
-  // .content-gallery
-  //   column-count: 2
 @media only screen and (max-width: 576px)
   .subheader-top__button_link
     padding: 7px 10px
@@ -150,9 +135,9 @@ Content section
   .subheader-bottom__image img 
     width: 140px
     margin: -196px 0 0 -20px
-  .content-nav
+  .memorial-content__nav
     flex-direction: column
-    &__link
+    &_link,
       &:after, &:before
         content: ''
         display: block
@@ -163,24 +148,28 @@ Content section
         width: 0
         background: transparent
         transition: width .5s ease, background-color .5s ease, left .5s ease
-      &:before 
+      &:before
         right: 50%
-        background: $logo-red
+        background: $login-red
         left: 80%
       &:hover:after, &:hover:before
         width: 20%
         left: -10px
-        background: $logo-red
+        background: $login-red
       &_active
         & a
-          color: $logo-red
+          color: $login-red
           &:after
-            content: ''
-            height: 3px
-            display: block
-            position: absolute
-            top: -22px
-            width: 100%
-            background: $logo-red
-  // .content-gallery
-  //   column-count: 1
+            display: none
+        &:after, &:before
+          content: ''
+          display: block
+          position: absolute
+          top: 9px
+          left: -10px
+          height: 3px
+          width: 20%
+          background: $login-red
+          transition: width .5s ease, background-color .5s ease, left .5s ease
+
+
