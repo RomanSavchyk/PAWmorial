@@ -86,7 +86,7 @@ ul {
 .hamburger {
   position: absolute;
   display: inline-block;
-  top: 32px;
+  top: 17px;
   right: 5px;
   overflow: visible;
   margin: 0;
@@ -564,6 +564,13 @@ ul {
   display: none;
 }
 
+.close-modal {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+
 .modal-login, .modal-login_invited {
   position: fixed;
   width: 500px;
@@ -573,6 +580,7 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: none;
 }
 
 .form-heading {
@@ -848,6 +856,9 @@ ul {
 }
 
 @media only screen and (max-width: 992px) {
+  .header {
+    height: 60px;
+  }
   .header-logo {
     z-index: 50;
   }
@@ -870,7 +881,7 @@ ul {
   }
   .header-nav__active {
     display: block;
-    top: 90px;
+    top: 60px;
     transition: all 0.4s ease;
   }
   .hamburger {
@@ -881,7 +892,7 @@ ul {
   }
   .header-login {
     position: absolute;
-    top: 27px;
+    top: 10px;
     right: 55px;
   }
   .login-btn {
@@ -953,7 +964,7 @@ ul {
     margin-bottom: 50px;
   }
   .modal-login {
-    height: auto;
+    height: 80%;
   }
 }
 
@@ -1022,8 +1033,8 @@ ul {
     left: -17px;
     bottom: 10px;
   }
-  .quote-text {
-    font-size: 20px;
+  .home-quote__text {
+    font-size: 19px;
   }
   .footer-join__input {
     display: flex;
@@ -1106,7 +1117,7 @@ ul {
   text-align: center;
 }
 
-@media only screen and (max-width: 992px) and (min-width: 768px) {
+@media only screen and (max-width: 992px) {
   .about-image img {
     width: 80%;
   }
@@ -1118,28 +1129,7 @@ ul {
   }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 576px) {
-  #about-logo {
-    min-height: 270px;
-  }
-  .about-image img {
-    width: 60%;
-  }
-  .story-info__image {
-    text-align: center;
-  }
-  .story-info__image img {
-    float: none;
-    margin: 0 0 30px 0;
-    width: 200px;
-    height: 200px;
-  }
-  .story-info__image p {
-    padding: 0;
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   #about-logo {
     min-height: 270px;
   }
