@@ -1,4 +1,5 @@
 $(document).ready(function() {
+// Testimonials slider
   $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -6,6 +7,7 @@ $(document).ready(function() {
     fade: true,
     asNavFor: '.slider-nav'
   });
+
   $('.slider-nav').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -18,7 +20,8 @@ $(document).ready(function() {
     nextArrow: '<i class="fa fa-angle-left next1"></i>',
     focusOnSelect: true
   });
-  
+
+// Home slider
   $('.main-image').slick({
       arrows: false,
       dots: false,
@@ -54,7 +57,7 @@ $(document).ready(function() {
     }
   })
 
- // Login Modal
+// Login Modal
   $('.modal-login, .modal-login_invited, .black-fill').hide();
   $('.login-btn').click(function() {
       $('.modal-login, .modal-login_invited, .black-fill').show();
@@ -64,7 +67,7 @@ $(document).ready(function() {
       $('.modal-login, .modal-login_invited, .black-fill').hide();
   });
 
-  
+// Show Password
   $('.login-password__eye').click(function() {
     let PWinput = document.getElementById("login-password__field");
     let src = $(this).attr('src');
@@ -76,11 +79,7 @@ $(document).ready(function() {
       PWinput.type = "password";
     }
   })
-
-  // $(".user-name, .user-image").click(function() {
-  //   $(".dropdown-content__user").css("display", "flex");
-  // });
-  
+// Memorials page, Masonry layout
   $('.content-gallery').masonry({
     columnWidth: 262,
     itemSelector: '.content-gallery__item',
