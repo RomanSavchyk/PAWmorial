@@ -34,6 +34,24 @@ ul {
   transition: all 0.3s ease;
 }
 
+.red-btn {
+  background: #fff;
+  color: #e42947;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 6px 37px;
+  border: 2px solid #e42947;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.red-btn:hover {
+  color: #ffffff;
+  background: #e42947;
+  outline: none;
+}
+
 .no-bg-btn {
   border: none;
   color: #D6B495;
@@ -172,7 +190,6 @@ ul {
 }
 
 .login-btn {
-  margin-top: 0;
   background: #fff;
   color: #e42947;
   font-weight: 400;
@@ -1152,4 +1169,3 @@ ul {
     padding: 0;
   }
 }
-/*# sourceMappingURL=about.css.map */

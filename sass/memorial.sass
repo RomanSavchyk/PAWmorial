@@ -96,14 +96,97 @@
   &__item
     width: 262px
     padding: 10px
-    &_image img
-      border-radius: 5px
-      width: 100%
-      min-height: 200px
-      object-fit: cover
-
-.memorial-new__text p
-  font-size: 32px
+    &_title
+      padding: 10px 30px 0 0
+      position: relative
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      -webkit-line-clamp: 3 
+      -webkit-box-orient: vertical
+    &_dots
+      position: absolute
+      top: 10px
+      right: 15px
+      width: 25px
+      height: 25px
+      text-align: center
+      border-radius: 50%
+      transition: all 0.3s ease
+    & figure
+      margin-bottom: 0
+      border: 7px solid #fff
+    &:hover figure
+      border: 7px solid #F3F3F3
+      border-radius: 10px
+      cursor: pointer
+    &:hover figcaption
+      background: #F3F3F3
+    &:hover .content-gallery__item_dots
+      background: #d3d2d2
+    &_image
+      & img
+        border-radius: 4px
+        width: 100%
+        min-height: 200px
+        object-fit: cover
+    &_like
+      transition: .5s ease
+      opacity: 0
+      position: absolute
+      top: 40%
+      left: 50%
+      transform: translate(-50%, -50%)
+      text-align: center
+      cursor: pointer
+      & img
+        min-height: 0
+    &_share
+      position: absolute
+      bottom: 85px
+      right: 27px
+      width: 36px
+      opacity: 0
+      height: 36px
+      border-radius: 50%
+      background: #fff
+      transition: all 0.3s ease
+      cursor: pointer
+      & svg
+        width: 20px
+        height: 20px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        fill: #4C4C51
+    &:hover .content-gallery__item_like, &:hover .content-gallery__item_share
+      opacity: 1
+  
+.memorial-new
+  display: flex
+  flex-direction: column
+  height: 400px
+  justify-content: flex-end
+  padding-bottom: 50px
+  &__text
+    margin-bottom: 10px
+    letter-spacing: 0
+    & p
+      font-size: 32px
+  &__button
+    margin: 0 auto
+    &_btn
+      color: $login-red
+      border: 1px solid $login-red
+      border-radius: 10px
+      text-decoration: none
+      padding: 10px 40px
+      &:hover
+        color: #ffffff
+        background: $login-red
+        outline: none
+        text-decoration: none
 @media only screen and (max-width: 992px)
   .subheader
     &-top
