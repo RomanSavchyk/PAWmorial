@@ -4,9 +4,9 @@ body {
   box-sizing: border-box;
 }
 
-ul {
-  padding: 0;
+p, ul, label, h1, h2, h3, h4, h5 {
   margin: 0;
+  padding: 0;
 }
 
 .main-page-heading {
@@ -28,6 +28,11 @@ ul {
   border: 2px solid #D6B495;
   border-radius: 5px;
   transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #D6B495;
 }
 
 .red-btn {
@@ -63,6 +68,169 @@ ul {
   color: #E2CBB6;
 }
 
+.black-fill {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.close-modal {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.modal-create-memorial {
+  position: fixed;
+  background: #fff;
+  z-index: 200;
+  overflow-y: auto;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  border-radius: 20px;
+  width: 76vw;
+}
+
+.create-memorial__heading {
+  display: flex;
+  justify-content: center;
+  background: #f5f4f4;
+  padding: 15px;
+}
+
+.create-memorial__heading h2 {
+  margin: 0;
+  color: #4C4C51;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.create-memorial__content {
+  display: flex;
+  padding: 20px 0 50px 0;
+}
+
+.create-memorial__left {
+  width: 50%;
+  padding-left: 30px;
+}
+
+.create-memorial__left_heading {
+  color: #4C4C51;
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+.create-memorial__left_name input {
+  width: 100%;
+  padding-left: 20px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid #b7b7b7;
+}
+
+.create-memorial__left_pickers_birth, .create-memorial__left_pickers_passed {
+  padding-top: 20px;
+}
+
+.create-memorial__left_pickers_birth .date-of-birth, .create-memorial__left_pickers_birth .place-of-birth, .create-memorial__left_pickers_birth .date-of-passing-away, .create-memorial__left_pickers_birth .place-of-passing-away, .create-memorial__left_pickers_passed .date-of-birth, .create-memorial__left_pickers_passed .place-of-birth, .create-memorial__left_pickers_passed .date-of-passing-away, .create-memorial__left_pickers_passed .place-of-passing-away {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.create-memorial__left_pickers_birth .date-of-birth label, .create-memorial__left_pickers_birth .place-of-birth label, .create-memorial__left_pickers_birth .date-of-passing-away label, .create-memorial__left_pickers_birth .place-of-passing-away label, .create-memorial__left_pickers_passed .date-of-birth label, .create-memorial__left_pickers_passed .place-of-birth label, .create-memorial__left_pickers_passed .date-of-passing-away label, .create-memorial__left_pickers_passed .place-of-passing-away label {
+  margin: 0;
+  font-size: 18px;
+  color: #4C4C51;
+}
+
+.create-memorial__left_pickers_birth .date-of-birth input, .create-memorial__left_pickers_birth .place-of-birth input, .create-memorial__left_pickers_birth .date-of-passing-away input, .create-memorial__left_pickers_birth .place-of-passing-away input, .create-memorial__left_pickers_passed .date-of-birth input, .create-memorial__left_pickers_passed .place-of-birth input, .create-memorial__left_pickers_passed .date-of-passing-away input, .create-memorial__left_pickers_passed .place-of-passing-away input {
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid #b7b7b7;
+  width: 210px;
+  margin-right: 97px;
+  padding-left: 50px;
+  padding-top: 4px;
+}
+
+.create-memorial__left_pickers_birth .birth-date-icon, .create-memorial__left_pickers_birth .passing-away-date-icon, .create-memorial__left_pickers_passed .birth-date-icon, .create-memorial__left_pickers_passed .passing-away-date-icon {
+  position: absolute;
+  right: 273px;
+  z-index: 2;
+}
+
+.create-memorial__left_pickers_birth .place-of-birth, .create-memorial__left_pickers_birth .place-of-passing-away, .create-memorial__left_pickers_passed .place-of-birth, .create-memorial__left_pickers_passed .place-of-passing-away {
+  padding-top: 30px;
+}
+
+.create-memorial__left_pickers_birth .place-of-birth input, .create-memorial__left_pickers_birth .place-of-passing-away input, .create-memorial__left_pickers_passed .place-of-birth input, .create-memorial__left_pickers_passed .place-of-passing-away input {
+  width: 308px;
+  padding-left: 20px;
+  margin-right: 0;
+}
+
+.create-memorial__right {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.create-memorial__left_checkbox {
+  margin-top: 15px;
+  position: relative;
+}
+
+.create-memorial__left_checkbox label {
+  margin-left: 45px;
+}
+
+.create-memorial__left_checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.create-memorial__left_checkbox input[type="checkbox"] + label:before {
+  content: url("../images/vektor/checkbox-circle.svg");
+  cursor: pointer;
+  margin-right: 8px;
+  margin-right: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.create-memorial__left_checkbox input[type="checkbox"]:checked + label:before {
+  content: url("../images/vektor/checkbox-circle-checked.svg");
+}
+
+.create-memorial__left_pickers_passed {
+  opacity: 0.3;
+}
+
+.create-memorial__left_pickers_passed_checked {
+  opacity: 1;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 992px) {
+  .create-memorial__content {
+    flex-direction: column;
+  }
+}
+
 .mb-15 {
   margin-bottom: 30px;
 }
@@ -82,7 +250,9 @@ ul {
 }
 
 .header-login {
-  margin-left: 160px;
+  position: absolute;
+  top: 24px;
+  right: 177px;
 }
 
 .header-nav {
@@ -721,24 +891,6 @@ ul {
   object-fit: cover;
 }
 
-.black-fill {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: none;
-}
-
-.close-modal {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  cursor: pointer;
-}
-
 .modal-login, .modal-login_invited {
   position: fixed;
   width: 500px;
@@ -1019,7 +1171,8 @@ ul {
     font-size: 14px;
   }
   .header-login {
-    margin-left: 100px;
+    top: 27px;
+    right: 111px;
   }
   .header-loggedIn {
     right: 82px;
@@ -1043,6 +1196,9 @@ ul {
     font-size: 15px;
   }
   .header-loggedIn {
+    right: 30px;
+  }
+  .header-login {
     right: 30px;
   }
 }

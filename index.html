@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/slick-theme.css" />
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css" />
 		<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+		<link rel="stylesheet" href="css/datepicker.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Pawmorial</title>
 	</head>
@@ -21,7 +22,7 @@
 					</div>
 					<div class="header-nav__container d-flex align-items-center">
 						<ul class="header-nav">
-							<li><a id="active-page" href="#">Home</a></li>
+							<li><a id="active-page" href="index.html">Home</a></li>
 							<li><a href="about.html">About Us</a></li>
 							<li><a href="memorial.html">Memorial</a></li>
 							<li><a href="#">FAQ</a></li>
@@ -660,8 +661,83 @@
 				</form>
 			</div>
 		</div> -->
+		<!-- Create memorial modal -->
+		<div class="modal-create-memorial">
+			<div class="create-memorial__heading">
+				<h2>Create a Memorial</h2>
+			</div>
+			<div class="create-memorial__content">
+				<div class="create-memorial__left">
+					<form action="">
+						<div class="create-memorial__left_heading">
+							<p>Who are you creating this memorial page for?</p>
+						</div>
+						<div class="create-memorial__left_name">
+							<input type="text" name="pet name" id="" placeholder="Type Pet Name" />
+						</div>
+						<div class="create-memorial__left_pickers_birth">
+							<div class="date-of-birth">
+								<label for="birth-date">
+									Date of birth
+								</label>
+								<span class="birth-date-icon"><img src="./images/vektor/calendar.svg" alt="calendar"></span>
+								<input type="text" data-toggle="datepicker" name="Date of birth" id="birth-date" placeholder="Pick date" />
+							</div>
+							<div class="place-of-birth">
+								<label for="birth-place">
+									Place of birth
+								</label>
+								<input type="text" name="Place of birth" id="birth-place" placeholder="Type a place" />
+							</div>
+						</div>
+						<div class="create-memorial__left_checkbox">
+							<input type="checkbox" name="is passed away" id="passed-away" />
+							<label for="passed-away">Pet passed away</label>
+						</div>
+						<div class="create-memorial__left_pickers_passed">
+							<div class="date-of-passing-away">
+								<label for="passing-away-date">
+									Date of passing away
+								</label>
+								<span class="passing-away-date-icon"><img src="./images/vektor/calendar.svg" alt="calendar"></span>
+								<input type="text" data-toggle="datepicker" name="Date of passing away" id="passing-away-date" placeholder="Pick date" disabled/>
+							</div>
+							<div class="place-of-passing-away">
+								<label for="passing-away-place">
+									Place of passing away
+								</label>
+								<input type="text" name="Place of passing away" id="passing-away-place" placeholder="Type a place" disabled/>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="create-memorial__right">
+					<form action="">
+						<div class="create-memorial__right_heading">
+							Set Profile Photo
+						</div>
+						<div class="create-memorial__right_image">
+							<p>Images will be uploaded here</p>
+						</div>
+						<div class="create-memorial__right_settings">
+							<p>Privacy settings</p>
+						</div>
+						<div class="create-memorial__right_checkbox">
+							<input type="checkbox" name="board private" id="board-private" />
+							<label for="board-private">Keep this board private</label>
+						</div>
+						<span class="right-checkbox__helper">You must invite or approve users</span>
+						<div class="create-memorial__right_buttons">
+							<button class="btn create-memorial__cancel">Cancel</button>
+							<button class="btn create-memorial__create">Create memorial</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 		<div class="black-fill"></div>
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="libs/datepicker/datepicker.min.js"></script>
 		<script src="slick/slick.min.js"></script>
 		<script src="js/slick.min.js"></script>
 		<script src="libs/masonry-docs/masonry.pkgd.js"></script>

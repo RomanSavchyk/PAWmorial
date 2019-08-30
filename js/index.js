@@ -66,7 +66,29 @@ $(document).ready(function() {
   $('.black-fill, .close-modal').click(function() {
       $('.modal-login, .modal-login_invited, .black-fill').hide();
   });
+// Create memorial modal
+  $('.modal-create-memorial, .black-fill').hide();
+  $('.main-about__btn').click(function() {
+      $('body').css('overflow', 'hidden');
+      $('.modal-create-memorial, .black-fill').show();
+  });
+  $('.black-fill').click(function() {
+      $('.modal-create-memorial, .black-fill').hide();
+      $('body').css('overflow', 'auto');
+  });
+// Memorial modal Date picker
+  $('[data-toggle="datepicker"]').datepicker();
+// Memorial modal toggle passed away pickers
+  $('#passed-away').click(function() {
+    $('.create-memorial__left_pickers_passed').toggleClass('create-memorial__left_pickers_passed_checked')
+    $('#passing-away-place, #passing-away-date').prop('disabled', function(i, v) { return !v; });
+  })
 
+  $('.modal-create-memorial, .black-fill').on('shown', function(){
+    $('body').css('overflow', 'hidden');
+  }).on('hidden', function(){
+      
+  })
 // Show Password
   $('.login-password__eye').click(function() {
     let PWinput = document.getElementById("login-password__field");
