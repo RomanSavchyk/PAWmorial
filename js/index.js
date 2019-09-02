@@ -73,7 +73,7 @@ $(document).ready(function() {
       $('body').css('overflow', 'hidden');
       $('.modal-create-memorial, .black-fill').show();
   });
-  $('.black-fill, .create-memorial__cancel').click(function(e) {
+  $('.black-fill, .create-memorial__cancel, .close-modal').click(function(e) {
       e.preventDefault()
       $('.modal-create-memorial, .black-fill').hide();
       $('body').css('overflow', 'visible');
