@@ -61,10 +61,12 @@ $(document).ready(function() {
   $('.modal-login, .modal-login_invited, .black-fill').hide();
   $('.login-btn').click(function() {
       $('.modal-login, .modal-login_invited, .black-fill').show();
+      $('body').css('overflow', 'hidden');
   });
 
   $('.black-fill, .close-modal').click(function() {
       $('.modal-login, .modal-login_invited, .black-fill').hide();
+      $('body').css('overflow', 'visible');
   });
 // Create memorial modal
   $('.modal-create-memorial, .black-fill').hide();
@@ -74,8 +76,19 @@ $(document).ready(function() {
   });
   $('.black-fill').click(function() {
       $('.modal-create-memorial, .black-fill').hide();
-      $('body').css('overflow', 'auto');
+      $('body').css('overflow', 'visible');
   });
+// Memorial modal toggle passed away pickers
+  $('#passed-away').click(function() {
+    $('.create-memorial__left_pickers_passed').toggleClass('create-memorial__left_pickers_passed_checked')
+    $('#passing-away-place, #passing-away-date').prop('disabled', function(i, v) { return !v; });
+  })
+
+  // $('.modal-login, .black-fill').on('shown', function(){
+  //   $('body').css('overflow', 'hidden');
+  // }).on('hidden', function(){
+  //   $('body').css('overflow', 'visible');
+  // })
 // Memorial modal Date picker
   $.fn.datepicker.language['en'] = {
     days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
@@ -91,17 +104,6 @@ $(document).ready(function() {
   }
   $('.datepicker-here').datepicker({
       language: 'en'
-  })
-// Memorial modal toggle passed away pickers
-  $('#passed-away').click(function() {
-    $('.create-memorial__left_pickers_passed').toggleClass('create-memorial__left_pickers_passed_checked')
-    $('#passing-away-place, #passing-away-date').prop('disabled', function(i, v) { return !v; });
-  })
-
-  $('.modal-create-memorial, .black-fill').on('shown', function(){
-    $('body').css('overflow', 'hidden');
-  }).on('hidden', function(){
-      
   })
 // Show Password
   $('.login-password__eye').click(function() {
