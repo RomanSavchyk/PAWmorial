@@ -77,7 +77,21 @@ $(document).ready(function() {
       $('body').css('overflow', 'auto');
   });
 // Memorial modal Date picker
-  $('[data-toggle="datepicker"]').datepicker();
+  $.fn.datepicker.language['en'] = {
+    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+    months: ['January','February','March','April','May','June', 'July','August','September','October','November','December'],
+    monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    today: 'Today',
+    clear: 'Clear',
+    dateFormat: 'mm/dd/yyyy',
+    timeFormat: 'hh:ii aa',
+    firstDay: 0
+  }
+  $('.datepicker-here').datepicker({
+      language: 'en'
+  })
 // Memorial modal toggle passed away pickers
   $('#passed-away').click(function() {
     $('.create-memorial__left_pickers_passed').toggleClass('create-memorial__left_pickers_passed_checked')
