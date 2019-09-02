@@ -10,6 +10,7 @@
   top: 0
   background: rgba(255,255,255,1)
   z-index: 10
+  box-shadow: 0 0.6px 11.5px 0px rgba(0,0,0,0.2)
   &-login
     position: absolute
     top: 24px
@@ -60,6 +61,8 @@
   background: #f5f5f5
   display: flex
   align-items: center
+  &:focus
+    outline: none
   & p
     margin: 0
 // delete later
@@ -111,8 +114,6 @@
   white-space: nowrap
   overflow: hidden
   text-overflow: ellipsis
-  &:focus
-    outline: none
 .user-image
   width: 36px
   height: 36px
@@ -209,11 +210,9 @@
   padding: 6px 37px
   border: 2px solid $login-red
   transition: all 0.3s ease 
-  outline: none
   &:hover
     color: #ffffff
     background: $login-red
-    outline: none
 
 // Home Section
 #home
@@ -238,12 +237,8 @@
     &:hover
       background: #ffffff
       color: $button-brown
-      outline: none
   &__example_btn
     margin-top: 25px
-    outline: none
-    &:hover
-      outline: none
 .main-image 
   visibility: hidden
   &__item 
@@ -468,7 +463,6 @@
       &:hover
         background: #ffffff
         color: $button-brown
-        outline: none
 .copy
   background: #efdfd1
   &-text

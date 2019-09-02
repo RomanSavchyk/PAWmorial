@@ -44,7 +44,7 @@
 					</div>
 					<div class="header-nav__container d-flex align-items-center">
 						<ul class="header-nav">
-							<li><a  href="index.html">Home</a></li>
+							<li><a href="index.html">Home</a></li>
 							<li><a href="about.html">About Us</a></li>
 							<li><a id="active-page" href="memorial.html">Memorial</a></li>
 							<li><a href="#">FAQ</a></li>
@@ -154,7 +154,7 @@
 					</div>
 				</div>
 				<!-- When there are posts-->
-				<div class="content-gallery">
+				<!-- <div class="content-gallery">
 					<div class="content-gallery__item">
 						<figure>
 							<div class="content-gallery__item_image">
@@ -555,22 +555,21 @@
 							</figcaption>
 						</figure>
 					</div>
-				</div>
+				</div> -->
 
 				<!-- When no posts -->
-				<!-- <div class="row justify-content-center">
+				<div class="row justify-content-center">
 					<div class="col-lg-7">
 						<div class="memorial-new">
 							<div class="memorial-new__text main-page-heading">
-								<p>There is no memories, but you can create it
-										in few moments</p>
+								<p>There is no memories, but you can create it in few moments</p>
 							</div>
 							<div class="memorial-new__button">
 								<a class="memorial-new__button_btn red-btn" href="#">Create new memory</a>
 							</div>
 						</div>
 					</div>
-				</div> -->
+				</div>
 			</div>
 		</section>
 
@@ -739,6 +738,84 @@
 						</div>
 					</div>
 				</form>
+			</div>
+		</div>
+		<div class="modal-create-memory">
+			<div class="close-modal">
+				<img src="./images/vektor/close-black.svg" alt="close button" />
+			</div>
+			<div class="create-memory__content">
+				<div class="create-memory__left">
+					<div class="create-memory__left_image">
+						<div class="create-memory__image_outer">
+							<div class="create-memory__image_inner">
+								<div class="create-memory__image_inner_upload">
+									<div class="create-memory__image_inner_upload_pic">
+										<img src="./images/vektor/upload.svg" alt="upload" />
+									</div>
+									<div class="create-memory__image_inner_upload_click">
+										Drag and Drop or click to upload
+									</div>
+									<div class="create-memory__image_inner_upload_helper">
+										(you can add few files in one time by clicking SHIFT button)
+									</div>
+								</div>
+							</div>
+							<div class="create-memory__image_text">
+								Please upload .jpg files less than to 10 MB
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="create-memory__right">
+					<form action="">
+						<div class="create-memory__right_title">
+							<input type="text" name="memory title" placeholder="Add a title" />
+						</div>
+						<div class="create-memory__right_hashtag">
+							<input type="text" name="memory hashtag" value="#" placeholder="#" />
+						</div>
+						<div class="create-memory__right_description">
+							<textarea name="memory description" placeholder="Add a description"></textarea>
+						</div>
+						<div class="create-memory__right_datepicker">
+							<label for="create-memory__datepicker">
+								Pick date of post
+							</label>
+							<span class="create-memory__datepicker_calendar"><img src="./images/vektor/calendar-blue.svg" alt="calendar"/></span>
+							<span class="create-memory__datepicker_arrow"><img src="./images/vektor/drop-down-arrow.svg" alt="pick a date"/></span>
+							<input type="text" class="datepicker-here" data-position="top left" name="date of post" id="create-memory__datepicker" placeholder="Pick date" readonly />
+						</div>
+						<div class="create-memory__right_type">
+							<div class="create-memory__right_type_heading">
+								Memory type
+							</div>
+							<ul class="create-memory__right_type_list">
+								<li class="type-list__item">
+									<input type="checkbox" name="type photo" id="type-photo" />
+									<label for="type-photo">Photo</label>
+								</li>
+								<li class="type-list__item">
+									<input type="checkbox" name="type video" id="type-video" />
+									<label for="type-video">Video</label>
+								</li>
+								<li class="type-list__item">
+									<input type="checkbox" name="type hashtag" id="type-hashtag" />
+									<label for="type-hashtag">#makingeachdaycount</label>
+								</li>
+								<li class="type-list__item">
+									<input type="checkbox" name="type timeline" id="type-timeline" />
+									<label for="type-timeline">Timeline</label>
+								</li>
+							</ul>
+						</div>
+						<div class="create-memory__right_button">
+							<button class="red-btn create-memory__right_btn">
+								Create memory
+							</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 		<div class="black-fill"></div>

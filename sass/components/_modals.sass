@@ -1,9 +1,9 @@
 @import "../abstracts/variables"
+@import "../abstracts/mixins"
   
 // Login popup
 
 // Login-invited popup
-
 .black-fill
   width: 100%
   height: 100vh
@@ -32,6 +32,7 @@
   display: none
   border-radius: 20px
   width: 76vw
+  box-shadow: 0 2px 15px rgba(0,0,0,0.35)
 .create-memorial
   &__heading
     display: flex
@@ -223,7 +224,157 @@
       border-radius: 8px
     button:last-of-type
       margin-right: 0
+// Create memory modal
+.modal-create-memory
+  position: fixed
+  background: #fff
+  z-index: 200
+  height: 90%
+  overflow-y: auto
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  display: none
+  border-radius: 20px
+  width: 76vw
+  box-shadow: 0 2px 15px rgba(0,0,0,0.35)
+  .close-modal
+    position: absolute
+    right: 13px
+    top: 13px
+    cursor: pointer
+    z-index: 201
+.create-memory
+  &__content
+    width: 100%
+    height: 100%
+    display: flex
+  &__left
+    width: 50%
+    height: 100%
+    &_image
+      width: 100%
+      height: 100%
+      padding: 20px
+  &__image
+    &_outer
+      width: 90%
+      height: 100%
+      background: #e2e2e2
+      border-radius: 10px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-around
+    &_inner
+      width: 90%
+      height: 85%
+      border: 3px dashed #fff
+      border-radius: 10px
+      margin-top: 20px
+      &_upload
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: center
+        height: 100%
+        padding: 0 48px
+        &_pic
+          padding-bottom: 40px
+        &_click
+          padding-bottom: 40px
+          text-align: center
+          font-size: 22px
+          color: #4C4C51
+          width: 70%
+        &_helper
+          text-align: center
+          font-size: 22px
+          @include regular-opacity
+          padding-bottom: 70px
+    &_text
+      @include regular-opacity
+      font-size: 21px
+      text-align: center
+      padding: 0 20px
+  &__right
+    width: 50%
+    margin-left: 10px
+    position: relative
+    form
+      padding: 20px 40px 20px 0
+      input, textarea
+        height: 45px
+        border: none
+        border-bottom: 1px solid #979797
+        width: 100%
+        color: $regular-black
+        font-size: 18px
+        &::placeholder
+          @include regular-opacity
+      textarea
+        min-height: 100px
+        max-height: 100px
+    &_title, &_hashtag, &_description
+      padding-top: 20px
+    .create-memory__right_datepicker
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-top: 20px
+      position: relative
+      label
+        @include regular-opacity
+        font-size: 18px
+      .create-memory__datepicker_calendar
+        position: absolute
+        right: 170px
+      .create-memory__datepicker_arrow
+        position: absolute
+        right: 20px
+      input
+        border: 1px solid #DFE2E6
+        width: 200px
+        border-radius: 10px
+        padding: 5px 0 0 45px
+    &_type
+      margin-top: 20px
+      &_heading
+        @include regular-opacity
+        font-size: 18px
+      &_list
+        list-style: none
+        li
+          position: relative
+          margin-top: 15px
+          label
+            margin-left: 35px
+            cursor: pointer
+          input[type="checkbox"]
+            display: none
+            + label:before
+              content: url('../images/vektor/checkbox-circle.svg')
+              cursor: pointer
+              margin-right: 8px
+              margin-right: 8px
+              position: absolute
+              top: 0
+              left: 0
+              transition: all 0.3s ease
+            &:checked + label:before
+              content: url('../images/vektor/checkbox-circle-checked.svg')
+    &_button
+      position: absolute
+      bottom: 20px
+      right: 40px
+      button
+        background: $login-red
+        color: #ffffff
+        &:hover
+          color: $login-red
+          background: #fff
 @media only screen and (max-width: 1440px)
+  // Create memorial
   .create-memorial__left_heading
     font-size: 20px
   .create-memorial__left_pickers_birth, .create-memorial__left_pickers_passed,
@@ -234,7 +385,21 @@
   .create-memorial__right_buttons
     button:first-of-type
       margin-right: 20px
+  // Create memory
+  .modal-create-memory
+    width: 85vw
+  .create-memory
+    &__image
+      &_text
+        font-size: 17px
+      &_inner_upload_click
+        font-size: 20px
+        padding-bottom: 30px
+      &_inner_upload_helper
+        padding-bottom: 50px
+        font-size: 20px
 @media only screen and (max-width: 1200px) 
+  // Create memorial
   .create-memorial__content
     flex-direction: column
     width: 80%
@@ -289,6 +454,47 @@
       margin-top: 110px
     &_checkbox
       margin-top: 30px
+  // Create memory
+  .create-memory__image_outer
+    width: 100%
+  .create-memory__right_title, .create-memory__right_hashtag, .create-memory__right_description
+    padding-top: 13px
+  .create-memory__right form input, .create-memory__right form textarea
+    height: 40px
+  .create-memory__right form textarea
+    min-height: 60px
+    max-height: 60px
+  .create-memory__right_type
+    margin-top: 12px
+  .create-memory__right_type_list li
+    margin-top: 9px
+@media only screen and (max-width: 992px)
+  .modal-create-memory .close-modal
+    right: 20px
+  .create-memory__content
+    flex-direction: column
+    padding-top: 35px
+  .create-memory__left
+    width: 100%
+    &_image
+      height: 400px
+  .create-memory__right
+    width: 100%
+    padding: 0 20px 20px 20px
+  .create-memory__right_type
+    padding-bottom: 80px
+  .create-memory__image_inner_upload_helper
+    padding-bottom: 30px
+    font-size: 18px
+  .create-memory__image_inner_upload_click
+    font-size: 18px
+    padding-bottom: 20px
+    width: 60%
+  .create-memory__right
+    padding: 0 20px
+    margin: 0
+    form
+      padding: 0
 @media only screen and (max-width: 768px)
   .modal-create-memorial
     width: 88vw
@@ -356,6 +562,66 @@
         margin-top: 37px
       button:first-of-type
         margin-right: 0
+  // Create memory
+  .create-memory__image_inner_upload_helper
+    padding-bottom: 30px
+    font-size: 18px
+  .create-memory__image_inner_upload_click
+    font-size: 18px
+    padding-bottom: 20px
+    width: 60%
+@media only screen and (max-width: 576px)
+  // Create memory
+  .create-memory__image_inner_upload
+    padding: 0 20px
+    justify-content: center
+  .create-memory__image_inner_upload_helper
+    font-size: 16px
+    padding-bottom: 20px
+  .create-memory__image_inner_upload_click
+    font-size: 16px
+    width: 100%
+  .create-memory__image_inner_upload_pic
+    padding-bottom: 20px
+  .create-memory__image_text
+    padding-top: 4px
+    padding-bottom: 4px
+    font-size: 15px
+  .create-memory__right
+    padding: 0 20px
+    margin: 0
+    form
+      padding: 0
+  .create-memory__right form textarea
+    min-height: 100px
+    max-height: 100px
+  .create-memory__right .create-memory__right_datepicker
+    flex-direction: column
+    align-items: flex-start
+    input
+      width: 100%
+      margin-top: 20px
+  .create-memory__right .create-memory__right_datepicker .create-memory__datepicker_calendar
+    top: 53px
+    left: 16px
+    right: unset
+  .create-memory__right .create-memory__right_datepicker .create-memory__datepicker_arrow
+    right: 20px
+    top: 53px
+    left: unset
+  .create-memory__right_type
+    padding-bottom: 30px
+  .create-memory__right_button
+    position: static
+    justify-content: center
+    display: flex
+    padding-bottom: 20px
+    width: 100%
+    font-size: flex
+    button
+      width: 100%
+
+
 @media only screen and (max-width: 420px)
   .create-memorial__right
     &_image
@@ -386,4 +652,6 @@
         top: 115px
         left: 120px
         font-size: 12px
+
+  
 

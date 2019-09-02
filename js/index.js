@@ -63,7 +63,6 @@ $(document).ready(function() {
       $('.modal-login, .modal-login_invited, .black-fill').show();
       $('body').css('overflow', 'hidden');
   });
-
   $('.black-fill, .close-modal').click(function() {
       $('.modal-login, .modal-login_invited, .black-fill').hide();
       $('body').css('overflow', 'visible');
@@ -74,8 +73,19 @@ $(document).ready(function() {
       $('body').css('overflow', 'hidden');
       $('.modal-create-memorial, .black-fill').show();
   });
-  $('.black-fill').click(function() {
+  $('.black-fill, .create-memorial__cancel').click(function(e) {
+      e.preventDefault()
       $('.modal-create-memorial, .black-fill').hide();
+      $('body').css('overflow', 'visible');
+  });
+// Create memory modal
+  $('.modal-create-memory, .black-fill').hide();
+  $('.memorial-new__button_btn').click(function() {
+      $('body').css('overflow', 'hidden');
+      $('.modal-create-memory, .black-fill').show();
+  });
+  $('.black-fill, .close-modal').click(function() {
+      $('.modal-create-memory, .black-fill').hide();
       $('body').css('overflow', 'visible');
   });
 // Memorial modal toggle passed away pickers
