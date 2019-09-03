@@ -1,5 +1,5 @@
 $(document).ready(function() {
-// Testimonials slider
+  // Testimonials slider
   $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -21,7 +21,7 @@ $(document).ready(function() {
     focusOnSelect: true
   });
 
-// Home slider
+  // Home slider
   $('.main-image').slick({
       arrows: false,
       dots: false,
@@ -30,13 +30,13 @@ $(document).ready(function() {
       autoplayspeed: 300
     });
 
-// Hamburger menu
+  // Hamburger menu
   $('.hamburger').click(function() {
     $('.hamburger').toggleClass('hamburger__active')
     $('.header-nav').toggleClass('header-nav__active')
   })
 
-// Login drop down
+  // Login drop down
   $('.loggedIn-user').click(function() {
     $('.dropdown-content__pet').css('display', 'none')
     $('.pet-dropdown').css('transform', 'rotate(0)')
@@ -57,7 +57,7 @@ $(document).ready(function() {
     }
   })
 
-// Login Modal
+  // Login Modal
   $('.modal-login, .modal-login_invited, .black-fill').hide();
   $('.login-btn').click(function() {
       $('.modal-login, .modal-login_invited, .black-fill').show();
@@ -67,7 +67,7 @@ $(document).ready(function() {
       $('.modal-login, .modal-login_invited, .black-fill').hide();
       $('body').css('overflow', 'visible');
   });
-// Create memorial modal
+  // Create memorial modal
   $('.modal-create-memorial, .black-fill').hide();
   $('.main-about__btn').click(function() {
       $('body').css('overflow', 'hidden');
@@ -78,7 +78,7 @@ $(document).ready(function() {
       $('.modal-create-memorial, .black-fill').hide();
       $('body').css('overflow', 'visible');
   });
-// Create memory modal
+  // Create memory modal
   $('.modal-create-memory, .black-fill').hide();
   $('.memorial-new__button_btn').click(function() {
       $('body').css('overflow', 'hidden');
@@ -88,18 +88,13 @@ $(document).ready(function() {
       $('.modal-create-memory, .black-fill').hide();
       $('body').css('overflow', 'visible');
   });
-// Memorial modal toggle passed away pickers
+  // Memorial modal toggle passed away pickers
   $('#passed-away').click(function() {
     $('.create-memorial__left_pickers_passed').toggleClass('create-memorial__left_pickers_passed_checked')
     $('#passing-away-place, #passing-away-date').prop('disabled', function(i, v) { return !v; });
   })
 
-  // $('.modal-login, .black-fill').on('shown', function(){
-  //   $('body').css('overflow', 'hidden');
-  // }).on('hidden', function(){
-  //   $('body').css('overflow', 'visible');
-  // })
-// Memorial modal Date picker
+  // Memorial modal Date picker
   $.fn.datepicker.language['en'] = {
     days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
     daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
@@ -115,7 +110,7 @@ $(document).ready(function() {
   $('.datepicker-here').datepicker({
       language: 'en'
   })
-// Show Password
+  // Show Password
   $('.login-password__eye').click(function() {
     let PWinput = document.getElementById("login-password__field");
     let src = $(this).attr('src');
@@ -127,11 +122,23 @@ $(document).ready(function() {
       PWinput.type = "password";
     }
   })
-// Memorials page, Masonry layout
+  // Memorials page, Masonry layout
   $('.content-gallery').masonry({
     columnWidth: 262,
     itemSelector: '.content-gallery__item',
     isFitWidth: true
+  });
+  // Share button
+  new jBox('Tooltip', {
+    attach: '.share-btn',
+    content: '<div class="jBox-header">Share this page</div>',
+    animation: 'zoomIn',
+    trigger: 'click',
+    position: {
+      x: 'left',
+      y: 'top'
+    },
+    outside: 'x'
   });
 })
 
