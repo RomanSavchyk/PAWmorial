@@ -130,7 +130,7 @@
       overflow: hidden
       text-overflow: ellipsis
       display: -webkit-box
-      -webkit-line-clamp: 3 
+      -webkit-line-clamp: 2 
       -webkit-box-orient: vertical
     &_dots
       position: absolute
@@ -191,13 +191,75 @@
     &:hover .content-gallery__item_like, &:hover .content-gallery__item_share
       opacity: 1
 // Share button on post
+.jB
+  &-container
+    background: #fff
+    height: 430px
+    width: 300px
+    z-index: 2
+  &-close
+    position: absolute
+    right: 15px
+    top: 10px
+    cursor: pointer
+    z-index: 20
+  &-header
+    height: 70px
+    background: #e6e5e5
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 18px
+    padding-top: 4px
+  &-links
+    display: flex
+    flex-wrap: wrap
+    padding: 5px 13px
+    .share-item
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      margin: 10px
+      &-bg
+        background: #efefef
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+      span
+        font-size: 11px
+        padding-top: 8px
+  &-invite
+    padding: 0 25px
+    &__text
+      font-size: 16px
+      margin-top: 5px
+    &__email
+      height: 50px
+      width: 100%
+      margin-top: 15px
+      border-radius: 5px
+      border: 1px solid #D8D8D8
+      padding-left: 20px
+    &__btn
+      height: 50px
+      width: 100%
+      margin-top: 15px
+      background: $login-red
+      color: #ffffff
+      border-radius: 10px
+      padding-top: 11px
+      &:hover
+        color: $login-red
+        background: #fff
 #jBox1 
   z-index: 2!important
 .jBox-pointer-left, .jBox-pointer-right
   top: 54%!important
 .jBox-content
-  width: 330px!important
-  height: 450px!important
   padding: 0!important
   border-radius: 10px!important
 .jBox-header
@@ -207,7 +269,6 @@
   font-size: 20px
 .jBox-container
   border-radius: 10px!important
-  box-shadow: none!important
 
 .memorial-new
   display: flex
@@ -253,9 +314,6 @@
         margin-top: -90px
       &__info
         padding: 0
-  .jBox-content
-    width: 330px!important
-    height: 450px!important
 @media only screen and (max-width: 576px)
   .subheader-top__button_link
     padding: 7px 10px
@@ -309,9 +367,45 @@
           width: 20%
           background: $login-red
           transition: width .5s ease, background-color .5s ease, left .5s ease
-  .jBox-content
-    width: 200px !important
-    height: 250px !important
   .jBox-pointer-left, .jBox-pointer-right
-    top: 56% !important
+      top: 56%!important
+  .jB
+    &-container
+      width: 202px
+      height: 270px
+    &-header
+      height: 40px
+      font-size: 15px
+      padding-top: 4px
+    &-links
+      justify-content: space-around
+      padding: 5px 5px
+      .share-item
+        width: 47px
+        margin: 3px
+        a
+          width: 30px
+          height: 30px
+          img
+            width: 30px
+        a.share-item-bg
+          img
+            width: 20px
+        span
+          font-size: 9px
+          padding-top: 3px
+    &-invite
+      padding: 0 10px
+      &__text
+        font-size: 12px
+        margin-top: 5px
+      &__email
+        font-size: 14px
+        height: 35px
+        margin-top: 8px
+      &__btn
+        font-size: 15px
+        height: 35px
+        margin-top: 8px
+        padding-top: 6px
 

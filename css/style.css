@@ -918,7 +918,6 @@ p, ul, label, h1, h2, h3, h4, h5 {
     display: flex;
     padding-bottom: 20px;
     width: 100%;
-    font-size: flex;
   }
   .create-memory__right_button button {
     width: 100%;
@@ -2440,7 +2439,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 
@@ -2523,6 +2522,93 @@ p, ul, label, h1, h2, h3, h4, h5 {
   opacity: 1;
 }
 
+.jB-container {
+  background: #fff;
+  height: 430px;
+  width: 300px;
+  z-index: 2;
+}
+
+.jB-close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.jB-header {
+  height: 70px;
+  background: #e6e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding-top: 4px;
+}
+
+.jB-links {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 13px;
+}
+
+.jB-links .share-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.jB-links .share-item-bg {
+  background: #efefef;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jB-links .share-item span {
+  font-size: 11px;
+  padding-top: 8px;
+}
+
+.jB-invite {
+  padding: 0 25px;
+}
+
+.jB-invite__text {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.jB-invite__email {
+  height: 50px;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #D8D8D8;
+  padding-left: 20px;
+}
+
+.jB-invite__btn {
+  height: 50px;
+  width: 100%;
+  margin-top: 15px;
+  background: #e42947;
+  color: #ffffff;
+  border-radius: 10px;
+  padding-top: 11px;
+}
+
+.jB-invite__btn:hover {
+  color: #e42947;
+  background: #fff;
+}
+
 #jBox1 {
   z-index: 2 !important;
 }
@@ -2532,8 +2618,6 @@ p, ul, label, h1, h2, h3, h4, h5 {
 }
 
 .jBox-content {
-  width: 330px !important;
-  height: 450px !important;
   padding: 0 !important;
   border-radius: 10px !important;
 }
@@ -2547,7 +2631,6 @@ p, ul, label, h1, h2, h3, h4, h5 {
 
 .jBox-container {
   border-radius: 10px !important;
-  box-shadow: none !important;
 }
 
 .memorial-new {
@@ -2608,10 +2691,6 @@ p, ul, label, h1, h2, h3, h4, h5 {
   }
   .subheader-bottom__info {
     padding: 0;
-  }
-  .jBox-content {
-    width: 330px !important;
-    height: 450px !important;
   }
 }
 
@@ -2679,12 +2758,57 @@ p, ul, label, h1, h2, h3, h4, h5 {
     background: #e42947;
     transition: width .5s ease, background-color .5s ease, left .5s ease;
   }
-  .jBox-content {
-    width: 200px !important;
-    height: 250px !important;
-  }
   .jBox-pointer-left, .jBox-pointer-right {
     top: 56% !important;
+  }
+  .jB-container {
+    width: 202px;
+    height: 270px;
+  }
+  .jB-header {
+    height: 40px;
+    font-size: 15px;
+    padding-top: 4px;
+  }
+  .jB-links {
+    justify-content: space-around;
+    padding: 5px 5px;
+  }
+  .jB-links .share-item {
+    width: 47px;
+    margin: 3px;
+  }
+  .jB-links .share-item a {
+    width: 30px;
+    height: 30px;
+  }
+  .jB-links .share-item a img {
+    width: 30px;
+  }
+  .jB-links .share-item a.share-item-bg img {
+    width: 20px;
+  }
+  .jB-links .share-item span {
+    font-size: 9px;
+    padding-top: 3px;
+  }
+  .jB-invite {
+    padding: 0 10px;
+  }
+  .jB-invite__text {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .jB-invite__email {
+    font-size: 14px;
+    height: 35px;
+    margin-top: 8px;
+  }
+  .jB-invite__btn {
+    font-size: 15px;
+    height: 35px;
+    margin-top: 8px;
+    padding-top: 6px;
   }
 }
 /*# sourceMappingURL=style.css.map */

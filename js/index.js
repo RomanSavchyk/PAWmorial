@@ -129,11 +129,57 @@ $(document).ready(function() {
     isFitWidth: true
   });
   // Share button
+  $('.jB-close').click(function(){
+    $('.black-fill').show()
+  })
+{/* <div class="jB-close">
+  <img src="./images/vektor/close-black.svg" alt="close this window">
+</div> */}
   new jBox('Tooltip', {
     attach: '.share-btn',
-    content: '<div class="jBox-header">Share this page</div>',
+    content: `<div class="jB-container">
+      <div class="jB-header">
+        Share this page
+      </div>
+      <div class="jB-links">
+        <div class="share-item">
+          <a href="#"><img src="./images/vektor/facebook.svg" alt="share on facebook"></a>
+          <span>Facebook</span>
+        </div>
+        <div class="share-item">
+          <a href="#"><img src="./images/vektor/twitter.svg" alt="share on twitter"></a>
+          <span>Twitter</span>
+        </div>
+        <div class="share-item">
+          <a href="#"><img src="./images/vektor/messenger.svg" alt="share on messenger"></a>
+          <span>Messenger</span>
+        </div>
+        <div class="share-item">
+          <a href="#"><img src="./images/vektor/whatsapp.svg" alt="share on whatsapp"></a>
+          <span>WhatsApp</span>
+        </div>
+        <div class="share-item">
+          <a class="share-item-bg" href="#"><img src="./images/vektor/link.svg" alt="copy link"></a>
+          <span>Copy link</span>
+        </div>
+        <div class="share-item">
+          <a class="share-item-bg" href="#"><img src="./images/vektor/close-envelope.svg" alt="email"></a>
+          <span>Email</span>
+        </div>
+      </div>
+      <div class="jB-invite">
+        <span class="jB-invite__text">
+          Or send an invite
+        </span>
+        <input class="jB-invite__email" type="email" name="" id="" placeholder="Type email">
+        <button class="red-btn jB-invite__btn">Send</button>
+      </div>
+    </div>`,
     animation: 'zoomIn',
     trigger: 'click',
+    closeButton: true,
+    closeOnEsc: true,
+    closeOnClick: 'body',
     position: {
       x: 'left',
       y: 'top'

@@ -203,23 +203,17 @@
 }
 
 .jBox-closeButton-box .jBox-closeButton {
-  top: -8px;
-  right: -10px;
-  width: 24px;
-  height: 24px;
-  background: #fff;
-  border-radius: 50%;
+  top: 12px;
+  right: 12px;
+  background: transparent;
 }
 
 .jBox-closeButton-box .jBox-closeButton svg {
-  width: 10px;
-  height: 10px;
-  margin-top: -5px;
-  margin-right: -5px;
+  width: 20px;
+  height: 20px;
 }
 
 .jBox-closeButton-box:before {
-  content: '';
   position: absolute;
   top: -8px;
   right: -10px;
