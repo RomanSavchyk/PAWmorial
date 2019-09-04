@@ -129,12 +129,6 @@ $(document).ready(function() {
     isFitWidth: true
   });
   // Share button
-  $('.jB-close').click(function(){
-    $('.black-fill').show()
-  })
-{/* <div class="jB-close">
-  <img src="./images/vektor/close-black.svg" alt="close this window">
-</div> */}
   new jBox('Tooltip', {
     attach: '.share-btn',
     content: `<div class="jB-container">
@@ -186,5 +180,27 @@ $(document).ready(function() {
     },
     outside: 'x'
   });
+  // Memory popup
+  // $('.content-gallery__item').magnificPopup({
+  //   items:
+  //     {
+  //       src: $(`		<div class="memory-popup">
+  //       <div class="memory-popup__left">
+  //         <div class="memory-popup__image">
+            
+  //         </div>
+  //       </div>
+  //       <div class="memory-popup__right">
+  
+  //       </div>
+  //     </div>`), // Dynamically created element
+  //       type: 'inline'
+  //     },
+  //   gallery: {
+  //     enabled: true
+  //   },
+  //   type: 'inline' // this is a default type
+  // });
+  
 })
 

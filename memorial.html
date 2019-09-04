@@ -7,7 +7,8 @@
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css" />
 		<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
 		<link rel="stylesheet" href="css/datepicker.min.css" />
-		<link rel="stylesheet" href="css/jBox.css">
+		<link rel="stylesheet" href="css/jBox.css" />
+		<link rel="stylesheet" href="css/magnific-popup.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Document</title>
 	</head>
@@ -59,7 +60,7 @@
 							<div class="loggedIn-user">
 								<div>
 									<button class="dropbtn-user">
-										<p class="user-name">Michelle</p>
+										<span class="user-name">Michelle</span>
 										<img class="user-image" src="./images/memorial/memorial-photo16.png" alt="user image" />
 									</button>
 									<div class="dropdown-content__user">
@@ -72,7 +73,7 @@
 							<div class="loggedIn-pet">
 								<div>
 									<button class="dropbtn-pet">
-										<p class="pet-name">Marvel</p>
+										<span class="pet-name">Marvel</span>
 										<img class="pet-dropdown" src="./images/vektor/drop-down-arrow.svg" alt="drop down" />
 									</button>
 									<div class="dropdown-content__pet">
@@ -156,14 +157,14 @@
 				</div>
 				<!-- When there are posts-->
 				<div class="content-gallery">
-					<div class="content-gallery__item">
+					<div class="content-gallery__item" data-mfp-src="#test-popup">
 						<figure>
 							<div class="content-gallery__item_image">
 								<img src="./images/doge.jpg" alt="memory post" />
 								<div class="content-gallery__item_like">
 									<img src="./images/vektor/like.svg" alt="like" />
 								</div>
-								<span class="content-gallery__item_share share-btn" >
+								<span class="content-gallery__item_share share-btn">
 									<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 										<desc>Created with Lunacy</desc>
 										<path
@@ -188,7 +189,7 @@
 								<div class="content-gallery__item_like">
 									<img src="./images/vektor/like.svg" alt="like" />
 								</div>
-								<span class="content-gallery__item_share share-btn" >
+								<span class="content-gallery__item_share share-btn">
 									<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 										<desc>Created with Lunacy</desc>
 										<path
@@ -213,7 +214,7 @@
 								<div class="content-gallery__item_like">
 									<img src="./images/vektor/like.svg" alt="like" />
 								</div>
-								<span class="content-gallery__item_share share-btn" >
+								<span class="content-gallery__item_share share-btn">
 									<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 										<desc>Created with Lunacy</desc>
 										<path
@@ -221,7 +222,7 @@
 											stroke="none"
 										/>
 									</svg>
-								</a>
+								</span>
 							</div>
 							<figcaption class="content-gallery__item_title">
 								First days of their friendship. Forever love
@@ -238,7 +239,7 @@
 								<div class="content-gallery__item_like">
 									<img src="./images/vektor/like.svg" alt="like" />
 								</div>
-								<span class="content-gallery__item_share share-btn" >
+								<span class="content-gallery__item_share share-btn">
 									<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 										<desc>Created with Lunacy</desc>
 										<path
@@ -263,7 +264,7 @@
 								<div class="content-gallery__item_like">
 									<img src="./images/vektor/like.svg" alt="like" />
 								</div>
-								<span class="content-gallery__item_share share-btn" >
+								<span class="content-gallery__item_share share-btn">
 									<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 										<desc>Created with Lunacy</desc>
 										<path
@@ -288,7 +289,7 @@
 								<div class="content-gallery__item_like">
 									<img src="./images/vektor/like.svg" alt="like" />
 								</div>
-								<span class="content-gallery__item_share share-btn" >
+								<span class="content-gallery__item_share share-btn">
 									<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 										<desc>Created with Lunacy</desc>
 										<path
@@ -313,7 +314,7 @@
 								<div class="content-gallery__item_like">
 									<img src="./images/vektor/like.svg" alt="like" />
 								</div>
-								<span class="content-gallery__item_share share-btn" >
+								<span class="content-gallery__item_share share-btn">
 									<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 										<desc>Created with Lunacy</desc>
 										<path
@@ -338,7 +339,7 @@
 								<div class="content-gallery__item_like">
 									<img src="./images/vektor/like.svg" alt="like" />
 								</div>
-								<span class="content-gallery__item_share share-btn" >
+								<span class="content-gallery__item_share share-btn">
 									<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 										<desc>Created with Lunacy</desc>
 										<path
@@ -363,7 +364,7 @@
 								<div class="content-gallery__item_like">
 									<img src="./images/vektor/like.svg" alt="like" />
 								</div>
-								<span class="content-gallery__item_share share-btn" >
+								<span class="content-gallery__item_share share-btn">
 									<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 										<desc>Created with Lunacy</desc>
 										<path
@@ -388,7 +389,7 @@
 								<div class="content-gallery__item_like">
 									<img src="./images/vektor/like.svg" alt="like" />
 								</div>
-								<span class="content-gallery__item_share share-btn" >
+								<span class="content-gallery__item_share share-btn">
 									<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 										<desc>Created with Lunacy</desc>
 										<path
@@ -413,7 +414,7 @@
 								<div class="content-gallery__item_like">
 									<img src="./images/vektor/like.svg" alt="like" />
 								</div>
-								<span class="content-gallery__item_share share-btn" >
+								<span class="content-gallery__item_share share-btn">
 									<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 										<desc>Created with Lunacy</desc>
 										<path
@@ -438,7 +439,7 @@
 								<div class="content-gallery__item_like">
 									<img src="./images/vektor/like.svg" alt="like" />
 								</div>
-								<span class="content-gallery__item_share share-btn" >
+								<span class="content-gallery__item_share share-btn">
 									<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 										<desc>Created with Lunacy</desc>
 										<path
@@ -463,7 +464,7 @@
 								<div class="content-gallery__item_like">
 									<img src="./images/vektor/like.svg" alt="like" />
 								</div>
-								<span class="content-gallery__item_share share-btn" >
+								<span class="content-gallery__item_share share-btn">
 									<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 										<desc>Created with Lunacy</desc>
 										<path
@@ -488,7 +489,7 @@
 								<div class="content-gallery__item_like">
 									<img src="./images/vektor/like.svg" alt="like" />
 								</div>
-								<span class="content-gallery__item_share share-btn" >
+								<span class="content-gallery__item_share share-btn">
 									<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 										<desc>Created with Lunacy</desc>
 										<path
@@ -513,7 +514,7 @@
 								<div class="content-gallery__item_like">
 									<img src="./images/vektor/like.svg" alt="like" />
 								</div>
-								<span class="content-gallery__item_share share-btn" >
+								<span class="content-gallery__item_share share-btn">
 									<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 										<desc>Created with Lunacy</desc>
 										<path
@@ -538,7 +539,7 @@
 								<div class="content-gallery__item_like">
 									<img src="./images/vektor/like.svg" alt="like" />
 								</div>
-								<span class="content-gallery__item_share share-btn" >
+								<span class="content-gallery__item_share share-btn">
 									<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
 										<desc>Created with Lunacy</desc>
 										<path
@@ -819,54 +820,94 @@
 				</div>
 			</div>
 		</div>
-		<!-- <div class="jB-container">
-			<div class="jB-close close-modal">
-				<img src="./images/vektor/close-black.svg" alt="close this window">
+		<div class="memory-popup">
+			<div class="memory-popup__container">
+				<div class="memory-popup__left">
+					<div class="memory-popup__image">
+						<img src="./images/1.jpg" alt="doge with ball" />
+						<div class="memory-popup__image_nav">
+							<!-- change later -->
+						</div>
+					</div>
+				</div>
+				<div class="memory-popup__right">
+					<div class="memory-popup__heading">
+						<div class="memory-popup__heading_name">
+							<div class="memory-popup__heading_name_icon">
+								<img src="./images/1.jpg" alt="picture of post" />
+							</div>
+							<div class="memory-popup__heading_name_pet">
+								<span>Marvel</span>
+							</div>
+						</div>
+						<div class="memory-popup__heading_date">
+							<span>Sept 12, 2018</span>
+						</div>
+					</div>
+					<div class="memory-popup__title">
+						<span class="memory-popup__title_text">
+							First days of their friendship. Forever love
+							<span class="memory-popup__title_hashtag">#friendshipLily</span>
+						</span>
+					</div>
+					<div class="memory-popup__comments">
+						<div class="memory-popup__comment">
+							<div class="memory-popup__comment_data">
+								<div class="comment-author">
+									<span>Lea</span>
+								</div>
+								<div class="comment-text">
+									<span>Remember this moment so clearly!</span>
+								</div>
+							</div>
+							<div class="memory-popup__comment_info">
+								<div class="comment-time">
+									<span>1h</span>
+								</div>
+								<div class="comment-reply">
+									<button>Reply</button>
+								</div>
+							</div>
+						</div>
+						<div class="memory-popup__comment">
+							<div class="memory-popup__comment_data">
+								<div class="comment-author">
+									<span>PapaJohn</span>
+								</div>
+								<div class="comment-text">
+									<span>This days was tottally amazing</span>
+								</div>
+							</div>
+							<div class="memory-popup__comment_info">
+								<div class="comment-time">
+									<span>30m</span>
+								</div>
+								<div class="comment-reply">
+									<button>Reply</button>
+								</div>
+							</div>
+						</div>			
+					</div>
+					<div class="memory-popup__footer">
+						<div class="memory-popup__options">
+
+						</div>
+						<div class="memory-popup__postcomment">
+							<input type="text" name="" id="">
+							<button>Post</button>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="jB-header">
-				Share this page
-			</div>
-			<div class="jB-links">
-				<div class="share-item">
-					<a href="#"><img src="./images/vektor/facebook.svg" alt="share on facebook"></a>
-					<span>Facebook</span>
-				</div>
-				<div class="share-item">
-					<a href="#"><img src="./images/vektor/twitter.svg" alt="share on twitter"></a>
-					<span>Twitter</span>
-				</div>
-				<div class="share-item">
-					<a href="#"><img src="./images/vektor/messenger.svg" alt="share on messenger"></a>
-					<span>Messenger</span>
-				</div>
-				<div class="share-item">
-					<a href="#"><img src="./images/vektor/whatsapp.svg" alt="share on whatsapp"></a>
-					<span>WhatsApp</span>
-				</div>
-				<div class="share-item">
-					<a class="share-item-bg" href="#"><img src="./images/vektor/link.svg" alt="copy link"></a>
-					<span>Copy link</span>
-				</div>
-				<div class="share-item">
-					<a class="share-item-bg" href="#"><img src="./images/vektor/close-envelope.svg" alt="email"></a>
-					<span>Email</span>
-				</div>
-			</div>
-			<div class="jB-invite">
-				<span class="jB-invite__text">
-					Or send an invite
-				</span>
-				<input class="jB-invite__email" type="email" name="" id="" placeholder="Type email">
-				<button class="red-btn jB-invite__btn">Send</button>
-			</div>
-		</div> -->
+		</div>
 		<div class="black-fill"></div>
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script src="slick/slick.min.js"></script>
 		<script src="libs/datepicker/datepicker.min.js"></script>
 		<script src="libs/imagesloaded/imagesloaded.pkgd.js"></script>
-		<script src="libs/masonry-docs/masonry.pkgd.js"></script>
+		<script src="libs/masonry/masonry.pkgd.js"></script>
 		<script src="libs/jBox/jBox.js"></script>
+		<script src="libs/magnific/jquery.magnific-popup.js"></script>
 		<script type="text/javascript" src="js/slick.min.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 	</body>
