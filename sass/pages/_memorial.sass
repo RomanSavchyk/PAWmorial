@@ -268,7 +268,7 @@
         color: $login-red
         background: #fff
 #jBox1 
-  z-index: 2!important
+  z-index: 2000!important
 .jBox-pointer-left, .jBox-pointer-right
   top: 54%!important
 .jBox-content
@@ -307,8 +307,7 @@
         outline: none
         text-decoration: none
 // Memory popup
-body
-  overflow: hidden
+
 .memory-popup
   position: fixed
   display: block
@@ -339,6 +338,9 @@ body
     width: 45%
     height: 100%
     overflow-y: auto
+    position: relative
+    flex-direction: column
+    display: flex
   &__heading
     display: flex
     justify-content: space-between
@@ -380,9 +382,9 @@ body
       color: $hashtag-blue
       cursor: pointer
   &__comments
-    padding: 0 30px 80px 30px
+    padding: 0 30px 40px 30px
   &__comment
-    padding: 15px 0
+    padding: 8px 0
     &_data
       display: flex
       .comment-author
@@ -405,17 +407,98 @@ body
   &__footer
     display: flex
     flex-direction: column
+    margin-top: auto
+    width: 100%
   &__options
-    padding-top: 30px
+    padding: 0 30px
     height: 90px
-    // background: $title-black
     background: $background-grey
+    display: flex
+    align-items: center
+    &_like
+      width: 40%
+      display: flex
+      align-items: center
+      cursor: pointer
+      & img
+        padding-right: 10px
+      & span
+        color: $title-black
+    &_messenger
+      width: 15%
+      cursor: pointer
+    &_share
+      width: 15%
+      cursor: pointer
+    &_more
+      margin-left: auto
+      cursor: pointer
+      & img
+        width: 130%
   &__postcomment
     display: flex
     input
       width: 100%
-      // background: red
+      height: 70px
+      padding: 20px
+      border: none
+      color: $title-black
+      &::placeholder
+        color: #D8D8D8
+    button
+      border: none
+      background: transparent
+      color: $button-brown
+      font-size: 18px
+      width: 100px
+      transition: all 0.3s ease
+      &:hover
+        color: #E2CBB6
+.jBox-pointer-bottom
+  left: 55%!important
+.jB-more
+  &-container
+    width: 200px
+    height: 100px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 15px
+  &-item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    a
+      background: #979797
+      width: 45px
+      height: 45px
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      background: rgba(216, 216, 216, 0.56)
+      transition: all 0.3s ease
+      &:hover
+        background: rgba(216, 216, 216, 0.76)
+    span
+      font-size: 12px
+      padding-top: 10px
 
+@media only screen and (max-width: 1200px)
+  .memory-popup
+    &__container
+      flex-direction: column
+    &__left,
+      width: 100%
+    &__image
+      img
+        border-radius: 15px 15px 0 0
+    &__right
+      width: 100%
+    &__options
+      &_like
+        width: 50%
 @media only screen and (max-width: 992px)
   .subheader
     &-top
@@ -425,6 +508,35 @@ body
           padding: 0
     &-bottom
       display: block
+  .memory-popup
+    overflow-y: auto
+    &__container
+      height: 90%
+      position: relative
+    &__left
+      padding-top: 58px
+    &__image
+      height: 70vh
+      img
+        border-radius: 0
+    &__heading
+      position: absolute
+      top: 0
+      width: 100%
+      padding: 11px 15px
+      &:after
+        display: none
+      &_name, &_date
+        padding: 0
+      &_date
+        padding-right: 20px
+      &_name_pet span
+        padding-left: 10px
+    &__right
+      position: static
+      overflow: visible
+    &__title
+      padding: 15px 20px
 @media only screen and (max-width: 768px)
   .subheader
     &-top
@@ -530,4 +642,25 @@ body
         height: 35px
         margin-top: 8px
         padding-top: 6px
-
+  .memory-popup
+    &__heading_date
+      padding-right: 20px
+      font-size: 13px
+    &__heading_name_pet
+      span
+        font-size: 13px
+    &__comments
+      padding: 0 20px 40px 20px
+    &__options
+      justify-content: space-between
+      img
+        width: 20px
+      &_like, &_messenger, &_share, &_more
+        width: auto
+      &_like
+        img
+          padding: 0
+        span
+          padding-left: 5px
+      &_more
+        margin: 0

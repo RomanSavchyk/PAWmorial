@@ -180,27 +180,135 @@ $(document).ready(function() {
     },
     outside: 'x'
   });
+  new jBox('Tooltip', {
+    attach: '.more-btn',
+    content: `<div class="jB-more-container">
+    <div class="jB-more-item">
+      <a href=""><img src="./images/vektor/edit-icon.svg" alt="edit"></a>
+      <span>Edit</span>
+    </div>
+    <div class="jB-more-item">
+      <a href=""><img src="./images/vektor/donwload.svg" alt="download"></a>
+      <span>Download</span>
+    </div>
+    <div class="jB-more-item">
+      <a href=""><img src="./images/vektor/close-black-icon.svg" alt="remove"></a>
+      <span>Remove</span>
+    </div>
+  </div>`,
+    animation: 'zoomIn',
+    trigger: 'click',
+    closeOnEsc: true,
+    closeOnClick: 'body',
+    position: {
+      x: 'left',
+      y: 'top'
+    },
+    outside: 'y'
+  });
   // Memory popup
-  // $('.content-gallery__item').magnificPopup({
-  //   items:
-  //     {
-  //       src: $(`		<div class="memory-popup">
-  //       <div class="memory-popup__left">
-  //         <div class="memory-popup__image">
-            
-  //         </div>
-  //       </div>
-  //       <div class="memory-popup__right">
-  
-  //       </div>
-  //     </div>`), // Dynamically created element
-  //       type: 'inline'
-  //     },
-  //   gallery: {
-  //     enabled: true
-  //   },
-  //   type: 'inline' // this is a default type
-  // });
+  $('.content-gallery__item').magnificPopup({
+    items:
+      {
+        src: $(`<div class="memory-popup">
+        <div class="memory-popup__container">
+          <div class="memory-popup__left">
+            <div class="memory-popup__image">
+              <img src="./images/1.jpg" alt="doge with ball" />
+              <div class="memory-popup__image_nav">
+                <!-- change later -->
+              </div>
+            </div>
+          </div>
+          <div class="memory-popup__right">
+            <div class="memory-popup__heading">
+              <div class="memory-popup__heading_name">
+                <div class="memory-popup__heading_name_icon">
+                  <img src="./images/1.jpg" alt="picture of post" />
+                </div>
+                <div class="memory-popup__heading_name_pet">
+                  <span>Marvel</span>
+                </div>
+              </div>
+              <div class="memory-popup__heading_date">
+                <span>Sept 12, 2018</span>
+              </div>
+            </div>
+            <div class="memory-popup__title">
+              <span class="memory-popup__title_text">
+                First days of their friendship. Forever love
+                <span class="memory-popup__title_hashtag">#friendshipLily</span>
+              </span>
+            </div>
+            <div class="memory-popup__comments">
+              <div class="memory-popup__comment">
+                <div class="memory-popup__comment_data">
+                  <div class="comment-author">
+                    <span>Lea</span>
+                  </div>
+                  <div class="comment-text">
+                    <span>Remember this moment so clearly!</span>
+                  </div>
+                </div>
+                <div class="memory-popup__comment_info">
+                  <div class="comment-time">
+                    <span>1h</span>
+                  </div>
+                  <div class="comment-reply">
+                    <button>Reply</button>
+                  </div>
+                </div>
+              </div>
+              <div class="memory-popup__comment">
+                <div class="memory-popup__comment_data">
+                  <div class="comment-author">
+                    <span>PapaJohn</span>
+                  </div>
+                  <div class="comment-text">
+                    <span>This days was tottally amazing</span>
+                  </div>
+                </div>
+                <div class="memory-popup__comment_info">
+                  <div class="comment-time">
+                    <span>30m</span>
+                  </div>
+                  <div class="comment-reply">
+                    <button>Reply</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="memory-popup__footer">
+              <div class="memory-popup__options">
+                <div class="memory-popup__options_like">
+                  <img src="./images/vektor/like-icon.svg" alt="like" />
+                  <span>257 likes</span>
+                </div>
+                <div class="memory-popup__options_messenger">
+                  <img src="./images/vektor/messenger-icon.svg" alt="messenger" />
+                </div>
+                <div class="memory-popup__options_share">
+                  <img class="share-btn" src="./images/vektor/share-icon.svg" alt="share" />
+                </div>
+                <div class="memory-popup__options_more more-btn">
+                  <img src="./images/vektor/more.svg" alt="more" />
+                </div>
+              </div>
+              <div class="memory-popup__postcomment">
+                <input type="text" name="" id="" placeholder="Write a comment..." />
+                <button>Post</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`), // Dynamically created element
+        type: 'inline'
+      },
+    gallery: {
+      enabled: true
+    },
+    type: 'inline' // this is a default type
+  });
   
 })
 
