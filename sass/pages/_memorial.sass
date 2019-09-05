@@ -368,7 +368,7 @@
           width: 36px
           height: 36px
           border-radius: 50%
-          object-fit: center
+          object-fit: cover
       &_pet
         span
           color: $login-red
@@ -416,7 +416,6 @@
     display: flex
     align-items: center
     &_like
-      width: 40%
       display: flex
       align-items: center
       cursor: pointer
@@ -424,14 +423,11 @@
         padding-right: 10px
       & span
         color: $title-black
-    &_messenger
-      width: 15%
-      cursor: pointer
     &_share
       width: 15%
       cursor: pointer
-    &_more
       margin-left: auto
+    &_more
       cursor: pointer
       & img
         width: 130%
@@ -455,7 +451,7 @@
       &:hover
         color: #E2CBB6
 .jBox-pointer-bottom
-  left: 55%!important
+  left: 56%!important
 .jB-more
   &-container
     width: 200px
@@ -487,33 +483,15 @@
 
 @media only screen and (max-width: 1200px)
   .memory-popup
+    overflow-y: auto
+    width: 90vw
+    border-radius: 5px
     &__container
       flex-direction: column
-    &__left,
-      width: 100%
-    &__image
-      img
-        border-radius: 15px 15px 0 0
-    &__right
-      width: 100%
-    &__options
-      &_like
-        width: 50%
-@media only screen and (max-width: 992px)
-  .subheader
-    &-top
-      &__title
-        text-align: right
-        & h2
-          padding: 0
-    &-bottom
-      display: block
-  .memory-popup
-    overflow-y: auto
-    &__container
       height: 90%
       position: relative
     &__left
+      width: 100%
       padding-top: 58px
     &__image
       height: 70vh
@@ -529,14 +507,26 @@
       &_name, &_date
         padding: 0
       &_date
-        padding-right: 20px
+        padding-right: 30px
       &_name_pet span
         padding-left: 10px
     &__right
+      width: 100%
       position: static
       overflow: visible
     &__title
       padding: 15px 20px
+  .content-gallery__item_share
+    opacity: 1
+@media only screen and (max-width: 992px)
+  .subheader
+    &-top
+      &__title
+        text-align: right
+        & h2
+          padding: 0
+    &-bottom
+      display: block
 @media only screen and (max-width: 768px)
   .subheader
     &-top
@@ -642,21 +632,44 @@
         height: 35px
         margin-top: 8px
         padding-top: 6px
+  .jB-more
+    &-container
+      width: 150px
+      height: 80px
+      padding: 12px
+    &-item
+      a
+        width: 30px
+        height: 30px
+      img
+        width: 14px
+      span
+        font-size: 8px
+        padding-top: 9px
+  .jBox-pointer-bottom
+    left: 58%!important
   .memory-popup
     &__heading_date
-      padding-right: 20px
       font-size: 13px
     &__heading_name_pet
       span
         font-size: 13px
+    &__title
+      span
+        font-size: 18px
     &__comments
       padding: 0 20px 40px 20px
+    &__comment
+      font-size: 14px
     &__options
       justify-content: space-between
+      height: 50px
       img
         width: 20px
-      &_like, &_messenger, &_share, &_more
+      &_like, &_share, &_more
         width: auto
+      &_share
+        width: 15%
       &_like
         img
           padding: 0
@@ -664,3 +677,7 @@
           padding-left: 5px
       &_more
         margin: 0
+    &__postcomment
+      input
+        height: 55px
+        font-size: 14px

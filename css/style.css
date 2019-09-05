@@ -1030,6 +1030,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
 .loggedIn-user {
   position: relative;
   width: 60%;
+  display: flex;
 }
 
 .loggedIn-user:after {
@@ -1059,7 +1060,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
   outline: none;
 }
 
-.dropbtn-pet p, .dropbtn-user p {
+.dropbtn-pet span, .dropbtn-user span {
   margin: 0;
 }
 
@@ -2767,7 +2768,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  object-fit: center;
+  object-fit: cover;
 }
 
 .memory-popup__heading_name_pet span {
@@ -2846,7 +2847,6 @@ p, ul, label, h1, h2, h3, h4, h5 {
 }
 
 .memory-popup__options_like {
-  width: 40%;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -2860,18 +2860,13 @@ p, ul, label, h1, h2, h3, h4, h5 {
   color: #4C4C51;
 }
 
-.memory-popup__options_messenger {
-  width: 15%;
-  cursor: pointer;
-}
-
 .memory-popup__options_share {
   width: 15%;
   cursor: pointer;
+  margin-left: auto;
 }
 
 .memory-popup__options_more {
-  margin-left: auto;
   cursor: pointer;
 }
 
@@ -2909,7 +2904,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
 }
 
 .jBox-pointer-bottom {
-  left: 55% !important;
+  left: 56% !important;
 }
 
 .jB-more-container {
@@ -2950,41 +2945,18 @@ p, ul, label, h1, h2, h3, h4, h5 {
 }
 
 @media only screen and (max-width: 1200px) {
-  .memory-popup__container {
-    flex-direction: column;
-  }
-  .memory-popup__left {
-    width: 100%;
-  }
-  .memory-popup__image img {
-    border-radius: 15px 15px 0 0;
-  }
-  .memory-popup__right {
-    width: 100%;
-  }
-  .memory-popup__options_like {
-    width: 50%;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .subheader-top__title {
-    text-align: right;
-  }
-  .subheader-top__title h2 {
-    padding: 0;
-  }
-  .subheader-bottom {
-    display: block;
-  }
   .memory-popup {
     overflow-y: auto;
+    width: 90vw;
+    border-radius: 5px;
   }
   .memory-popup__container {
+    flex-direction: column;
     height: 90%;
     position: relative;
   }
   .memory-popup__left {
+    width: 100%;
     padding-top: 58px;
   }
   .memory-popup__image {
@@ -3006,17 +2978,33 @@ p, ul, label, h1, h2, h3, h4, h5 {
     padding: 0;
   }
   .memory-popup__heading_date {
-    padding-right: 20px;
+    padding-right: 30px;
   }
   .memory-popup__heading_name_pet span {
     padding-left: 10px;
   }
   .memory-popup__right {
+    width: 100%;
     position: static;
     overflow: visible;
   }
   .memory-popup__title {
     padding: 15px 20px;
+  }
+  .content-gallery__item_share {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .subheader-top__title {
+    text-align: right;
+  }
+  .subheader-top__title h2 {
+    padding: 0;
+  }
+  .subheader-bottom {
+    display: block;
   }
 }
 
@@ -3149,24 +3137,52 @@ p, ul, label, h1, h2, h3, h4, h5 {
     margin-top: 8px;
     padding-top: 6px;
   }
+  .jB-more-container {
+    width: 150px;
+    height: 80px;
+    padding: 12px;
+  }
+  .jB-more-item a {
+    width: 30px;
+    height: 30px;
+  }
+  .jB-more-item img {
+    width: 14px;
+  }
+  .jB-more-item span {
+    font-size: 8px;
+    padding-top: 9px;
+  }
+  .jBox-pointer-bottom {
+    left: 58% !important;
+  }
   .memory-popup__heading_date {
-    padding-right: 20px;
     font-size: 13px;
   }
   .memory-popup__heading_name_pet span {
     font-size: 13px;
   }
+  .memory-popup__title span {
+    font-size: 18px;
+  }
   .memory-popup__comments {
     padding: 0 20px 40px 20px;
   }
+  .memory-popup__comment {
+    font-size: 14px;
+  }
   .memory-popup__options {
     justify-content: space-between;
+    height: 50px;
   }
   .memory-popup__options img {
     width: 20px;
   }
-  .memory-popup__options_like, .memory-popup__options_messenger, .memory-popup__options_share, .memory-popup__options_more {
+  .memory-popup__options_like, .memory-popup__options_share, .memory-popup__options_more {
     width: auto;
+  }
+  .memory-popup__options_share {
+    width: 15%;
   }
   .memory-popup__options_like img {
     padding: 0;
@@ -3176,6 +3192,10 @@ p, ul, label, h1, h2, h3, h4, h5 {
   }
   .memory-popup__options_more {
     margin: 0;
+  }
+  .memory-popup__postcomment input {
+    height: 55px;
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */

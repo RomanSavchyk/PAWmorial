@@ -179,33 +179,8 @@ $(document).ready(function() {
       y: 'top'
     },
     outside: 'x'
-  });
-  new jBox('Tooltip', {
-    attach: '.more-btn',
-    content: `<div class="jB-more-container">
-    <div class="jB-more-item">
-      <a href=""><img src="./images/vektor/edit-icon.svg" alt="edit"></a>
-      <span>Edit</span>
-    </div>
-    <div class="jB-more-item">
-      <a href=""><img src="./images/vektor/donwload.svg" alt="download"></a>
-      <span>Download</span>
-    </div>
-    <div class="jB-more-item">
-      <a href=""><img src="./images/vektor/close-black-icon.svg" alt="remove"></a>
-      <span>Remove</span>
-    </div>
-  </div>`,
-    animation: 'zoomIn',
-    trigger: 'click',
-    closeOnEsc: true,
-    closeOnClick: 'body',
-    position: {
-      x: 'left',
-      y: 'top'
-    },
-    outside: 'y'
-  });
+  })
+
   // Memory popup
   $('.content-gallery__item').magnificPopup({
     items:
@@ -284,11 +259,8 @@ $(document).ready(function() {
                   <img src="./images/vektor/like-icon.svg" alt="like" />
                   <span>257 likes</span>
                 </div>
-                <div class="memory-popup__options_messenger">
-                  <img src="./images/vektor/messenger-icon.svg" alt="messenger" />
-                </div>
-                <div class="memory-popup__options_share">
-                  <img class="share-btn" src="./images/vektor/share-icon.svg" alt="share" />
+                <div class="memory-popup__options_share share-btn">
+                  <img src="./images/vektor/share-icon.svg" alt="share" />
                 </div>
                 <div class="memory-popup__options_more more-btn">
                   <img src="./images/vektor/more.svg" alt="more" />
@@ -309,6 +281,71 @@ $(document).ready(function() {
     },
     type: 'inline' // this is a default type
   });
+  
+  // $('.more-btn, .share-btn').click(function(){
+  //   alert('hello')
+  // })
+
+  new jBox('Tooltip', {
+    attach: '.more-btn',
+    content: `<div class="jB-more-container">
+    <div class="jB-more-item">
+      <a href=""><img src="./images/vektor/edit-icon.svg" alt="edit"></a>
+      <span>Edit</span>
+    </div>
+    <div class="jB-more-item">
+      <a href=""><img src="./images/vektor/donwload.svg" alt="download"></a>
+      <span>Download</span>
+    </div>
+    <div class="jB-more-item">
+      <a href=""><img src="./images/vektor/close-black-icon.svg" alt="remove"></a>
+      <span>Remove</span>
+    </div>
+  </div>`,
+    animation: 'zoomIn',
+    trigger: 'click',
+    closeOnEsc: true,
+    closeOnClick: 'body',
+    position: {
+      x: 'left',
+      y: 'top'
+    },
+    outside: 'y'
+  });
+
+  
+  // $(document).on('click', '.more-btn', function (e) {
+  //   new jBox('Tooltip', {
+  //     attach: '.more-btn',
+  //     content: `<div class="jB-more-container">
+  //     <div class="jB-more-item">
+  //       <a href=""><img src="./images/vektor/edit-icon.svg" alt="edit"></a>
+  //       <span>Edit</span>
+  //     </div>
+  //     <div class="jB-more-item">
+  //       <a href=""><img src="./images/vektor/donwload.svg" alt="download"></a>
+  //       <span>Download</span>
+  //     </div>
+  //     <div class="jB-more-item">
+  //       <a href=""><img src="./images/vektor/close-black-icon.svg" alt="remove"></a>
+  //       <span>Remove</span>
+  //     </div>
+  //   </div>`,
+  //     animation: 'zoomIn',
+  //     trigger: 'click',
+  //     closeOnEsc: true,
+  //     closeOnClick: 'body',
+  //     position: {
+  //       x: 'left',
+  //       y: 'top'
+  //     },
+  //     outside: 'y'
+  //   });
+  // });
+
+  $('.share-btn, .more-btn').click(function(e){
+    e.stopPropagation()
+  })
   
 })
 
