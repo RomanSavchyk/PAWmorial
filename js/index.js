@@ -89,9 +89,9 @@ $(document).ready(function() {
       $('body').css('overflow', 'visible');
   });
   // Memorial modal toggle passed away pickers
-  $('#passed-away').click(function() {
-    $('.create-memorial__left_pickers_passed').toggleClass('create-memorial__left_pickers_passed_checked')
-    $('#passing-away-place, #passing-away-date').prop('disabled', function(i, v) { return !v; });
+  $('#passed-away, #about-memorial-passed-away').click(function() {
+    $('.create-memorial__left_pickers_passed, .section-information__passed').toggleClass('checked')
+    $('#passing-away-place, #passing-away-date, #passed-date, #passed-place').prop('disabled', function(i, v) { return !v; });
   })
 
   // Memorial modal Date picker

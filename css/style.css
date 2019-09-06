@@ -41,7 +41,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
   font-weight: 400;
   font-size: 18px;
   border-radius: 5px;
-  padding: 6px 37px;
+  padding: 9px 37px 6px 37px;
   border: 2px solid #e42947;
   transition: all 0.3s ease;
   outline: none;
@@ -214,8 +214,8 @@ p, ul, label, h1, h2, h3, h4, h5 {
   opacity: 0.3;
 }
 
-.create-memorial__left_pickers_passed_checked {
-  opacity: 1;
+.checked {
+  opacity: 1 !important;
 }
 
 .create-memorial__right {
@@ -460,14 +460,12 @@ p, ul, label, h1, h2, h3, h4, h5 {
 .create-memory__image_inner_upload_helper {
   text-align: center;
   font-size: 22px;
-  color: #4C4C51;
-  opacity: 0.5;
+  color: rgba(76, 76, 81, 0.5);
   padding-bottom: 70px;
 }
 
 .create-memory__image_text {
-  color: #4C4C51;
-  opacity: 0.5;
+  color: rgba(76, 76, 81, 0.5);
   font-size: 21px;
   text-align: center;
   padding: 0 20px;
@@ -493,8 +491,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
 }
 
 .create-memory__right form input::placeholder, .create-memory__right form textarea::placeholder {
-  color: #4C4C51;
-  opacity: 0.5;
+  color: rgba(76, 76, 81, 0.5);
 }
 
 .create-memory__right form textarea {
@@ -515,8 +512,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
 }
 
 .create-memory__right .create-memory__right_datepicker label {
-  color: #4C4C51;
-  opacity: 0.5;
+  color: rgba(76, 76, 81, 0.5);
   font-size: 18px;
 }
 
@@ -542,8 +538,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
 }
 
 .create-memory__right_type_heading {
-  color: #4C4C51;
-  opacity: 0.5;
+  color: rgba(76, 76, 81, 0.5);
   font-size: 18px;
 }
 
@@ -2754,8 +2749,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
 }
 
 .memory-popup__heading_date span {
-  color: #4C4C51;
-  opacity: 0.5;
+  color: rgba(76, 76, 81, 0.5);
 }
 
 .memory-popup__heading_name {
@@ -2804,8 +2798,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
 
 .memory-popup__comment_data .comment-author {
   padding-right: 10px;
-  color: #4C4C51;
-  opacity: 0.5;
+  color: rgba(76, 76, 81, 0.5);
 }
 
 .memory-popup__comment_data .comment-text {
@@ -2819,16 +2812,14 @@ p, ul, label, h1, h2, h3, h4, h5 {
 }
 
 .memory-popup__comment_info .comment-time {
-  color: #4C4C51;
-  opacity: 0.5;
+  color: rgba(76, 76, 81, 0.5);
   width: 60px;
 }
 
 .memory-popup__comment_info .comment-reply button {
   border: none;
   background: transparent;
-  color: #4C4C51;
-  opacity: 0.5;
+  color: rgba(76, 76, 81, 0.5);
 }
 
 .memory-popup__footer {
@@ -3196,6 +3187,411 @@ p, ul, label, h1, h2, h3, h4, h5 {
   .memory-popup__postcomment input {
     height: 55px;
     font-size: 14px;
+  }
+}
+
+.about-memorial {
+  width: 100%;
+  padding: 70px 30px;
+  color: #4C4C51;
+}
+
+.about-memorial__section_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-memorial__section_heading_title {
+  background: rgba(214, 180, 149, 0.5);
+  width: 100%;
+  color: #ffffff;
+  padding: 15px 28px;
+  border-radius: 35px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-memorial__section_heading_btn {
+  display: flex;
+  align-items: center;
+}
+
+.about-memorial__section_heading_btn img {
+  cursor: pointer;
+}
+
+.about-memorial__section_heading_btn span {
+  padding-left: 20px;
+}
+
+.about-memorial__section_content input {
+  height: 45px;
+  padding: 2px 0 0 20px;
+  border: solid 1px #dfe2e6;
+  box-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: #4C4C51;
+}
+
+.about-memorial__section_content input::placeholder {
+  color: rgba(76, 76, 81, 0.5);
+}
+
+.about-memorial__section_content .section-privacy {
+  padding: 35px 30px 50px 30px;
+}
+
+.about-memorial__section_content .section-privacy__checkbox {
+  position: relative;
+}
+
+.about-memorial__section_content .section-privacy__checkbox label {
+  margin-left: 45px;
+}
+
+.about-memorial__section_content .section-privacy__checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.about-memorial__section_content .section-privacy__checkbox input[type="checkbox"] + label:before {
+  content: url("../images/vektor/checkbox-circle.svg");
+  cursor: pointer;
+  margin-right: 8px;
+  margin-right: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.about-memorial__section_content .section-privacy__checkbox input[type="checkbox"]:checked + label:before {
+  content: url("../images/vektor/checkbox-circle-checked.svg");
+}
+
+.about-memorial__section_content .section-privacy__helper {
+  margin-left: 45px;
+  padding-top: 10px;
+  font-size: 14px;
+  color: rgba(76, 76, 81, 0.5);
+}
+
+.about-memorial__section_content .section-description {
+  padding: 35px 30px 50px 30px;
+}
+
+.about-memorial__section_content .section-description__textarea textarea {
+  width: 100%;
+  height: 220px;
+  border: solid 1px #dfe2e6;
+  background: #ffffff;
+  box-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  resize: none;
+}
+
+.about-memorial__section_content .section-description__textarea textarea::placeholder {
+  color: rgba(76, 76, 81, 0.5);
+}
+
+.about-memorial__section_content .section-information {
+  padding: 35px 30px 60px 30px;
+}
+
+.about-memorial__section_content .section-information__birth, .about-memorial__section_content .section-information__passed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-memorial__section_content .section-information__birth_input, .about-memorial__section_content .section-information__passed_input {
+  position: relative;
+  padding: 0 10px;
+}
+
+.about-memorial__section_content .section-information__birth_input input, .about-memorial__section_content .section-information__passed_input input {
+  padding: 2px 0 0 49px;
+}
+
+.about-memorial__section_content .section-information__birth label, .about-memorial__section_content .section-information__passed label {
+  font-size: 16px;
+  width: 180px;
+}
+
+.about-memorial__section_content .section-information__birth_calendar, .about-memorial__section_content .section-information__passed_calendar {
+  position: absolute;
+  top: 9px;
+  left: 20px;
+}
+
+.about-memorial__section_content .section-information__checkbox {
+  margin-top: 30px;
+  position: relative;
+}
+
+.about-memorial__section_content .section-information__checkbox label {
+  margin-left: 45px;
+  color: rgba(76, 76, 81, 0.5);
+}
+
+.about-memorial__section_content .section-information__checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.about-memorial__section_content .section-information__checkbox input[type="checkbox"] + label:before {
+  content: url("../images/vektor/checkbox-circle.svg");
+  cursor: pointer;
+  margin-right: 8px;
+  margin-right: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.about-memorial__section_content .section-information__checkbox input[type="checkbox"]:checked + label:before {
+  content: url("../images/vektor/checkbox-circle-checked.svg");
+}
+
+.about-memorial__section_content .section-information__passed {
+  margin-top: 30px;
+  opacity: .3;
+}
+
+.about-memorial__section_content .section-information__pet {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-memorial__section_content .section-information__pet input {
+  width: 260px;
+}
+
+.about-memorial__section_content .section-information__pet label {
+  padding-bottom: 8px;
+}
+
+.about-memorial__section_content .section-information__pet_species, .about-memorial__section_content .section-information__pet_breed, .about-memorial__section_content .section-information__pet_sex {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-memorial__section_content .section-information__color {
+  margin: 40px 0 80px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-memorial__section_content .section-information__color label {
+  padding-bottom: 8px;
+}
+
+.about-memorial__section_content .section-health {
+  padding: 35px 30px 60px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-memorial__section_content .section-health__clinic, .about-memorial__section_content .section-health__veterinarian {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.about-memorial__section_content .section-health__clinic label, .about-memorial__section_content .section-health__veterinarian label {
+  width: 120px;
+}
+
+.about-memorial__section_content .section-health__clinic input, .about-memorial__section_content .section-health__veterinarian input {
+  margin-left: auto;
+  width: 65%;
+}
+
+.about-memorial__section_content .section-health__veterinarian {
+  padding-left: 20px;
+}
+
+.about-memorial__section_content .section-data {
+  padding: 35px 30px 50px 30px;
+}
+
+.about-memorial__section_content .section-data__meal, .about-memorial__section_content .section-data__person, .about-memorial__section_content .section-data__pastime, .about-memorial__section_content .section-data__nickname {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.about-memorial__section_content .section-data__meal label, .about-memorial__section_content .section-data__person label, .about-memorial__section_content .section-data__pastime label, .about-memorial__section_content .section-data__nickname label {
+  width: 200px;
+}
+
+.about-memorial__section_content .section-data__meal input, .about-memorial__section_content .section-data__person input, .about-memorial__section_content .section-data__pastime input, .about-memorial__section_content .section-data__nickname input {
+  width: 100%;
+}
+
+.about-memorial__section_content .section-save {
+  padding: 35px 30px 50px 30px;
+  height: 150px;
+  background: #faf7f4;
+}
+
+.about-memorial__section_content .section-save__title {
+  padding-bottom: 25px;
+}
+
+.about-memorial__section_content .section-save__input {
+  display: flex;
+}
+
+.about-memorial__section_content .section-save__input input {
+  width: 100%;
+}
+
+.about-memorial__section_content .section-save__input_btn {
+  margin-left: 40px;
+  border-radius: 10px;
+  padding: 6px 65px;
+}
+
+.about-memorial__section_content .section-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.about-memorial__section_content .section-buttons__cancel {
+  margin-right: 30px;
+  height: 45px;
+  border-radius: 10px;
+  padding: 9px 50px 6px 50px;
+}
+
+.about-memorial__section_content .section-buttons__save {
+  height: 45px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  padding: 9px 50px 6px 50px;
+}
+
+@media only screen and (max-width: 992px) {
+  .about-memorial {
+    padding: 70px 20px 40px 20px;
+  }
+  .about-memorial__section_content .section-information__birth input {
+    width: 100%;
+  }
+  .about-memorial__section_content .section-information, .about-memorial__section_content .section-description {
+    padding: 36px 0;
+  }
+  .about-memorial__section_content .section-privacy {
+    padding: 36px 10px;
+  }
+  .about-memorial__section_content .section-information__birth,
+  .about-memorial__section_content .section-information__passed {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about-memorial__section_content .section-information__birth label,
+  .about-memorial__section_content .section-information__passed label {
+    margin-bottom: 5px;
+  }
+  .about-memorial__section_content .section-information__birth input,
+  .about-memorial__section_content .section-information__passed input {
+    width: 100%;
+  }
+  .about-memorial__section_content .section-information__birth_input,
+  .about-memorial__section_content .section-information__passed_input {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .about-memorial__section_content .section-information__pet {
+    flex-direction: column;
+  }
+  .about-memorial__section_content .section-information__pet input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .about-memorial__section_content .section-information__color {
+    margin: 20px 0;
+  }
+  .about-memorial__section_content .section-health {
+    padding: 35px 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about-memorial__section_content .section-health div {
+    margin-bottom: 20px;
+  }
+  .about-memorial__section_content .section-health__clinic, .about-memorial__section_content .section-health__veterinarian {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .about-memorial__section_content .section-health__clinic label, .about-memorial__section_content .section-health__veterinarian label {
+    width: auto;
+    padding-bottom: 8px;
+  }
+  .about-memorial__section_content .section-health__clinic input, .about-memorial__section_content .section-health__veterinarian input {
+    margin-left: 0;
+    width: 100%;
+  }
+  .about-memorial__section_content .section-health__veterinarian {
+    padding: 0;
+  }
+  .about-memorial__section_content .section-data {
+    padding: 35px 0;
+  }
+  .about-memorial__section_content .section-data__meal, .about-memorial__section_content .section-data__person, .about-memorial__section_content .section-data__pastime, .about-memorial__section_content .section-data__nickname {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  .about-memorial__section_content .section-data__meal label, .about-memorial__section_content .section-data__person label, .about-memorial__section_content .section-data__pastime label, .about-memorial__section_content .section-data__nickname label {
+    padding-bottom: 8px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about-memorial__section_heading_title {
+    font-size: 16px;
+  }
+  .about-memorial__section_content .section-information__color input::placeholder {
+    font-size: 10px;
+  }
+  .about-memorial__section_content .section-save {
+    height: auto;
+    padding: 25px 20px;
+  }
+  .about-memorial__section_content .section-save__title {
+    padding-bottom: 10px;
+  }
+  .about-memorial__section_content .section-save__input {
+    flex-direction: column;
+  }
+  .about-memorial__section_content .section-save__input input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .about-memorial__section_content .section-save__input_btn {
+    margin-left: 0;
+  }
+  .about-memorial__section_content .section-buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .about-memorial__section_content .section-buttons__cancel {
+    margin: 10px 0 20px 0;
+  }
+  .about-memorial__section_content .section-buttons__cancel,
+  .about-memorial__section_content .section-buttons__save {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */

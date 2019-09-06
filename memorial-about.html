@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+		<link rel="stylesheet" href="css/datepicker.min.css" />
+		<link rel="stylesheet" href="css/jBox.css" />
+		<link rel="stylesheet" href="css/magnific-popup.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- <header class="header">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="header-logo align-items-center">
+						<img src="./images/main-logo.svg" alt="Pawmorial" />
+					</div>
+					<div class="header-nav__container d-flex align-items-center">
+						<ul class="header-nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a id="active-page" href="#">Memorial</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+						<div class="header-login">
+							<button class="login-btn">Log in / Register</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hamburger">
+				<div class="hamburger__container">
+					<span class="hamburger__lines"></span>
+				</div>
+			</div>
+		</header> -->
+		<header class="header">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="header-logo align-items-center">
+						<img src="./images/main-logo.svg" alt="Pawmorial" />
+					</div>
+					<div class="header-nav__container d-flex align-items-center">
+						<ul class="header-nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a id="active-page" href="memorial.html">Memorial</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+						<!-- <div class="header-login">
+							<button class="login-btn">Log in / Register</button>
+						</div> -->
+
+						<!-- When logged in -->
+						<div class="header-loggedIn">
+							<div class="loggedIn-user">
+								<div>
+									<button class="dropbtn-user">
+										<span class="user-name">Michelle</span>
+										<img class="user-image" src="./images/memorial/memorial-photo16.png" alt="user image" />
+									</button>
+									<div class="dropdown-content__user">
+										<a href="#">Edit Profile</a>
+										<a href="#">Get Help</a>
+										<a href="#">Sign Out</a>
+									</div>
+								</div>
+							</div>
+							<div class="loggedIn-pet">
+								<div>
+									<button class="dropbtn-pet">
+										<span class="pet-name">Marvel</span>
+										<img class="pet-dropdown" src="./images/vektor/drop-down-arrow.svg" alt="drop down" />
+									</button>
+									<div class="dropdown-content__pet">
+										<a href="#">Marvel</a>
+										<a href="#">Marvel</a>
+										<a href="#">Marvel</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hamburger">
+				<div class="hamburger__container">
+					<span class="hamburger__lines"></span>
+				</div>
+			</div>
+		</header>
+
+		<!-- Subheader Section -->
+		<section class="subheader d-flex justify-content-center">
+			<div class="subheader-top d-flex align-items-end">
+				<div class="container d-flex align-items-center">
+					<div class="subheader-top__title col-lg-11">
+						<h2>Marvel</h2>
+					</div>
+					<!-- When logged in -->
+					<div class="subheader-top__options">
+						<a class="subheader-top__options_edit" href="#">
+							<span class="subheader-top__options_image">
+								<img src="./images/vektor/edit.svg" alt="edit" />
+							</span>
+							<span>
+								Edit
+							</span>
+						</a>
+						<a class="subheader-top__options_add" href="#">
+							<span class="subheader-top__options_image">
+								<img src="./images/vektor/add.svg" alt="add" />
+							</span>
+							<span>
+								Add
+							</span>
+						</a>
+					</div>
+					<div class="subheader-top__button">
+						<a href="#"><img class="subheader-top__button_link" src="./images/vektor/next.svg" alt="share"/></a>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="subheader-bottom">
+					<div class="subheader-bottom__image col-lg-4">
+						<img src="./images/memorial/memorial-subheader-image.png" alt="main picture of a pet" />
+					</div>
+					<div class="subheader-bottom__info">
+						<p class="subheader-bottom__info_date">
+							21 may 2013 – 11April 2019
+						</p>
+						<p class="subheader-bottom__info_subtitle">
+							Beloved Pet, Friend and Nanny
+						</p>
+						<p class="subheader-bottom__info_description">Marvel was the cutest dog in the world. Marvel was the cutest dog in the world. Marvel was the cutest dog in the world. Marvel was the cutest dog in the world. Marvel was the cutest dog in the world. Marvel was the cutest dog in the world. … <span class="read-more no-bg-btn">READ MORE</span></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Memorial Content -->
+		<section class="memorial-content">
+			<div class="container">
+				<div class="row">
+					<div class="memorial-content__navbar col">
+						<div class="memorial-content__navbar_line"></div>
+						<ul class="memorial-content__nav">
+							<li class="memorial-content__nav_link memorial-content__nav_link_active"><a href="memorial-about.html">About</a></li>
+							<li class="memorial-content__nav_link"><a href="memorial.html">photos&videos</a></li>
+							<li class="memorial-content__nav_link"><a href="#">timeline</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<form class="about-memorial" action="">
+						<div class="about-memorial__section">
+							<div class="about-memorial__section_heading">
+								<div class="about-memorial__section_heading_title">
+									Privacy Settings
+								</div>
+							</div>
+							<div class="about-memorial__section_content">
+								<div class="section-privacy">
+									<div class="section-privacy__checkbox">
+										<input type="checkbox" name="keep it private" id="about-memorial-private" />
+										<label for="about-memorial-private">Keep this board private</label>
+									</div>
+									<div class="section-privacy__helper">
+										You must invite or approve users
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="about-memorial__section">
+							<div class="about-memorial__section_heading">
+								<div class="about-memorial__section_heading_title">
+									Description
+								</div>
+							</div>
+							<div class="about-memorial__section_content">
+								<div class="section-description">
+									<div class="section-description__textarea">
+										<textarea name="description about pet" placeholder="Type a description of your pet...1000 words maximum"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="about-memorial__section">
+							<div class="about-memorial__section_heading">
+								<div class="about-memorial__section_heading_title">
+									Basic information
+								</div>
+							</div>
+							<div class="about-memorial__section_content">
+								<div class="section-information">
+									<div class="section-information__birth">
+										<label for="birth-date">Date of birth</label>
+										<div class="section-information__birth_input">
+											<span class="section-information__birth_calendar"><img src="./images/vektor/calendar.svg" alt="calendar"/></span>
+											<input type="text" class="datepicker-here" name="birth date" id="birth-date" placeholder="Pick a date" />
+										</div>
+										<label for="birth-place">Place of birth</label>
+										<input type="text" name="birth place" id="birth-place" placeholder="Type a place" />
+									</div>
+									<div class="section-information__checkbox">
+										<input type="checkbox" name="is passed away" id="about-memorial-passed-away" />
+										<label for="about-memorial-passed-away">Pet passed away</label>
+									</div>
+									<div class="section-information__passed">
+										<label for="passed-date">Date of passing away</label>
+										<div class="section-information__passed_input">
+											<span class="section-information__passed_calendar"><img src="./images/vektor/calendar.svg" alt="calendar"/></span>
+											<input type="text" class="datepicker-here" name="passed date" id="passed-date" placeholder="Pick a date" disabled />
+										</div>
+										<label for="passed-place">Place of passing away</label>
+										<input type="text" name="passed place" id="passed-place" placeholder="Type a place" disabled />
+									</div>
+									<div class="section-information__pet">
+										<div class="section-information__pet_species">
+											<label for="pet-species">Pet species</label>
+											<input type="text" name="pet species" id="pet-species" placeholder="Type species" />
+										</div>
+										<div class="section-information__pet_breed">
+											<label for="pet-breed">Pet breed</label>
+											<input type="text" name="pet breed" id="pet-breed" placeholder="Type breed" />
+										</div>
+										<div class="section-information__pet_sex">
+											<label for="pet-sex">Pet species</label>
+											<input type="text" name="pet sex" id="pet-sex" placeholder="Choose sex" />
+										</div>
+									</div>
+									<div class="section-information__color">
+										<label for="unique-feature">Wool / suit / color</label>
+										<input type="text" name="unique feature" id="unique-feature" placeholder="Type in unique physical features your pet has / had " />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="about-memorial__section">
+							<div class="about-memorial__section_heading">
+								<div class="about-memorial__section_heading_title">
+									Health Care Provider
+								</div>
+							</div>
+							<div class="about-memorial__section_content">
+								<div class="section-health">
+									<div class="section-health__clinic">
+										<label for="health-clinic">Name of veterinary clinic</label>
+										<input type="text" name="clinic" id="health-clinic" placeholder="Type a clinic" />
+									</div>
+									<div class="section-health__veterinarian">
+										<label for="health-veterinarian">Name of veterinary clinic</label>
+										<input type="text" name="veterinarian" id="health-veterinarian" placeholder="Type a name" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="about-memorial__section">
+							<div class="about-memorial__section_heading">
+								<div class="about-memorial__section_heading_title">
+									Personal data
+									<div class="about-memorial__section_heading_btn">
+										<img src="./images/vektor/add.svg" alt="add" />
+										<span>ADD</span>
+									</div>
+								</div>
+
+								<!-- <div class="about-memorial__section_heading_button">
+									<a class="about-memorial__section_heading_button_container" href="#">
+										<span class="about-memorial__section_heading_button_image">
+											<img src="./images/vektor/edit.svg" alt="edit" />
+										</span>
+										<span class="about-memorial__section_heading_button_text">
+											Edit
+										</span>
+									</a>
+								</div> button as on a mockup if needed, set title's width to 80%-->
+							</div>
+							<div class="about-memorial__section_content">
+								<div class="section-data">
+									<div class="section-data__meal">
+										<label for="favourite-meal">Favourite meal</label>
+										<input type="text" name="favourite meal" id="favourite-meal" placeholder="Type a meal" />
+									</div>
+									<div class="section-data__person">
+										<label for="favourite-person">Favourite person (-s)</label>
+										<input type="text" name="favourite person" id="favourite-person" placeholder="Type a name (-s)" />
+									</div>
+									<div class="section-data__pastime">
+										<label for="favourite-pastime">Favourite pastime</label>
+										<input type="text" name="favourite pastime" id="favourite-pastime" placeholder="Walks, eatings..." />
+									</div>
+								</div>
+								<div class="section-save">
+									<div class="section-save__title">
+										Type a title
+									</div>
+									<div class="section-save__input">
+										<input type="text" name="" id="" placeholder="Type a description" />
+										<button class="red-btn section-save__input_btn">Save</button>
+									</div>
+								</div>
+								<div class="section-buttons">
+									<button class="red-btn section-buttons__cancel">Cancel</button>
+									<button class="red-btn section-buttons__save">Save changes</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12 col-xs-12 footer-logo">
+						<div class="footer-logo__image">
+							<img src="./images/main-logo.svg" alt="Pawmorial" />
+						</div>
+						<div class="footer-logo__text">
+							<p>
+								Looking for additional features? Contact us at <span><a class="footer-link" href="mailto:info@pawmorial.com"> info@pawmorial.com</a></span>
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-xs-12 footer-memorials">
+						<div class="footer-memorials__heading">
+							<h4>Memorials</h4>
+						</div>
+						<div class="footer-memorials__list">
+							<ul>
+								<li><a href="#">Create a memorial</a></li>
+								<li><a href="#">Give a gift</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-xs-12 footer-about">
+						<div class="footer-about__heading">
+							<h4>About Us</h4>
+						</div>
+						<div class="footer-about__list">
+							<ul>
+								<li><a href="#">Our Story</a></li>
+								<li><a href="#">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-5 col-md-12 col-xs-12 footer-join">
+						<div class="footer-join__heading">
+							<h4>Join our community</h4>
+						</div>
+						<div class="footer-join__input">
+							<input type="email" name="email" placeholder="Type your email" />
+							<button class="btn footer-join__input_btn">Sign Up</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="container">
+					<div class="row">
+						<div class="col d-flex justify-content-center align-items-center">
+							<p class="copy-text">Copyright © 2019 Peymorials Ltd. All Rights Reserved. Read our Terms and Conditions & Privacy Policy.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer -->
+		<!-- Modal -->
+		<!-- <div class="modal-login">
+			<div class="close-modal">
+				<img src="./images/vektor/close.svg" alt="close button" />
+			</div>
+			<div class="modal-login__content">
+				<div class="form-heading">
+					<p class="form-heading__title">Login to your account</p>
+				</div>
+				<form action="" class="login-form">
+					<div class="login-form__container">
+						<div class="login-form__inputs">
+							<div class="login-email login-email__invalid">
+								<span class="login-email__label login-email__label_invalid">e-mail</span>
+								<span class="login-email__mail"><img src="./images/vektor/mail.svg" alt="mail icon"/></span>
+								<input type="email" name="email" id="login-email__field" placeholder="Your e-mail" />
+							</div>
+							<div class="login-password login-password__invalid">
+								<span class="login-password__label login-password__label_invalid">Password</span>
+								<span class="login-password__key"><img src="./images/vektor/key.svg" alt="key icon"/></span>
+								<input type="password" name="password" id="login-password__field" placeholder="Your password" />
+								<span><img class="login-password__eye" src="./images/vektor/eye.svg" alt="show password"/></span>
+								<p class="invalid">Your e-mail or password is invalid</p>
+							</div>
+						</div>
+						<div class="login-form__buttons">
+							<button class="btn login-form__buttons_register">Register</button>
+							<button class="btn login-form__buttons_login">Login</button>
+						</div>
+						<div class="login-form__checkbox">
+							<div class="login-form__checkbox_remember">
+								<label>
+									<input type="checkbox" name="check" id="remember" />
+									<span class="login-form__checkbox_text">Remember me</span>
+								</label>
+							</div>
+							<div class="login-form__checkbox_forgotPw">
+								<a href="#">Forgot password?</a>
+							</div>
+						</div>
+						<div class="login-form__text">
+							<p>or sign in using</p>
+						</div>
+						<div class="login-form__signIn">
+							<button class="login-form__signIn_google">Google+</button>
+							<button class="login-form__signIn_facebook">facebook</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div> -->
+		<div class="modal-login_invited">
+			<div class="close-modal">
+				<img src="./images/vektor/close.svg" alt="close button" />
+			</div>
+			<div class="modal-login__content">
+				<div class="login-invited__header">
+					<div class="login-invited__header_images">
+						<img src="./images/login-invited_post.svg" alt="memory post" class="invited_post" />
+						<img src="./images/login-invited_author.png" alt="author of memory post" class="invited_author" />
+					</div>
+					<div class="login-invited__header_text">
+						<p>Michael invite you to join Marvel’s page</p>
+					</div>
+					<p class="login-with-email">
+						Login with email
+					</p>
+				</div>
+				<form action="" class="login-form">
+					<div class="login-form__container">
+						<div class="login-form__inputs">
+							<div class="login-email login-email__invalid">
+								<span class="login-email__label login-email__label_invalid">e-mail</span>
+								<span class="login-email__mail"><img src="./images/vektor/mail.svg" alt="mail icon"/></span>
+								<input type="email" name="email" id="login-email__field" placeholder="Your e-mail" />
+							</div>
+							<div class="login-password login-password__invalid">
+								<span class="login-password__label login-password__label_invalid">Password</span>
+								<span class="login-password__key"><img src="./images/vektor/key.svg" alt="key icon"/></span>
+								<input type="password" name="password" id="login-password__field" placeholder="Your password" />
+								<span><img class="login-password__eye" src="./images/vektor/eye.svg" alt="show password"/></span>
+								<p class="invalid">Your e-mail or password is invalid</p>
+							</div>
+						</div>
+						<div class="login-form__buttons">
+							<button class="btn login-form__buttons_register">Register</button>
+							<button class="btn login-form__buttons_login">Login</button>
+						</div>
+						<div class="login-form__checkbox">
+							<div class="login-form__checkbox_remember">
+								<label>
+									<input type="checkbox" name="check" id="remember" />
+									<span class="login-form__checkbox_text">Remember me</span>
+								</label>
+							</div>
+							<div class="login-form__checkbox_forgotPw">
+								<a href="#">Forgot password?</a>
+							</div>
+						</div>
+						<div class="login-form__text">
+							<p>or sign in using</p>
+						</div>
+						<div class="login-form__signIn">
+							<button class="login-form__signIn_google">Google+</button>
+							<button class="login-form__signIn_facebook">facebook</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="modal-create-memory">
+			<div class="close-modal">
+				<img src="./images/vektor/close-black.svg" alt="close button" />
+			</div>
+			<div class="create-memory__content">
+				<div class="create-memory__left">
+					<div class="create-memory__left_image">
+						<div class="create-memory__image_outer">
+							<div class="create-memory__image_inner">
+								<div class="create-memory__image_inner_upload">
+									<div class="create-memory__image_inner_upload_pic">
+										<img src="./images/vektor/upload.svg" alt="upload" />
+									</div>
+									<div class="create-memory__image_inner_upload_click">
+										Drag and Drop or click to upload
+									</div>
+									<div class="create-memory__image_inner_upload_helper">
+										(you can add few files in one time by clicking SHIFT button)
+									</div>
+								</div>
+							</div>
+							<div class="create-memory__image_text">
+								Please upload .jpg files less than to 10 MB
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="create-memory__right">
+					<form action="">
+						<div class="create-memory__right_title">
+							<input type="text" name="memory title" placeholder="Add a title" />
+						</div>
+						<div class="create-memory__right_hashtag">
+							<input type="text" name="memory hashtag" value="#" placeholder="#" />
+						</div>
+						<div class="create-memory__right_description">
+							<textarea name="memory description" placeholder="Add a description"></textarea>
+						</div>
+						<div class="create-memory__right_datepicker">
+							<label for="create-memory__datepicker">
+								Pick date of post
+							</label>
+							<span class="create-memory__datepicker_calendar"><img src="./images/vektor/calendar-blue.svg" alt="calendar"/></span>
+							<span class="create-memory__datepicker_arrow"><img src="./images/vektor/drop-down-arrow.svg" alt="pick a date"/></span>
+							<input type="text" class="datepicker-here" data-position="top left" name="date of post" id="create-memory__datepicker" placeholder="Pick date" readonly />
+						</div>
+						<div class="create-memory__right_type">
+							<div class="create-memory__right_type_heading">
+								Memory type
+							</div>
+							<ul class="create-memory__right_type_list">
+								<li class="type-list__item">
+									<input type="checkbox" name="type photo" id="type-photo" />
+									<label for="type-photo">Photo</label>
+								</li>
+								<li class="type-list__item">
+									<input type="checkbox" name="type video" id="type-video" />
+									<label for="type-video">Video</label>
+								</li>
+								<li class="type-list__item">
+									<input type="checkbox" name="type hashtag" id="type-hashtag" />
+									<label for="type-hashtag">#makingeachdaycount</label>
+								</li>
+								<li class="type-list__item">
+									<input type="checkbox" name="type timeline" id="type-timeline" />
+									<label for="type-timeline">Timeline</label>
+								</li>
+							</ul>
+						</div>
+						<div class="create-memory__right_button">
+							<button class="red-btn create-memory__right_btn">
+								Create memory
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="black-fill"></div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="slick/slick.min.js"></script>
+		<script src="libs/datepicker/datepicker.min.js"></script>
+		<script src="libs/imagesloaded/imagesloaded.pkgd.js"></script>
+		<script src="libs/masonry/masonry.pkgd.js"></script>
+		<script src="libs/jBox/jBox.js"></script>
+		<script src="libs/magnific/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
