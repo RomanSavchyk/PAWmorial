@@ -1,5 +1,31 @@
+@font-face {
+  font-family: "SFTextRegular";
+  font-weight: 400;
+  src: url("../fonts/SF-Pro-Text-Regular.otf");
+}
+
+@font-face {
+  font-family: "SFTextSemibold";
+  font-weight: 600;
+  src: url("../fonts/SF-Pro-Text-Semibold.otf");
+}
+
+@font-face {
+  font-family: "SFTextBold";
+  font-weight: 700;
+  src: url("../fonts/SF-Pro-Text-Bold.otf");
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "SFTextRegular", "RobotoRegular", sans-serif;
+  font-weight: 400;
   color: #58585D;
   box-sizing: border-box;
 }
@@ -14,16 +40,15 @@ p, ul, label, h1, h2, h3, h4, h5 {
   text-align: center;
   font-size: 45px;
   font-weight: 400;
-  letter-spacing: 1.8px;
-  font-weight: 500;
 }
 
 .btn {
   border: none;
   background: #D6B495;
+  font-family: "SFTextRegular", sans-serif;
+  font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: 700;
   font-size: 18px;
   border: 2px solid #D6B495;
   border-radius: 5px;
@@ -58,6 +83,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
   color: #D6B495;
   background: #fff;
   text-transform: uppercase;
+  font-family: "SFTextRegular", sans-serif;
   font-weight: 400;
   font-size: 18px;
   transition: all 0.3s ease;
@@ -1243,7 +1269,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
   font-weight: 400;
   font-size: 18px;
   border-radius: 5px;
-  padding: 6px 37px;
+  padding: 7px 37px 5px 37px;
   border: 2px solid #e42947;
   transition: all 0.3s ease;
 }
@@ -1268,17 +1294,18 @@ p, ul, label, h1, h2, h3, h4, h5 {
   color: #4C4C51;
   text-align: center;
   font-size: 30px;
-  letter-spacing: 0.4px;
-  line-height: 1.3;
+  font-weight: 400;
+  width: 80%;
 }
 
 .main-about__subtitle {
   margin-top: 18px;
-  font-weight: 500;
+  font-weight: 400;
+  opacity: .9;
 }
 
 .main-about__btn {
-  padding: 4px 65px;
+  padding: 7px 65px 3px 65px;
   margin-top: 50px;
 }
 
@@ -1328,9 +1355,9 @@ p, ul, label, h1, h2, h3, h4, h5 {
 
 .mission-info__tldr {
   text-align: center;
-  font-weight: 700;
   font-size: 17px;
   width: 70%;
+  line-height: 2.2;
   padding-bottom: 55px;
 }
 
@@ -1419,6 +1446,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
   font-size: 18px;
   font-weight: 400;
   color: #88939E;
+  opacity: .9;
   padding: 25px 15px 0 15px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1592,6 +1620,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
 
 .copy {
   background: #efdfd1;
+  margin-top: 20px;
 }
 
 .copy-text {
@@ -1888,7 +1917,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
 
 @media only screen and (max-width: 1440px) {
   .login-btn {
-    padding: 6px 25px;
+    padding: 7px 25px 5px 25px;
     font-size: 14px;
   }
   .header-login {
@@ -1971,10 +2000,6 @@ p, ul, label, h1, h2, h3, h4, h5 {
     position: absolute;
     right: 55px;
   }
-  .login-btn {
-    padding: 6px 25px;
-    font-size: 14px;
-  }
   .main-about__title {
     font-size: 24px;
   }
@@ -2027,8 +2052,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
   }
   .login-btn {
     font-size: 13px;
-    border-radius: 5px;
-    padding: 6px 10px;
+    padding: 7px 10px 5px 10px;
   }
   .footer-memorials, .footer-about, .footer-join {
     margin-top: 20px;
@@ -2063,10 +2087,14 @@ p, ul, label, h1, h2, h3, h4, h5 {
     padding: 6px 9px;
   }
   .main-about__btn {
-    padding: 4px 44px;
+    padding: 6px 44px 2px 44px;
+    font-size: 16px;
   }
   .mission-info__tldr {
     width: 100%;
+  }
+  .mission {
+    margin-top: 40px;
   }
   .main-image__item img {
     display: block;
@@ -3324,7 +3352,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
 .about-memorial__section_content .section-information__birth_calendar, .about-memorial__section_content .section-information__passed_calendar {
   position: absolute;
   top: 9px;
-  left: 20px;
+  left: 28px;
 }
 
 .about-memorial__section_content .section-information__checkbox {
@@ -3510,6 +3538,10 @@ p, ul, label, h1, h2, h3, h4, h5 {
     width: 100%;
     padding: 0;
     margin-bottom: 20px;
+  }
+  .about-memorial__section_content .section-information__birth_calendar,
+  .about-memorial__section_content .section-information__passed_calendar {
+    left: 20px;
   }
   .about-memorial__section_content .section-information__pet {
     flex-direction: column;
