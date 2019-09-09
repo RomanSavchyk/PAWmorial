@@ -35,6 +35,18 @@ p, ul, label, h1, h2, h3, h4, h5 {
   padding: 0;
 }
 
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 30px;
+  width: 30px;
+  background-color: #D8D8D8;
+  background-image: url(../images/vektor/close-black.svg);
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
 .main-page-heading {
   color: #C79C74;
   text-align: center;
@@ -3257,7 +3269,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
 
 .about-memorial__section_content input {
   height: 45px;
-  padding: 2px 0 0 20px;
+  padding: 0 5px 0 20px;
   border: solid 1px #dfe2e6;
   box-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -3266,6 +3278,10 @@ p, ul, label, h1, h2, h3, h4, h5 {
 
 .about-memorial__section_content input::placeholder {
   color: rgba(76, 76, 81, 0.5);
+}
+
+.about-memorial__section_content input::outline {
+  color: #D6B495;
 }
 
 .about-memorial__section_content .section-privacy {
@@ -3341,7 +3357,7 @@ p, ul, label, h1, h2, h3, h4, h5 {
 }
 
 .about-memorial__section_content .section-information__birth_input input, .about-memorial__section_content .section-information__passed_input input {
-  padding: 2px 0 0 49px;
+  padding-left: 49px;
 }
 
 .about-memorial__section_content .section-information__birth label, .about-memorial__section_content .section-information__passed label {
@@ -3628,6 +3644,201 @@ p, ul, label, h1, h2, h3, h4, h5 {
     width: 50%;
     padding: 5px 0 0 0;
     font-size: 14px;
+  }
+}
+
+.profile {
+  margin-top: 80px;
+}
+
+.profile-heading h2 {
+  font-size: 48px;
+  font-weight: 400;
+  color: #4C4C51;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-image {
+  margin-top: 50px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-image:hover .profile-image__hover {
+  opacity: 1;
+}
+
+.profile-image img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-image__hover {
+  color: #fff;
+  top: 150px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.profile-info {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.profile-info__left, .profile-info__right {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-info .profile-info__left_firstname,
+.profile-info .profile-info__left_location,
+.profile-info .profile-info__left_email,
+.profile-info .profile-info__right_lastname,
+.profile-info .profile-info__right_phone {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.profile-info .profile-info__left_firstname label,
+.profile-info .profile-info__left_location label,
+.profile-info .profile-info__left_email label,
+.profile-info .profile-info__right_lastname label,
+.profile-info .profile-info__right_phone label {
+  color: rgba(76, 76, 81, 0.5);
+  font-size: 18px;
+}
+
+.profile-info .profile-info__left_firstname input,
+.profile-info .profile-info__left_location input,
+.profile-info .profile-info__left_email input,
+.profile-info .profile-info__right_lastname input,
+.profile-info .profile-info__right_phone input {
+  height: 45px;
+  border: none;
+  border-bottom: 1px solid #dfe2e6;
+  color: #4C4C51;
+  padding: 0 5px;
+  outline-color: #D6B495;
+}
+
+.profile-info .profile-info__left_firstname input::outline,
+.profile-info .profile-info__left_location input::outline,
+.profile-info .profile-info__left_email input::outline,
+.profile-info .profile-info__right_lastname input::outline,
+.profile-info .profile-info__right_phone input::outline {
+  color: #D6B495;
+}
+
+.profile-info__clear-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #D8D8D8;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
+.profile-info__clear-btn img {
+  width: 12px;
+}
+
+.profile input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 30px;
+  width: 30px;
+  background-color: #D8D8D8;
+  background-image: url(../images/vektor/close-black.svg);
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.profile-save {
+  display: flex;
+  margin: 20px 0 100px 0;
+}
+
+.profile-save__btn {
+  height: 45px;
+  border-radius: 10px;
+  background: #e42947;
+  color: #ffffff;
+  width: 250px;
+}
+
+.profile-save__btn:hover {
+  background: #ffffff;
+  color: #e42947;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile {
+    margin-top: 30px;
+  }
+  .profile-heading h2 {
+    font-size: 34px;
+  }
+  .profile-image {
+    margin-top: 20px;
+  }
+  .profile-image img {
+    width: 140px;
+    height: 140px;
+  }
+  .profile-image__hover {
+    font-size: 14px;
+    top: 90px;
+    height: 50px;
+  }
+  .profile-info {
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+  }
+  .profile-info__left, .profile-info__right {
+    width: 100%;
+    padding: 0;
+  }
+  .profile-info .profile-info__left_firstname,
+  .profile-info .profile-info__left_location,
+  .profile-info .profile-info__left_email,
+  .profile-info .profile-info__right_lastname,
+  .profile-info .profile-info__right_phone {
+    margin-bottom: 20px;
+  }
+  .profile-info .profile-info__left_firstname label,
+  .profile-info .profile-info__left_location label,
+  .profile-info .profile-info__left_email label,
+  .profile-info .profile-info__right_lastname label,
+  .profile-info .profile-info__right_phone label {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
