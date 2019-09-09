@@ -49,7 +49,7 @@
 							<li><a href="index.html">Home</a></li>
 							<li><a href="about.html">About Us</a></li>
 							<li><a id="active-page" href="memorial.html">Memorial</a></li>
-							<li><a href="#">FAQ</a></li>
+							<li><a href="faq.html">FAQ</a></li>
 						</ul>
 						<!-- <div class="header-login">
 							<button class="login-btn">Log in / Register</button>
@@ -64,7 +64,7 @@
 										<img class="user-image" src="./images/memorial/memorial-photo16.png" alt="user image" />
 									</button>
 									<div class="dropdown-content__user">
-											<a href="edit-profile.html">Edit Profile</a>
+										<a href="edit-profile.html">Edit Profile</a>
 										<a href="#">Get Help</a>
 										<a href="#">Sign Out</a>
 									</div>
@@ -229,13 +229,20 @@
 											<input type="search" name="pet breed" id="pet-breed" placeholder="Type breed" />
 										</div>
 										<div class="section-information__pet_sex">
-											<label for="pet-sex">Pet species</label>
-											<input type="search" name="pet sex" id="pet-sex" placeholder="Choose sex" />
+											<label for="pet-sex">Sex</label>
+											<img src="./images/vektor/drop-down-arrow.svg" alt="select" />
+											<select name="pet sex" id="pet-sex" required>
+												<option value="" hidden disabled selected>Choose sex</option>
+												<option value="Male">Male</option>
+												<option value="Male neutered">Male neutered</option>
+												<option value="Female">Female</option>
+												<option value="Female neutered">Female neutered</option>
+											</select>
 										</div>
 									</div>
 									<div class="section-information__color">
 										<label for="unique-feature">Wool / suit / color</label>
-										<input type="search" name="unique feature" id="unique-feature" placeholder="Unique physical features your pet has / had " />
+										<input type="search" name="unique feature" id="unique-feature" placeholder="Unique features your pet has / had " />
 									</div>
 								</div>
 							</div>

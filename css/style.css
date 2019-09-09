@@ -79,14 +79,14 @@ input[type="search"]::-webkit-search-cancel-button {
   font-size: 18px;
   border-radius: 5px;
   padding: 9px 37px 6px 37px;
-  border: 2px solid #e42947;
+  border: 2px solid #CD233E;
   transition: all 0.3s ease;
   outline: none;
 }
 
 .red-btn:hover {
   color: #ffffff;
-  background: #e42947;
+  background: #CD233E;
   outline: none;
 }
 
@@ -620,12 +620,12 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .create-memory__right_button button {
-  background: #e42947;
+  background: #CD233E;
   color: #ffffff;
 }
 
 .create-memory__right_button button:hover {
-  color: #e42947;
+  color: #CD233E;
   background: #fff;
 }
 
@@ -1002,7 +1002,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 #active-page {
-  color: #e42947;
+  color: #CD233E;
 }
 
 .header {
@@ -1039,7 +1039,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .header-nav li a:hover {
-  color: #e42947;
+  color: #CD233E;
 }
 
 .header .header-nav__container {
@@ -1111,7 +1111,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .dropdown-content__pet a, .dropdown-content__user a {
   padding: 7px 20px;
   font-size: 17px;
-  color: #e42947;
+  color: #CD233E;
   text-decoration: none;
   text-align: left;
   white-space: nowrap;
@@ -1181,7 +1181,7 @@ input[type="search"]::-webkit-search-cancel-button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #e42947;
+  color: #CD233E;
 }
 
 .pet-dropdown {
@@ -1282,13 +1282,13 @@ input[type="search"]::-webkit-search-cancel-button {
   font-size: 18px;
   border-radius: 5px;
   padding: 7px 37px 5px 37px;
-  border: 2px solid #e42947;
+  border: 2px solid #CD233E;
   transition: all 0.3s ease;
 }
 
 .login-btn:hover {
   color: #ffffff;
-  background: #e42947;
+  background: #CD233E;
 }
 
 #home {
@@ -1574,7 +1574,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .footer-link {
-  color: #e42947;
+  color: #CD233E;
 }
 
 .footer-logo__text {
@@ -2441,7 +2441,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .memorial-content__nav_link a:hover {
-  color: #e42947;
+  color: #CD233E;
 }
 
 .memorial-content__nav_link:after {
@@ -2459,11 +2459,11 @@ input[type="search"]::-webkit-search-cancel-button {
 .memorial-content__nav_link:hover:after {
   width: 100%;
   left: 0;
-  background: #e42947;
+  background: #CD233E;
 }
 
 .memorial-content__nav_link_active a {
-  color: #e42947;
+  color: #CD233E;
 }
 
 .memorial-content__nav_link_active a:after {
@@ -2473,7 +2473,7 @@ input[type="search"]::-webkit-search-cancel-button {
   position: absolute;
   top: -22px;
   width: 100%;
-  background: #e42947;
+  background: #CD233E;
 }
 
 .content-gallery {
@@ -2650,14 +2650,14 @@ input[type="search"]::-webkit-search-cancel-button {
   height: 50px;
   width: 100%;
   margin-top: 15px;
-  background: #e42947;
+  background: #CD233E;
   color: #ffffff;
   border-radius: 10px;
   padding-top: 11px;
 }
 
 .jB-invite__btn:hover {
-  color: #e42947;
+  color: #CD233E;
   background: #fff;
 }
 
@@ -2707,8 +2707,8 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .memorial-new__button_btn {
-  color: #e42947;
-  border: 1px solid #e42947;
+  color: #CD233E;
+  border: 1px solid #CD233E;
   border-radius: 10px;
   text-decoration: none;
   padding: 10px 40px;
@@ -2716,7 +2716,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .memorial-new__button_btn:hover {
   color: #ffffff;
-  background: #e42947;
+  background: #CD233E;
   outline: none;
   text-decoration: none;
 }
@@ -2806,7 +2806,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .memory-popup__heading_name_pet span {
-  color: #e42947;
+  color: #CD233E;
   padding-left: 20px;
 }
 
@@ -3091,16 +3091,16 @@ input[type="search"]::-webkit-search-cancel-button {
   }
   .memorial-content__nav_link:before {
     right: 50%;
-    background: #e42947;
+    background: #CD233E;
     left: 80%;
   }
   .memorial-content__nav_link:hover:after, .memorial-content__nav_link:hover:before {
     width: 20%;
     left: -10px;
-    background: #e42947;
+    background: #CD233E;
   }
   .memorial-content__nav_link_active a {
-    color: #e42947;
+    color: #CD233E;
   }
   .memorial-content__nav_link_active a:after {
     display: none;
@@ -3113,7 +3113,7 @@ input[type="search"]::-webkit-search-cancel-button {
     left: -10px;
     height: 3px;
     width: 20%;
-    background: #e42947;
+    background: #CD233E;
     transition: width .5s ease, background-color .5s ease, left .5s ease;
   }
   .jBox-pointer-left, .jBox-pointer-right {
@@ -3267,7 +3267,7 @@ input[type="search"]::-webkit-search-cancel-button {
   padding-left: 20px;
 }
 
-.about-memorial__section_content input {
+.about-memorial__section_content input, .about-memorial__section_content select {
   height: 45px;
   padding: 0 5px 0 20px;
   border: solid 1px #dfe2e6;
@@ -3276,11 +3276,11 @@ input[type="search"]::-webkit-search-cancel-button {
   color: #4C4C51;
 }
 
-.about-memorial__section_content input::placeholder {
+.about-memorial__section_content input::placeholder, .about-memorial__section_content select::placeholder {
   color: rgba(76, 76, 81, 0.5);
 }
 
-.about-memorial__section_content input::outline {
+.about-memorial__section_content input::outline, .about-memorial__section_content select::outline {
   color: #D6B495;
 }
 
@@ -3411,7 +3411,7 @@ input[type="search"]::-webkit-search-cancel-button {
   justify-content: space-between;
 }
 
-.about-memorial__section_content .section-information__pet input {
+.about-memorial__section_content .section-information__pet input, .about-memorial__section_content .section-information__pet select {
   width: 260px;
 }
 
@@ -3422,6 +3422,41 @@ input[type="search"]::-webkit-search-cancel-button {
 .about-memorial__section_content .section-information__pet_species, .about-memorial__section_content .section-information__pet_breed, .about-memorial__section_content .section-information__pet_sex {
   display: flex;
   flex-direction: column;
+}
+
+.about-memorial__section_content .section-information__pet_sex {
+  position: relative;
+}
+
+.about-memorial__section_content .section-information__pet_sex select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #4C4C51;
+}
+
+.about-memorial__section_content .section-information__pet_sex select:invalid {
+  color: rgba(76, 76, 81, 0.5);
+}
+
+.about-memorial__section_content .section-information__pet_sex img {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.about-memorial__section_content .section-information__pet_sex .pet-sex__dropdown {
+  display: block;
+  list-style: none;
+}
+
+.about-memorial__section_content .section-information__pet_sex .pet-sex__dropdown li {
+  padding: 8px 8px;
+  cursor: pointer;
+}
+
+.about-memorial__section_content .section-information__pet_sex .pet-sex__dropdown li:hover {
+  background: #f5f5f5;
 }
 
 .about-memorial__section_content .section-information__color {
@@ -3536,35 +3571,34 @@ input[type="search"]::-webkit-search-cancel-button {
   .about-memorial__section_content .section-privacy {
     padding: 36px 10px;
   }
-  .about-memorial__section_content .section-information__birth,
-  .about-memorial__section_content .section-information__passed {
+  .about-memorial__section_content .section-information__birth, .about-memorial__section_content .section-information__passed {
     flex-direction: column;
     align-items: flex-start;
   }
-  .about-memorial__section_content .section-information__birth label,
-  .about-memorial__section_content .section-information__passed label {
+  .about-memorial__section_content .section-information__birth label, .about-memorial__section_content .section-information__passed label {
     margin-bottom: 5px;
   }
   .about-memorial__section_content .section-information__birth input,
   .about-memorial__section_content .section-information__passed input {
     width: 100%;
   }
-  .about-memorial__section_content .section-information__birth_input,
-  .about-memorial__section_content .section-information__passed_input {
+  .about-memorial__section_content .section-information__birth_input, .about-memorial__section_content .section-information__passed_input {
     width: 100%;
     padding: 0;
     margin-bottom: 20px;
   }
-  .about-memorial__section_content .section-information__birth_calendar,
-  .about-memorial__section_content .section-information__passed_calendar {
+  .about-memorial__section_content .section-information__birth_calendar, .about-memorial__section_content .section-information__passed_calendar {
     left: 20px;
   }
   .about-memorial__section_content .section-information__pet {
     flex-direction: column;
   }
-  .about-memorial__section_content .section-information__pet input {
+  .about-memorial__section_content .section-information__pet input, .about-memorial__section_content .section-information__pet select {
     width: 100%;
     margin-bottom: 15px;
+  }
+  .about-memorial__section_content .section-information__pet_sex img {
+    bottom: 28px;
   }
   .about-memorial__section_content .section-information__color {
     margin: 20px 0;
@@ -3788,14 +3822,14 @@ input[type="search"]::-webkit-search-cancel-button {
 .profile-save__btn {
   height: 45px;
   border-radius: 10px;
-  background: #e42947;
+  background: #CD233E;
   color: #ffffff;
   width: 250px;
 }
 
 .profile-save__btn:hover {
   background: #ffffff;
-  color: #e42947;
+  color: #CD233E;
 }
 
 @media only screen and (max-width: 768px) {
@@ -3838,6 +3872,153 @@ input[type="search"]::-webkit-search-cancel-button {
   .profile-info .profile-info__left_email label,
   .profile-info .profile-info__right_lastname label,
   .profile-info .profile-info__right_phone label {
+    font-size: 16px;
+  }
+}
+
+.faq-subheader__background {
+  background: url(../images/memorial/memorial-subheader-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  max-width: 1920px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 0.6px 11.5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.faq-heading {
+  font-size: 56px;
+  color: #CD233E;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.transition, .faq-subheader__accordion p, .faq-subheader__accordion ul li i:before, .faq-subheader__accordion ul li i:after {
+  transition: all 0.3s ease-in-out;
+}
+
+.flipIn, .faq-subheader__accordion ul li {
+  animation: flipdown 0.5s ease both;
+}
+
+.no-select, .faq-subheader__accordion h2 {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.faq-subheader__accordion {
+  margin: 50px 0 100px 0;
+}
+
+.faq-subheader__accordion h2 {
+  font-size: 22px;
+  color: #4C4C51;
+  font-weight: 400;
+  display: block;
+  padding: 12px 48px 12px 28px;
+  border-radius: 35px;
+  background: #efdfd1;
+  margin: 0;
+  cursor: pointer;
+}
+
+.faq-subheader__accordion p {
+  color: #4C4C51;
+  background: #F9F4EF;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 0;
+  z-index: 2;
+  padding: 30px;
+  border-radius: 35px;
+}
+
+.faq-subheader__accordion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faq-subheader__accordion ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background: #F9F4EF;
+  margin-top: 30px;
+  border-radius: 35px;
+}
+
+.faq-subheader__accordion ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 20px;
+  right: 30px;
+}
+
+.faq-subheader__accordion ul li i:before, .faq-subheader__accordion ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #4C4C51;
+  opacity: 1;
+  width: 3px;
+  height: 15px;
+}
+
+.faq-subheader__accordion ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+
+.faq-subheader__accordion ul li i:after {
+  transform: translate(6.5px, 0) rotate(-45deg);
+}
+
+.faq-subheader__accordion ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.faq-subheader__accordion ul li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  padding: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+
+.faq-subheader__accordion ul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(6.5px, 0) rotate(45deg);
+}
+
+.faq-subheader__accordion ul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .faq-heading {
+    font-size: 32px;
+    padding: 0 10px;
+    margin-top: 30px;
+  }
+  .faq-subheader__accordion {
+    margin: 20px 12px 100px 12px;
+  }
+  .faq-subheader__accordion h2 {
     font-size: 16px;
   }
 }

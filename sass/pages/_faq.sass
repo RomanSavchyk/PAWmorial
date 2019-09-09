@@ -1,0 +1,122 @@
+@import "../abstracts/variables"
+@import "../abstracts/mixins"
+
+.faq-subheader__background
+  background: url(../images/memorial/memorial-subheader-bg.png)
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  width: 100%
+  max-width: 1920px
+  height: 300px
+  margin: 0 auto
+  position: relative
+  box-shadow: 0 0.6px 11.5px 0px rgba(0, 0, 0, 0.2)  
+.faq-heading
+  font-size: 56px
+  color: $login-red
+  margin-top: 40px
+  text-align: center
+
+.transition
+  transition: all 0.3s ease-in-out
+
+.flipIn
+  animation: flipdown 0.5s ease both
+    
+.no-select
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.faq-subheader__accordion
+  margin: 50px 0 100px 0
+  h2
+    font-size: 22px
+    color: $title-black
+    font-weight: 400
+    display: block
+    padding: 12px 48px 12px 28px
+    border-radius: 35px
+    background: #efdfd1
+    margin: 0
+    cursor: pointer
+    @extend .no-select
+  p
+    color: $title-black
+    background: #F9F4EF
+    font-size: 16px
+    position: relative
+    overflow: hidden
+    max-height: 800px
+    opacity: 1
+    transform: translate( 0 , 0 )  
+    margin-top: 0
+    z-index: 2
+    padding: 30px
+    border-radius: 35px
+    @extend .transition
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+    li
+      position: relative
+      padding: 0
+      margin: 0
+      background: #F9F4EF
+      margin-top: 30px
+      border-radius: 35px
+      @extend .flipIn
+      i
+        position: absolute
+        transform: translate( -6px , 0 )
+        margin-top: 20px
+        right: 30px
+        &:before , &:after
+          content: ""
+          @extend .transition
+          position: absolute
+          background-color: #4C4C51
+          opacity: 1
+          width: 3px
+          height: 15px
+        &:before
+          transform: translate( -2px , 0 ) rotate( 45deg )
+        &:after
+          transform: translate(6.5px, 0) rotate(-45deg)
+      input[type=checkbox]
+        position: absolute
+        cursor: pointer
+        width: 100%
+        height: 100%
+        z-index: 1
+        opacity: 0
+        &:checked
+          &~p
+            margin-top: 0
+            padding: 0
+            max-height: 0
+            opacity: 0
+            transform: translate( 0 , 50% )
+          &~i
+            &:before
+              transform: translate(6.5px, 0) rotate(45deg)
+            
+            &:after
+              transform: translate( -2px , 0 ) rotate( -45deg )
+
+@media only screen and (max-width: 768px)
+  .faq-heading
+    font-size: 32px
+    padding: 0 10px
+    margin-top: 30px
+  .faq-subheader__accordion
+    margin: 20px 12px 100px 12px
+    h2
+      font-size: 16px
+  

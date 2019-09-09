@@ -346,6 +346,8 @@ $(document).ready(function() {
   $('.share-btn, .more-btn').click(function(e){
     e.stopPropagation()
   })
+
+
   
 })
 
