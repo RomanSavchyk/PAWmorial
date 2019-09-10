@@ -1,6 +1,38 @@
 @import "../abstracts/variables"
 @import "../abstracts/mixins"
 
+.blog-heading
+  margin-bottom: 12px
+  text-align: center
+  h2
+    font-size: 32px
+    line-height: 38px
+    font-weight: 400
+    color: $title-black
+.blog-text
+  margin-bottom: 36px
+.blog-image
+  margin-bottom: 36px
+  img
+    width: 100%
+    max-height: 550px
+    object-fit: cover
+    border-radius: 5px
+.blog-quote
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  svg
+    margin-bottom: 10px
+  p
+    text-align: center
+    font-style: italic
+    font-size: 20px
+    line-height: 30px
+    margin-bottom: 36px
+.subheader-blog
+  margin-bottom: 30px
 .blog-veterenarian-subheader-background
   height: 460px
   display: flex
@@ -25,7 +57,116 @@
       color: #fff
       font-size: 56px
       line-height: 67px
+      text-align: center
+      padding: 0 15px
+      font-weight: 400
     span
       color: #fff
       text-transform: uppercase
+.subheader-blog-vet__image
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: 100%
+  margin-top: -103px
+  z-index: 2
+  span
+    color: #fff
+    font-size: 16px
+    line-height: 19px
+    padding-bottom: 10px
+  img
+    width: 160px
+    height: 160px
+    border-radius: 50%
+    border: 5px solid #FFFFFF
+    object-fit: cover
+.blog-content
+  ul 
+    li
+      list-style: none
+      &::before 
+        content: "\2022"
+        color: $title-brown
+        font-weight: bold
+        padding-right: 5px
+      a
+        color: $title-brown
+        text-decoration: underline
+  ol
+    counter-reset: li
+    li
+      list-style: none
+      counter-increment: li
+      &::before
+        content: counter(li)
+        color: $title-brown
+        display: inline-block 
+        padding-right: 5px
+      a
+        color: $title-brown
+        text-decoration: underline
+.blog-share
+  background: #F4F4F4
+  &-container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__heading
+    font-size: 24px
+    line-height: 30px
+    text-align: center
+    color: $title-black
+    padding: 45px 0 48px 0
+  &__socials
+    display: flex
+    justify-content: space-between
+    width: 100%
+    padding-bottom: 60px
+  &__facebook, &__twitter, &__messenger, &__whatsapp
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    span
+      padding-top: 10px
+    img
+      width: 50px
+.blog-articles
+  margin: 36px 18px
+  &__heading h2
+    text-align: center
+    font-weight: 600
+    color: $title-black
+    font-size: 32px
+    font-weight: 400
+  .articles-blog-items-vererenarian
+    margin-top: 30px
+@media only screen and (max-width: 992px)
+  .blog-veterenarian-subheader-background .subheader-blog-vet h1
+    font-size: 44px
+@media only screen and (max-width: 768px)
+  .blog-veterenarian-subheader-background .subheader-blog-vet h1
+    font-size: 34px
+@media only screen and (max-width: 576px)
+  .blog-heading h2
+    font-size: 26px
+  .blog-veterenarian-subheader-background .subheader-blog-vet h1
+    line-height: 50px
+  .blog-share
+  .blog-share__facebook, .blog-share__twitter, .blog-share__messenger, .blog-share__whatsapp
+    span
+      font-size: 12px
+    img
+      width: 30px
+  .blog-share__heading
+    padding: 30px 0 30px 0
+  .blog-share__socials
+    padding: 0 0 30px 0
+  .blog-articles__heading h2
+    font-size: 26px
+
 

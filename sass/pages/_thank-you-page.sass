@@ -1,0 +1,68 @@
+@import "../abstracts/variables"
+@import "../abstracts/mixins"
+
+.thanks
+  &-image
+    text-align: right
+    img
+      transform: scale(-1, 1)
+      max-width: 440px
+      max-height: 620px
+      object-fit: cover
+  &-text
+    display: flex
+    align-items: center
+    text-align: center
+    flex-direction: column
+    justify-content: center
+    height: 100%
+    &__heading 
+      margin-bottom: 24px
+      h2
+        font-size: 36px
+        line-height: 43px
+        font-weight: 400
+    &__helper
+      margin-bottom: 32px
+      width: 60%
+      span
+        font-size: 16px
+        line-height: 24px
+    &__btn
+      padding: 6px 90px 4px 90px
+      &:hover
+        text-decoration: none
+@media only screen and (max-width: 992px)
+  .thanks
+    margin-top: 30px
+    &-image
+      margin-top: 30px
+      text-align: center
+      img
+        width: 300px
+
+@media only screen and (max-width: 768px)
+  .thanks
+    &-text
+      &__heading h2
+        font-size: 30px
+      &__btn
+        padding: 6px 70px 4px 70px
+    &-image
+      img
+        width: 200px
+      
+@media only screen and (max-width: 576px)
+  .thanks
+    &-text
+      &__heading 
+        margin-bottom: 16px
+        h2
+          font-size: 26px
+      &__helper 
+        margin-bottom: 24px
+        width: 100%
+        span
+          font-size: 14px
+      &__btn
+        padding: 6px 40px 4px 40px
