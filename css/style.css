@@ -1365,6 +1365,10 @@ input[type="search"]::-webkit-search-cancel-button {
   align-items: center;
 }
 
+.mission-info__title {
+  margin-bottom: 25px;
+}
+
 .mission-info__text {
   text-align: center;
   line-height: 2.3;
@@ -1425,6 +1429,10 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-top: 70px;
 }
 
+.articles-heading {
+  margin-bottom: 50px;
+}
+
 .articles-btn {
   margin: 30px 0 60px 0;
 }
@@ -1478,6 +1486,10 @@ input[type="search"]::-webkit-search-cancel-button {
   padding: 70px 0 45px 0;
   max-width: 1920px;
   margin: 0 auto;
+}
+
+.testimonials-heading {
+  margin-bottom: 40px;
 }
 
 .testimonials-slider {
