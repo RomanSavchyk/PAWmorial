@@ -3907,7 +3907,7 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 }
 
-.faq-subheader__background {
+.subheader-background {
   background: url(../images/memorial/memorial-subheader-bg.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -3918,6 +3918,18 @@ input[type="search"]::-webkit-search-cancel-button {
   margin: 0 auto;
   position: relative;
   box-shadow: 0 0.6px 11.5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.subheader-background:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 110px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(30, 30, 30, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 2px;
+  z-index: 0;
 }
 
 .faq-heading {
@@ -4052,5 +4064,92 @@ input[type="search"]::-webkit-search-cancel-button {
   .faq-subheader__accordion h2 {
     font-size: 16px;
   }
+}
+
+.articles-blog-items {
+  margin-top: 50px;
+}
+
+.blog-pagination, .blog-pagination-mobile {
+  margin: 50px 0;
+}
+
+.blog-pagination a, .blog-pagination-mobile a {
+  padding: 9px 14px;
+  text-decoration: none;
+  color: #C79C74;
+}
+
+.blog-pagination .page, .blog-pagination-mobile .page {
+  margin: 0 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.blog-pagination .page:hover, .blog-pagination-mobile .page:hover {
+  border: 1px solid #C79C74;
+}
+
+.blog-pagination .page-active, .blog-pagination-mobile .page-active {
+  background: #C79C74;
+  color: #fff;
+}
+
+.blog-pagination .page-arrow-prev, .blog-pagination .page-arrow-next, .blog-pagination-mobile .page-arrow-prev, .blog-pagination-mobile .page-arrow-next {
+  transition: all 0.3s ease;
+}
+
+.blog-pagination .page-arrow-prev:hover, .blog-pagination .page-arrow-next:hover, .blog-pagination-mobile .page-arrow-prev:hover, .blog-pagination-mobile .page-arrow-next:hover {
+  color: #D6B495;
+}
+
+.blog-pagination-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .blog-pagination {
+    display: none;
+  }
+  .blog-pagination-mobile {
+    display: block;
+  }
+}
+
+.blog-veterenarian-subheader-background {
+  height: 460px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-veterenarian-subheader-background:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+  z-index: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.blog-veterenarian-subheader-background .subheader-blog-vet {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-veterenarian-subheader-background .subheader-blog-vet h1 {
+  color: #fff;
+  font-size: 56px;
+  line-height: 67px;
+}
+
+.blog-veterenarian-subheader-background .subheader-blog-vet span {
+  color: #fff;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
