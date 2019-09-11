@@ -132,6 +132,11 @@
             top: -22px
             width: 100%
             background: $login-red
+.memorial-sticky-nav
+  position: sticky
+  top: 89px
+  background: rgba(255,255,255,.9)
+  z-index: 1
 .content-gallery
   margin: 0 auto
   &__item
@@ -541,6 +546,8 @@
           padding: 0
     &-bottom
       display: block
+  .memorial-sticky-nav
+    top: 59px
 @media only screen and (max-width: 768px)
   .subheader
     &-top
@@ -552,6 +559,7 @@
         margin-top: -90px
       &__info
         padding: 0
+
 @media only screen and (max-width: 576px)
   .subheader-top__button_link
     padding: 7px 10px
@@ -570,41 +578,55 @@
   .subheader-top__options_image img
     width: 18px
   .memorial-content__nav
-    flex-direction: column
-    &_link,
-      &:after, &:before
-        content: ''
-        display: block
-        position: absolute
-        top: 9px
-        left: 50%
-        height: 3px
-        width: 0
-        background: transparent
-        transition: width .5s ease, background-color .5s ease, left .5s ease
-      &:before
-        right: 50%
-        background: $login-red
-        left: 80%
-      &:hover:after, &:hover:before
-        width: 20%
-        left: -10px
-        background: $login-red
-      &_active
-        & a
-          color: $login-red
-          &:after
-            display: none
-        &:after, &:before
-          content: ''
-          display: block
-          position: absolute
-          top: 9px
-          left: -10px
-          height: 3px
-          width: 20%
-          background: $login-red
-          transition: width .5s ease, background-color .5s ease, left .5s ease
+    justify-content: space-around
+    &_link
+      margin: 12px 8px
+      height: 24px
+      a
+        font-size: 14px
+        padding: 0
+        &:after
+          top: -15px
+  .memorial-content__nav_link:after
+    top: -15px
+
+
+  // .memorial-content__nav
+  //   flex-direction: column
+  //   &_link,
+  //     &:after, &:before
+  //       content: ''
+  //       display: block
+  //       position: absolute
+  //       top: 9px
+  //       left: 50%
+  //       height: 3px
+  //       width: 0
+  //       background: transparent
+  //       transition: width .5s ease, background-color .5s ease, left .5s ease
+  //     &:before
+  //       right: 50%
+  //       background: $login-red
+  //       left: 80%
+  //     &:hover:after, &:hover:before
+  //       width: 20%
+  //       left: -10px
+  //       background: $login-red
+  //     &_active
+  //       & a
+  //         color: $login-red
+  //         &:after
+  //           display: none
+  //       &:after, &:before
+  //         content: ''
+  //         display: block
+  //         position: absolute
+  //         top: 9px
+  //         left: -10px
+  //         height: 3px
+  //         width: 20%
+  //         background: $login-red
+  //         transition: width .5s ease, background-color .5s ease, left .5s ease
   .jBox-pointer-left, .jBox-pointer-right
       top: 56%!important
   .jB
