@@ -1031,6 +1031,7 @@ input[type="password"] {
   height: 90px;
   display: flex;
   align-items: center;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background: white;
@@ -2530,6 +2531,7 @@ input[type="password"] {
 }
 
 .memorial-sticky-nav {
+  position: -webkit-sticky;
   position: sticky;
   top: 89px;
   background: rgba(255, 255, 255, 0.9);
