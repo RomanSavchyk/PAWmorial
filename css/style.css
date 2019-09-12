@@ -2114,7 +2114,8 @@ input[type="password"] {
     margin-bottom: 50px;
   }
   .modal-login {
-    height: 80%;
+    height: auto;
+    max-height: 100%;
   }
 }
 
