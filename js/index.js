@@ -38,21 +38,21 @@ $(document).ready(function() {
 
   // Login drop down
   $('.loggedIn-user').click(function() {
-    $('.dropdown-content__pet').css('display', 'none')
+    $('.dropdown-content__pet').hide()
     $('.pet-dropdown').css('transform', 'rotate(0)')
     if ($('.dropdown-content__user').css('display') == 'none') {
-      $('.dropdown-content__user').css('display', 'flex')
+      $('.dropdown-content__user').show()
     } else {
-      $('.dropdown-content__user').css('display', 'none')
+      $('.dropdown-content__user').hide()
     }
   })
   $('.loggedIn-pet').click(function() {
-    $('.dropdown-content__user').css('display', 'none')
+    $('.dropdown-content__user').hide()
     if ($('.dropdown-content__pet').css('display') == 'none') {
-      $('.dropdown-content__pet').css('display', 'flex')
+      $('.dropdown-content__pet').show()
       $('.pet-dropdown').css('transform', 'rotate(-90deg)')
     } else {
-      $('.dropdown-content__pet').css('display', 'none')
+      $('.dropdown-content__pet').hide()
       $('.pet-dropdown').css('transform', 'rotate(0)')
     }
   })

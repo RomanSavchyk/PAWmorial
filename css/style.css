@@ -432,6 +432,7 @@ input[type="password"] {
   background: #fff;
   z-index: 200;
   height: 90%;
+  max-height: 100%;
   overflow-y: auto;
   top: 50%;
   left: 50%;
@@ -574,6 +575,7 @@ input[type="password"] {
 .create-memory__right .create-memory__right_datepicker .create-memory__datepicker_arrow {
   position: absolute;
   right: 20px;
+  max-width: 15px;
 }
 
 .create-memory__right .create-memory__right_datepicker input {
@@ -761,6 +763,11 @@ input[type="password"] {
 }
 
 @media only screen and (max-width: 992px) {
+  .modal-create-memory {
+    height: auto;
+    max-height: 100%;
+    margin-top: 10px;
+  }
   .modal-create-memory .close-modal {
     right: 20px;
   }
@@ -802,6 +809,9 @@ input[type="password"] {
 @media only screen and (max-width: 768px) {
   .modal-create-memorial {
     width: 88vw;
+    height: auto;
+    max-height: 100%;
+    margin-top: 10px;
   }
   .modal-create-memorial .close-modal {
     top: 10px;
@@ -1130,6 +1140,7 @@ input[type="password"] {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
+  display: block;
 }
 
 .dropdown-content__pet a:hover, .dropdown-content__user a:hover {

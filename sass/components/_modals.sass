@@ -232,6 +232,7 @@
   background: #fff
   z-index: 200
   height: 90%
+  max-height: 100%
   overflow-y: auto
   top: 50%
   left: 50%
@@ -334,6 +335,7 @@
       .create-memory__datepicker_arrow
         position: absolute
         right: 20px
+        max-width: 15px
       input
         border: 1px solid #DFE2E6
         width: 200px
@@ -471,6 +473,10 @@
   .create-memory__right_type_list li
     margin-top: 9px
 @media only screen and (max-width: 992px)
+  .modal-create-memory
+    height: auto
+    max-height: 100%
+    margin-top: 10px
   .modal-create-memory .close-modal
     right: 20px
   .create-memory__content
@@ -500,6 +506,9 @@
 @media only screen and (max-width: 768px)
   .modal-create-memorial
     width: 88vw
+    height: auto
+    max-height: 100%
+    margin-top: 10px
     .close-modal
       top: 10px
   .create-memorial__content
