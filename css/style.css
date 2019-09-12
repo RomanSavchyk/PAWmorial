@@ -139,7 +139,6 @@ input[type="password"] {
   position: fixed;
   background: #fff;
   z-index: 200;
-  height: 90%;
   overflow-y: auto;
   top: 50%;
   left: 50%;
@@ -148,6 +147,8 @@ input[type="password"] {
   border-radius: 20px;
   width: 76vw;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.35);
+  height: auto;
+  max-height: 100%;
 }
 
 .create-memorial__heading {
@@ -2089,7 +2090,9 @@ input[type="password"] {
     padding-bottom: 10px;
   }
   .modal-login_invited {
-    overflow: scroll;
+    overflow-y: auto;
+    height: auto;
+    max-height: 100%;
   }
 }
 
