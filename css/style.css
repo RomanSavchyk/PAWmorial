@@ -23,10 +23,6 @@
   font-style: normal;
 }
 
-html {
-  overflow: auto;
-}
-
 body {
   font-family: "SFTextRegular", "RobotoRegular", sans-serif;
   font-weight: 400;
@@ -34,8 +30,6 @@ body {
   box-sizing: border-box;
   max-width: 1920px;
   margin: 0 auto;
-  height: auto;
-  overflow: auto;
 }
 
 p, ul, ol, label, h1, h2, h3, h4, h5 {
