@@ -343,11 +343,28 @@ $(document).ready(function() {
   //   });
   // });
 
+  // tooltip and share btn doesn't work on a memory popup
   $('.share-btn, .more-btn').click(function(e){
     e.stopPropagation()
   })
 
+  // Preloader
 
+  $(document).ready(function() {
+    $(window).on("load", function() {
+    preloaderFadeOutTime = 500;
+    function hidePreloader() {
+    var preloader = $('.preloader');
+    preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+    });
+  });
+
+  $('#pet-sex').change(
+    function () {
+    $('#pet-sex').css("background", $("select option:selected").css("background-color"));
+  });
   
 })
 

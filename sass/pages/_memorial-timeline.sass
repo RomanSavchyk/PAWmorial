@@ -25,13 +25,15 @@
     background: #D8D8D8
     display: block
     height: 100%
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
+    top: 0
+    left: calc(50% - 3px)
+
+    
 .timeline-container 
   display: flex
   justify-content: center
   flex-direction: column
+  min-height: 300px
 .timeline-buttons
   position: absolute
   right: 0
@@ -120,8 +122,9 @@
   .timeline-buttons
     width: 100%
     flex-direction: row
-    left: 50%
-    transform: translate(-50%, -200%)
+    left: 0px
+    transform: translate(0px)
+    top: -105px
     justify-content: center
     &__play
       margin: 0 30px 0 0
@@ -141,8 +144,10 @@
           left: unset
 @media only screen and (max-width: 576px)
   .timeline-centered
-    &:before, &:after
+    &:before
       left: 6%
+    &:after
+      left: calc(6% - 3px)
   .timeline-item:nth-child(odd), .timeline-item:nth-child(even),
     flex-direction: column-reverse
     align-items: center
