@@ -4608,14 +4608,14 @@ input[type="password"] {
   margin-bottom: 30px;
 }
 
-.blog-veterenarian-subheader-background {
+.blog-single-subheader-background {
   height: 460px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.blog-veterenarian-subheader-background:before {
+.blog-single-subheader-background:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -4627,14 +4627,14 @@ input[type="password"] {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
-.blog-veterenarian-subheader-background .subheader-blog-vet {
+.blog-single-subheader-background .subheader-blog-single {
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.blog-veterenarian-subheader-background .subheader-blog-vet h1 {
+.blog-single-subheader-background .subheader-blog-single h1 {
   font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   color: #fff;
   font-size: 56px;
@@ -4644,12 +4644,12 @@ input[type="password"] {
   font-weight: 400;
 }
 
-.blog-veterenarian-subheader-background .subheader-blog-vet span {
+.blog-single-subheader-background .subheader-blog-single span {
   color: #fff;
   text-transform: uppercase;
 }
 
-.subheader-blog-vet__image {
+.subheader-blog-single__image {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4659,14 +4659,14 @@ input[type="password"] {
   z-index: 2;
 }
 
-.subheader-blog-vet__image span {
+.subheader-blog-single__image span {
   color: #fff;
   font-size: 16px;
   line-height: 19px;
   padding-bottom: 10px;
 }
 
-.subheader-blog-vet__image img {
+.subheader-blog-single__image img {
   width: 160px;
   height: 160px;
   border-radius: 50%;
@@ -4799,7 +4799,7 @@ progress::-moz-progress-bar {
 }
 
 @media only screen and (max-width: 992px) {
-  .blog-veterenarian-subheader-background .subheader-blog-vet h1 {
+  .blog-single-subheader-background .subheader-blog-single h1 {
     font-size: 44px;
   }
   progress {
@@ -4808,7 +4808,7 @@ progress::-moz-progress-bar {
 }
 
 @media only screen and (max-width: 768px) {
-  .blog-veterenarian-subheader-background .subheader-blog-vet h1 {
+  .blog-single-subheader-background .subheader-blog-single h1 {
     font-size: 34px;
   }
 }
@@ -4817,7 +4817,7 @@ progress::-moz-progress-bar {
   .blog-heading h2 {
     font-size: 26px;
   }
-  .blog-veterenarian-subheader-background .subheader-blog-vet h1 {
+  .blog-single-subheader-background .subheader-blog-single h1 {
     line-height: 50px;
   }
   .blog-share__facebook span, .blog-share__twitter span, .blog-share__messenger span, .blog-share__whatsapp span {
