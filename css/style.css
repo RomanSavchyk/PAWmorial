@@ -5,6 +5,18 @@
 }
 
 @font-face {
+  font-family: "SFTextRegularItalic";
+  font-weight: 400;
+  src: url("../fonts/SF-Pro-Text-RegularItalic.otf");
+}
+
+@font-face {
+  font-family: "SFTextMedium";
+  font-weight: 500;
+  src: url("../fonts/SF-Pro-Text-Medium.otf");
+}
+
+@font-face {
   font-family: "SFTextSemibold";
   font-weight: 600;
   src: url("../fonts/SF-Pro-Text-Semibold.otf");
@@ -19,6 +31,20 @@
 @font-face {
   font-family: 'RobotoRegular';
   src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -59,6 +85,7 @@ input[type="password"] {
 }
 
 .main-page-heading {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   text-align: center;
   font-size: 45px;
   font-weight: 400;
@@ -68,7 +95,7 @@ input[type="password"] {
 .btn {
   border: none;
   background: #D6B495;
-  font-family: "SFTextRegular", sans-serif;
+  font-family: 'SFTextBold', 'RobotoBold', sans-serif;
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
@@ -93,6 +120,7 @@ input[type="password"] {
   border: 2px solid #CD233E;
   transition: all 0.3s ease;
   outline: none;
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
 }
 
 .red-btn:hover {
@@ -106,7 +134,7 @@ input[type="password"] {
   color: #D6B495;
   background: #fff;
   text-transform: uppercase;
-  font-family: "SFTextRegular", sans-serif;
+  font-family: 'SFTextBold', 'RobotoBold', sans-serif;
   font-weight: 400;
   font-size: 18px;
   transition: all 0.3s ease;
@@ -159,6 +187,7 @@ input[type="password"] {
 }
 
 .create-memorial__heading h2 {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   margin: 0;
   color: #4C4C51;
   font-size: 32px;
@@ -176,12 +205,14 @@ input[type="password"] {
 }
 
 .create-memorial__left_heading {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   color: #4C4C51;
   font-size: 22px;
   padding-bottom: 15px;
 }
 
 .create-memorial__left_name input {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   width: 100%;
   padding-left: 20px;
   height: 45px;
@@ -194,6 +225,7 @@ input[type="password"] {
 }
 
 .create-memorial__left_pickers_birth .date-of-birth, .create-memorial__left_pickers_birth .place-of-birth, .create-memorial__left_pickers_birth .date-of-passing-away, .create-memorial__left_pickers_birth .place-of-passing-away, .create-memorial__left_pickers_passed .date-of-birth, .create-memorial__left_pickers_passed .place-of-birth, .create-memorial__left_pickers_passed .date-of-passing-away, .create-memorial__left_pickers_passed .place-of-passing-away {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -207,6 +239,7 @@ input[type="password"] {
 }
 
 .create-memorial__left_pickers_birth .date-of-birth input, .create-memorial__left_pickers_birth .place-of-birth input, .create-memorial__left_pickers_birth .date-of-passing-away input, .create-memorial__left_pickers_birth .place-of-passing-away input, .create-memorial__left_pickers_passed .date-of-birth input, .create-memorial__left_pickers_passed .place-of-birth input, .create-memorial__left_pickers_passed .date-of-passing-away input, .create-memorial__left_pickers_passed .place-of-passing-away input {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   height: 45px;
   border-radius: 5px;
   border: 1px solid #b7b7b7;
@@ -238,6 +271,7 @@ input[type="password"] {
 }
 
 .create-memorial__left_checkbox label {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   margin-left: 45px;
 }
 
@@ -275,6 +309,7 @@ input[type="password"] {
 }
 
 .create-memorial__right_heading {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   color: #4C4C51;
   font-size: 22px;
   padding-bottom: 15px;
@@ -305,6 +340,7 @@ input[type="password"] {
 }
 
 .create-memorial__right .background-photo__inner_upload {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -335,6 +371,7 @@ input[type="password"] {
 }
 
 .create-memorial__right .profile-photo__inner {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   width: 85%;
   height: 85%;
   display: flex;
@@ -372,6 +409,7 @@ input[type="password"] {
 }
 
 .create-memorial__right_settings {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   margin-top: 85px;
   font-size: 22px;
 }
@@ -382,6 +420,7 @@ input[type="password"] {
 }
 
 .create-memorial__right_checkbox label {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   margin-left: 35px;
 }
 
@@ -477,6 +516,7 @@ input[type="password"] {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
 }
 
 .create-memory__image_inner {
@@ -485,6 +525,7 @@ input[type="password"] {
   border: 3px dashed #fff;
   border-radius: 10px;
   margin-top: 20px;
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
 }
 
 .create-memory__image_inner_upload {
@@ -530,6 +571,7 @@ input[type="password"] {
 
 .create-memory__right form {
   padding: 20px 40px 20px 0;
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
 }
 
 .create-memory__right form input, .create-memory__right form textarea {
@@ -1055,6 +1097,7 @@ input[type="password"] {
 }
 
 .header-nav li a {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   color: #58585D;
   font-size: 18px;
   text-decoration: none;
@@ -1132,6 +1175,7 @@ input[type="password"] {
 }
 
 .dropdown-content__pet a, .dropdown-content__user a {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   padding: 7px 20px;
   font-size: 17px;
   color: #CD233E;
@@ -1185,6 +1229,7 @@ input[type="password"] {
 }
 
 .user-name {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   max-width: 70px;
   white-space: nowrap;
   overflow: hidden;
@@ -1201,6 +1246,7 @@ input[type="password"] {
 }
 
 .pet-name {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   max-width: 60px;
   white-space: nowrap;
   overflow: hidden;
@@ -1303,6 +1349,7 @@ input[type="password"] {
 .login-btn {
   background: #fff;
   color: #e42947;
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   font-weight: 400;
   font-size: 18px;
   border-radius: 5px;
@@ -1318,6 +1365,9 @@ input[type="password"] {
 
 #home {
   margin-top: 20px;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
 }
 
 .main-about {
@@ -1329,6 +1379,7 @@ input[type="password"] {
 
 .main-about__title {
   color: #4C4C51;
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   text-align: center;
   font-size: 30px;
   font-weight: 400;
@@ -1336,6 +1387,7 @@ input[type="password"] {
 }
 
 .main-about__subtitle {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   margin-top: 18px;
   font-weight: 400;
   opacity: .9;
@@ -1374,7 +1426,7 @@ input[type="password"] {
 }
 
 .mission {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .mission-info {
@@ -1395,6 +1447,7 @@ input[type="password"] {
 }
 
 .mission-info__tldr {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   text-align: center;
   font-size: 17px;
   width: 70%;
@@ -1521,6 +1574,7 @@ input[type="password"] {
 }
 
 .slider-item__info_author {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   text-align: right;
   color: #D6B495;
   padding-right: 30px;
@@ -1606,6 +1660,7 @@ input[type="password"] {
 }
 
 .home-quote__text {
+  font-family: 'SFTextRegularItalic', 'RobotoRegular', sans-serif;
   text-align: center;
   font-size: 25px;
   font-weight: 400;
@@ -1613,6 +1668,7 @@ input[type="password"] {
 }
 
 .home-quote__author {
+  font-family: 'SFTextRegularItalic', 'RobotoRegular', sans-serif;
   margin-top: 20px;
   font-size: 25px;
   font-weight: 400;
@@ -1632,7 +1688,12 @@ input[type="password"] {
   padding-top: 10px;
 }
 
+.footer-logo__text span {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
+}
+
 .footer-memorials__heading h4, .footer-about__heading h4, .footer-join__heading h4 {
+  font-family: 'SFTextBold', 'RobotoBold', sans-serif;
   color: #D6B495;
   font-weight: 500;
   text-transform: uppercase;
@@ -1724,6 +1785,7 @@ input[type="password"] {
 .form-heading__title {
   font-size: 22px;
   color: #4C4C51;
+  font-family: 'SFTextBold', 'RobotoBold', sans-serif;
 }
 
 .modal-login__content {
@@ -1734,6 +1796,7 @@ input[type="password"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10px;
 }
 
 .login-form__container {
@@ -1746,6 +1809,7 @@ input[type="password"] {
 }
 
 .login-email, .login-password, .login-email__invalid, .login-password__invalid {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   width: 100%;
   text-align: center;
   position: relative;
@@ -1759,6 +1823,7 @@ input[type="password"] {
   border-radius: 5px;
   border: 1px solid #dfe2e6;
   color: #4C4C51;
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
 }
 
 .login-email input::placeholder, .login-password input::placeholder, .login-email__invalid input::placeholder, .login-password__invalid input::placeholder {
@@ -1771,6 +1836,7 @@ input[type="password"] {
 }
 
 .login-email__label, .login-password__label, .login-email__label_invalid, .login-password__label_invalid {
+  font-family: 'SFTextBold', 'RobotoBold', sans-serif;
   position: absolute;
   top: -11px;
   left: 32px;
@@ -1957,6 +2023,7 @@ input[type="password"] {
 }
 
 .login-invited__header_text p {
+  font-family: 'SFTextBold', 'RobotoBold', sans-serif;
   margin: 0;
   margin: 10px auto;
   width: 80%;
@@ -2166,8 +2233,8 @@ input[type="password"] {
     display: block;
     margin: 0 auto;
     width: auto;
-    height: 150px;
-    max-height: 150px;
+    height: 190px;
+    max-height: 190px;
   }
   .slider-item {
     flex-direction: column;
@@ -2289,7 +2356,7 @@ input[type="password"] {
 }
 
 .story-heading {
-  margin-top: 70px;
+  margin: 70px 10px;
 }
 
 .story-info img {
@@ -2306,6 +2373,10 @@ input[type="password"] {
   font-weight: 400;
   color: #4C4C51;
   padding-bottom: 25px;
+}
+
+.story span {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
 }
 
 .story__image {
@@ -2345,6 +2416,12 @@ input[type="password"] {
   }
 }
 
+@media only screen and (max-width: 576px) {
+  .story-heading {
+    margin: 40px 10px;
+  }
+}
+
 .subheader {
   width: 100%;
   flex-direction: column;
@@ -2381,6 +2458,7 @@ input[type="password"] {
 }
 
 .subheader-top__title h2 {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   color: #fff;
   font-size: 56px;
   font-weight: 400;
@@ -2426,6 +2504,7 @@ input[type="password"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
 }
 
 .subheader-top__options_edit {
@@ -2456,6 +2535,7 @@ input[type="password"] {
 }
 
 .subheader-bottom__info_subtitle {
+  font-family: "SFTextMedium", 'RobotoMedium', sans-serif;
   font-size: 22px;
 }
 
@@ -2517,6 +2597,7 @@ input[type="password"] {
 }
 
 .memorial-content__nav_link_active a {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   color: #CD233E;
 }
 
@@ -2548,6 +2629,7 @@ input[type="password"] {
 }
 
 .content-gallery__item_title {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   padding: 10px 30px 0 0;
   position: relative;
   overflow: hidden;
@@ -2656,6 +2738,7 @@ input[type="password"] {
 }
 
 .jB-header {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   height: 70px;
   background: #e6e5e5;
   display: flex;
@@ -2699,6 +2782,7 @@ input[type="password"] {
 }
 
 .jB-invite__text {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   font-size: 16px;
   margin-top: 5px;
 }
@@ -2710,6 +2794,7 @@ input[type="password"] {
   border-radius: 5px;
   border: 1px solid #D8D8D8;
   padding-left: 20px;
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
 }
 
 .jB-invite__btn {
@@ -2754,9 +2839,14 @@ input[type="password"] {
 .memorial-new {
   display: flex;
   flex-direction: column;
-  height: 400px;
   justify-content: flex-end;
   padding-bottom: 50px;
+  align-items: center;
+}
+
+.memorial-new__image {
+  margin: 30px 0;
+  opacity: 0.3;
 }
 
 .memorial-new__text {
@@ -2765,6 +2855,7 @@ input[type="password"] {
 }
 
 .memorial-new__text p {
+  font-family: 'SFTextRegular', 'RobotoRegular', sans-serif;
   font-size: 32px;
 }
 
@@ -2889,12 +2980,14 @@ input[type="password"] {
 }
 
 .memory-popup__heading_name_pet span {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   color: #CD233E;
   padding-left: 20px;
 }
 
 .memory-popup__title {
   padding: 40px 30px;
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
 }
 
 .memory-popup__title_text {
@@ -2921,7 +3014,7 @@ input[type="password"] {
 
 .memory-popup__comment_data .comment-author {
   padding-right: 10px;
-  color: rgba(76, 76, 81, 0.5);
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
 }
 
 .memory-popup__comment_data .comment-text {
@@ -2971,6 +3064,7 @@ input[type="password"] {
 }
 
 .memory-popup__options_like span {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   color: #4C4C51;
 }
 
@@ -3246,6 +3340,9 @@ input[type="password"] {
   .memorial-content__nav_link:after {
     top: -15px;
   }
+  .memorial-new__image img {
+    width: 200px;
+  }
   .jBox-pointer-left, .jBox-pointer-right {
     top: 56% !important;
   }
@@ -3378,6 +3475,7 @@ input[type="password"] {
 
 .about-memorial__section_heading_title {
   background: rgba(214, 180, 149, 0.5);
+  font-family: 'SFTextBold', 'RobotoBold', sans-serif;
   width: 100%;
   color: #ffffff;
   padding: 15px 28px;
@@ -3401,6 +3499,10 @@ input[type="password"] {
   padding-left: 20px;
 }
 
+.about-memorial__section_content label {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
+}
+
 .about-memorial__section_content input, .about-memorial__section_content select {
   height: 45px;
   padding: 0 5px 0 20px;
@@ -3408,10 +3510,12 @@ input[type="password"] {
   box-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   color: #4C4C51;
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
 }
 
 .about-memorial__section_content input::placeholder, .about-memorial__section_content select::placeholder {
   color: rgba(76, 76, 81, 0.5);
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
 }
 
 .about-memorial__section_content input::outline, .about-memorial__section_content select::outline {
@@ -3461,6 +3565,7 @@ input[type="password"] {
 }
 
 .about-memorial__section_content .section-description__textarea textarea {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   width: 100%;
   height: 220px;
   border: solid 1px #dfe2e6;
@@ -3473,6 +3578,7 @@ input[type="password"] {
 
 .about-memorial__section_content .section-description__textarea textarea::placeholder {
   color: rgba(76, 76, 81, 0.5);
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
 }
 
 .about-memorial__section_content .section-information {
@@ -3614,7 +3720,7 @@ input[type="password"] {
 }
 
 .about-memorial__section_content .section-health__clinic label, .about-memorial__section_content .section-health__veterinarian label {
-  width: 120px;
+  width: 140px;
 }
 
 .about-memorial__section_content .section-health__clinic input, .about-memorial__section_content .section-health__veterinarian input {
@@ -3637,7 +3743,7 @@ input[type="password"] {
 }
 
 .about-memorial__section_content .section-data__meal label, .about-memorial__section_content .section-data__person label, .about-memorial__section_content .section-data__pastime label, .about-memorial__section_content .section-data__nickname label {
-  width: 200px;
+  width: 230px;
 }
 
 .about-memorial__section_content .section-data__meal input, .about-memorial__section_content .section-data__person input, .about-memorial__section_content .section-data__pastime input, .about-memorial__section_content .section-data__nickname input {
@@ -3652,6 +3758,7 @@ input[type="password"] {
 
 .about-memorial__section_content .section-save__title {
   padding-bottom: 25px;
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
 }
 
 .about-memorial__section_content .section-save__input {
@@ -3889,6 +3996,7 @@ input[type="password"] {
 }
 
 .timeline-buttons__play span, .timeline-buttons__add span {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   text-transform: uppercase;
@@ -3955,6 +4063,7 @@ input[type="password"] {
 }
 
 .timeline-item .timeline-item__date span {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   font-size: 14px;
 }
 
@@ -4044,6 +4153,7 @@ input[type="password"] {
 }
 
 .profile-heading h2 {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   font-size: 48px;
   font-weight: 400;
   color: #4C4C51;
@@ -4120,6 +4230,7 @@ input[type="password"] {
 .profile-info .profile-info__left_email label,
 .profile-info .profile-info__right_lastname label,
 .profile-info .profile-info__right_phone label {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   color: rgba(76, 76, 81, 0.5);
   font-size: 18px;
 }
@@ -4129,6 +4240,7 @@ input[type="password"] {
 .profile-info .profile-info__left_email input,
 .profile-info .profile-info__right_lastname input,
 .profile-info .profile-info__right_phone input {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   height: 45px;
   border: none;
   border-bottom: 1px solid #dfe2e6;
@@ -4289,6 +4401,7 @@ input[type="password"] {
 }
 
 .faq-subheader__accordion h2 {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   font-size: 22px;
   color: #4C4C51;
   font-weight: 400;
@@ -4408,6 +4521,7 @@ input[type="password"] {
 }
 
 .blog-pagination .page, .blog-pagination-mobile .page {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   margin: 0 5px;
   border-radius: 5px;
   border: 1px solid transparent;
@@ -4449,6 +4563,7 @@ input[type="password"] {
 }
 
 .blog-heading h2 {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   font-size: 32px;
   line-height: 38px;
   font-weight: 400;
@@ -4483,7 +4598,7 @@ input[type="password"] {
 
 .blog-quote p {
   text-align: center;
-  font-style: italic;
+  font-family: 'SFTextRegularItalic', 'RobotoRegular', sans-serif;
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 36px;
@@ -4520,6 +4635,7 @@ input[type="password"] {
 }
 
 .blog-veterenarian-subheader-background .subheader-blog-vet h1 {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   color: #fff;
   font-size: 56px;
   line-height: 67px;
@@ -4607,6 +4723,7 @@ input[type="password"] {
 }
 
 .blog-share__heading {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   font-size: 24px;
   line-height: 30px;
   text-align: center;
@@ -4642,6 +4759,7 @@ input[type="password"] {
 }
 
 .blog-articles__heading h2 {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   text-align: center;
   font-weight: 600;
   color: #4C4C51;
@@ -4744,6 +4862,7 @@ progress::-moz-progress-bar {
 }
 
 .thanks-text__heading h2 {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   font-size: 36px;
   line-height: 43px;
   font-weight: 400;
@@ -4833,6 +4952,7 @@ progress::-moz-progress-bar {
 }
 
 .not-found-text__404 {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   font-size: 80px;
   color: #C79C74;
   margin-bottom: 60px;
@@ -4843,6 +4963,7 @@ progress::-moz-progress-bar {
 }
 
 .not-found-text__heading h2 {
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   font-size: 36px;
   line-height: 43px;
   font-weight: 400;

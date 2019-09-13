@@ -29,6 +29,7 @@
     &__title 
       text-align: center
       & h2
+        font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
         color: #fff
         font-size: 56px
         font-weight: 400
@@ -62,6 +63,7 @@
         display: flex
         justify-content: center
         align-items: center
+        font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
       &_edit
         margin-right: 30px
       &_image
@@ -79,6 +81,7 @@
       &_date
         font-size: 16px
       &_subtitle
+        font-family: "SFTextMedium", 'RobotoMedium', sans-serif
         font-size: 22px
       &_description
         font-size: 18px
@@ -123,6 +126,7 @@
         background: $login-red
       &_active
         & a
+          font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
           color: $login-red
           &:after
             content: ''
@@ -144,6 +148,7 @@
     width: 262px
     padding: 10px
     &_title
+      font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
       padding: 10px 30px 0 0
       position: relative
       overflow: hidden
@@ -227,6 +232,7 @@
     cursor: pointer
     z-index: 20
   &-header
+    font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
     height: 70px
     background: #e6e5e5
     display: flex
@@ -258,6 +264,7 @@
   &-invite
     padding: 0 25px
     &__text
+      font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
       font-size: 16px
       margin-top: 5px
     &__email
@@ -267,6 +274,7 @@
       border-radius: 5px
       border: 1px solid #D8D8D8
       padding-left: 20px
+      font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
     &__btn
       height: 50px
       width: 100%
@@ -296,13 +304,17 @@
 .memorial-new
   display: flex
   flex-direction: column
-  height: 400px
   justify-content: flex-end
   padding-bottom: 50px
+  align-items: center
+  &__image
+    margin: 30px 0
+    opacity: 0.3
   &__text
     margin-bottom: 20px
     letter-spacing: 0
     & p
+      font-family: 'SFTextRegular', 'RobotoRegular', sans-serif
       font-size: 32px
   &__button
     margin: 0 auto
@@ -395,10 +407,12 @@
           object-fit: cover
       &_pet
         span
+          font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
           color: $login-red
           padding-left: 20px
   &__title
     padding: 40px 30px
+    font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
     &_text
       font-size: 22px
     &_hashtag
@@ -413,7 +427,7 @@
       display: flex
       .comment-author
         padding-right: 10px
-        @include regular-opacity
+        font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
       .comment-text
         color: $title-black
     &_info
@@ -446,6 +460,7 @@
       & img
         padding-right: 10px
       & span
+        font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
         color: $title-black
     &_share
       width: 15%
@@ -654,6 +669,9 @@
           top: -15px
   .memorial-content__nav_link:after
     top: -15px
+  .memorial-new__image
+    img
+      width: 200px
 
 
   // .memorial-content__nav

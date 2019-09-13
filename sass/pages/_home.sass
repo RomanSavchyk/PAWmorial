@@ -24,6 +24,7 @@
     & li
       margin: 0 26px
       & a
+        font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
         color: $regular-black
         font-size: 18px
         text-decoration: none
@@ -81,6 +82,7 @@
   top: 50px
   border-radius: 20px
   & a
+    font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
     padding: 7px 20px
     font-size: 17px
     color: $login-red
@@ -116,6 +118,7 @@
 .dropdown-content__pet_active, .dropdown-content__user_active
   display: flex
 .user-name
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
   max-width: 70px
   white-space: nowrap
   overflow: hidden
@@ -128,6 +131,7 @@
   position: absolute
   right: 17px
 .pet-name
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
   max-width: 60px
   white-space: nowrap
   overflow: hidden
@@ -211,6 +215,7 @@
 .login-btn
   background: #fff
   color: #e42947
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
   font-weight: 400
   font-size: 18px
   border-radius: 5px
@@ -224,6 +229,9 @@
 // Home Section
 #home
   margin-top: 20px
+  min-height: 60vh
+  display: flex
+  align-items: center
 .main-about
   display: flex
   flex-direction: column
@@ -231,11 +239,13 @@
   justify-content: center
   &__title
     color: $title-black
+    font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
     text-align: center
     font-size: 30px
     font-weight: 400
     width: 80%
   &__subtitle
+    font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
     margin-top: 18px
     font-weight: 400
     opacity: .9
@@ -262,7 +272,7 @@
   height: 2px
 // Mission section
 .mission
-  margin-top: 80px
+  margin-top: 60px
   &-info
     display: flex
     flex-direction: column
@@ -275,6 +285,7 @@
       line-height: 2.3
       font-size: 17px
     &__tldr
+      font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
       text-align: center
       font-size: 17px
       width: 70%
@@ -369,6 +380,7 @@
     padding: 0 40px
     width: 100%
     &_author
+      font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
       text-align: right
       color: $button-brown
       padding-right: 30px
@@ -439,11 +451,13 @@
     flex-direction: column
     align-items: center
   &__text
+    font-family: 'SFTextRegularItalic', 'RobotoRegular', sans-serif
     text-align: center
     font-size: 25px
     font-weight: 400
     z-index: 1
   &__author
+    font-family: 'SFTextRegularItalic', 'RobotoRegular', sans-serif
     margin-top: 20px
     font-size: 25px
     font-weight: 400  
@@ -457,7 +471,10 @@
   &-logo
     &__text
       padding-top: 10px
+      span
+        font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
   &-memorials__heading h4, &-about__heading h4, &-join__heading h4
+    font-family: 'SFTextBold', 'RobotoBold', sans-serif
     color: $button-brown
     font-weight: 500
     text-transform: uppercase
@@ -524,18 +541,21 @@
   &__title
     font-size: 22px 
     color: $title-black
+    font-family: 'SFTextBold', 'RobotoBold', sans-serif
 .modal-login__content
   width: 100%
 .login-form
   display: flex
   flex-direction: column
   align-items: center
+  margin-top: 10px
   &__container
     width: 350px
     margin: 0 auto
   &__inputs
     width: 100%
 .login-email, .login-password, .login-email__invalid, .login-password__invalid
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
   width: 100%
   text-align: center
   position: relative
@@ -547,6 +567,7 @@
     border-radius: 5px
     border: 1px solid #dfe2e6
     color: $title-black
+    font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
     &::placeholder
       color: #DFE2E6
       font-size: 14px
@@ -554,6 +575,7 @@
   & input
     border: 1px solid #CD233E
 .login-email__label, .login-password__label, .login-email__label_invalid, .login-password__label_invalid
+  font-family: 'SFTextBold', 'RobotoBold', sans-serif
   position: absolute
   top: -11px
   left: 32px
@@ -678,6 +700,7 @@
     font-size: 20px
     text-align: center
     & p
+      font-family: 'SFTextBold', 'RobotoBold', sans-serif
       margin: 0
       margin: 10px auto
       width: 80%
@@ -834,8 +857,8 @@
         display: block
         margin: 0 auto
         width: auto
-        height: 150px
-        max-height: 150px
+        height: 190px
+        max-height: 190px
   .slider-item
     flex-direction: column
     &__info
