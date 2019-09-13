@@ -350,23 +350,65 @@ $(document).ready(function() {
 
   // Preloader
 
-  $(document).ready(function() {
-    $(window).on("load", function() {
-    preloaderFadeOutTime = 500;
-    function hidePreloader() {
-    var preloader = $('.preloader');
-    preloader.fadeOut(preloaderFadeOutTime);
-    }
-    hidePreloader();
-    });
-  });
+  // $(document).ready(function() {
+  //   $(window).on("load", function() {
+  //   preloaderFadeOutTime = 500;
+  //   function hidePreloader() {
+  //   var preloader = $('.preloader');
+  //   preloader.fadeOut(preloaderFadeOutTime);
+  //   }
+  //   hidePreloader();
+  //   });
+  // }); 
+  var getMax = function(){
+    return $(document).height() - $(window).height() - $('.blog-share').height() - $('.blog-articles').height() - $('.footer').height()
+  }
+    
+  var getValue = function(){
+    return $(window).scrollTop();
+  }
+    
+  if ('max' in document.createElement('progress')) {
+    // Browser supports progress element
+    var progressBar = $('progress');
+        
+    // Set the Max attr for the first time
+    progressBar.attr({ max: getMax() });
 
-  // $(function() {
-  //   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-  //   var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-  //   $("html").css({"width":w,"height":h});
-  //   $("body").css({"width":w,"height":h});
-  // });
+    $(document).on('scroll', function(){
+      // On scroll only Value attr needs to be calculated
+      progressBar.attr({ value: getValue() });
+    });
+      
+    $(window).resize(function(){
+      // On resize, both Max/Value attr needs to be calculated
+      progressBar.attr({ max: getMax(), value: getValue() });
+    }); 
   
+  } else {
+
+      var progressBar = $('.progress-bar'), 
+          max = getMax(), 
+          value, width;
+          
+      var getWidth = function() {
+        // Calculate width in percentage
+        value = getValue();            
+        width = (value/max) * 100;
+        width = width + '%';
+        return width;
+      }
+          
+      var setWidth = function(){
+        progressBar.css({ width: getWidth() });
+      }
+          
+      $(document).on('scroll', setWidth);
+      $(window).on('resize', function(){
+        // Need to reset the Max attr
+        max = getMax();
+        setWidth();
+      });
+    }
 })
 

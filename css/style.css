@@ -4653,9 +4653,39 @@ input[type="password"] {
   margin-top: 30px;
 }
 
+progress {
+  position: fixed;
+  left: 0;
+  top: 90px;
+  width: 100%;
+  height: 5px;
+  -webkit-appearance: none;
+  -webkit-appearance--moz-appearance: none;
+  -webkit-appearance--moz-appearance-appearance: none;
+  border: none;
+  background-color: transparent;
+  color: #CD233E;
+  z-index: 1;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+  background-color: #CD233E;
+}
+
+progress::-moz-progress-bar {
+  background-color: #CD233E;
+}
+
 @media only screen and (max-width: 992px) {
   .blog-veterenarian-subheader-background .subheader-blog-vet h1 {
     font-size: 44px;
+  }
+  progress {
+    top: 60px;
   }
 }
 
