@@ -1,39 +1,43 @@
 @import "../abstracts/variables"
 @import "../abstracts/mixins"
 
-.blog-heading
+.blog-content__item
   margin-bottom: 12px
-  text-align: center
-  h2
+  & h2
     font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
     font-size: 32px
     line-height: 38px
     font-weight: 400
     color: $title-black
-.blog-text
-  margin-bottom: 36px
-.blog-image
-  margin-bottom: 36px
-  img
+    text-align: center
+    margin-bottom: 12px
+  & p
+    margin-bottom: 36px
+  & img
+    margin-bottom: 36px
     width: 100%
     max-height: 550px
     object-fit: cover
     border-radius: 5px
-.blog-quote
-  display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: center
-  svg
-    margin-bottom: 10px
-  p
+  & ul, ol
+    margin-bottom: 36px
+  & ul p, ol p
+    margin: 0
+  & blockquote
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
     text-align: center
     font-family: 'SFTextRegularItalic', 'RobotoRegular', sans-serif
     font-size: 20px
     line-height: 30px
     margin-bottom: 36px
+    img
+      width: 66px
+      margin-bottom: 10px
 .subheader-blog
-  margin-bottom: 30px
+  margin-bottom: 40px
 .blog-single-subheader-background
   height: 460px
   display: flex
