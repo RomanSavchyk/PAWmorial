@@ -1748,12 +1748,12 @@ input[type="password"] {
   color: #D6B495;
 }
 
-.copy {
+.copyright {
   background: #f9f4ef;
-  margin-top: 22px;
+  margin-top: 20px;
 }
 
-.copy-text {
+.copyright-text {
   font-size: 12px;
   color: #58585D;
   margin: 0;
