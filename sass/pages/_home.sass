@@ -490,22 +490,24 @@
     padding-bottom: 10px
   &-join__input 
     padding-top: 10px
-    & input
-      border: 1px solid #DFE2E6
-      border-radius: 3px
-      width: 210px
-      height: 50px
-      padding-left: 15px
-      margin-right: 10px
-    &_btn
-      font-weight: 400
-      text-transform: none
-      padding: 9px 30px 7px 30px
-      border-radius: 8px
-      &:hover
-        background: #ffffff
-        color: $button-brown
-.copyright
+    & form
+      & .footer-email
+        border: 1px solid #DFE2E6
+        border-radius: 3px
+        width: 210px
+        height: 50px
+        padding-left: 15px
+        margin-right: 10px
+      & .footer-submit
+        font-weight: 400
+        text-transform: none
+        padding: 9px 30px 7px 30px
+        border-radius: 8px
+        border: 2px solid #D6B495
+        &:hover
+          background: #ffffff
+          color: $button-brown
+.copy
   background: #f9f4ef
   margin-top: 20px
   &-text
@@ -889,9 +891,10 @@
   .footer-join__input
     display: flex
     flex-direction: column
-    & input
-      width: 100%
-      margin-bottom: 20px
+    & form
+      & .footer-email, .footer-submit
+        width: 100%
+        margin-bottom: 20px
   .modal-login, .modal-login_invited
     width: 88vw
   .login-form__container

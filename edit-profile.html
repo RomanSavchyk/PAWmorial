@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="css/magnific-popup.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Pawmorial</title>
-		<link rel="shortcut icon" type="image/ico" href="images/favicon/pawprint.ico">
+		<link rel="shortcut icon" type="image/ico" href="images/favicon/pawprint.ico" />
 	</head>
 	<body>
 		<header class="header">
@@ -86,39 +86,36 @@
 					</div>
 				</div>
 				<div class="row">
-					<form action="" class="profile-info">
+					<form action="" class="profile-info" id="edit-profile-data">
 						<div class="profile-info__left">
 							<div class="profile-info__left_firstname">
 								<label for="profile-first-name">First Name</label>
-								<input type="search" name="first name" id="profile-first-name" />
+								<input type="text" name="first name" id="profile-first-name" />
 							</div>
 							<div class="profile-info__left_location">
 								<label for="profile-location">Location</label>
-								<input type="search" name="location" id="profile-location" />
+								<input type="text" name="location" id="profile-location" />
 							</div>
 							<div class="profile-info__left_email">
 								<label for="profile-email">Email</label>
-								<input type="search" name="email" id="profile-email" />
+								<input type="email" name="email" id="profile-email" />
 							</div>
 						</div>
 						<div class="profile-info__right">
 							<div class="profile-info__right_lastname">
 								<label for="profile-last-name">Last Name</label>
-								<input type="search" name="last name" id="profile-last-name" />
+								<input type="text" name="last name" id="profile-last-name" />
 							</div>
 							<div class="profile-info__right_phone">
 								<label for="profile-phone">Phone</label>
-								<input type="search" name="phone" id="profile-phone" />
-								<!-- <button class="profile-info__clear-btn">
-									<img src="./images/vektor/close-black-icon.svg" alt="clear">
-								</button> -->
+								<input type="tel" name="phone" id="profile-phone" />
 							</div>
 						</div>
 					</form>
 				</div>
 				<div class="row d-flex justify-content-center align-items-center">
 					<div class="profile-save">
-						<button class="red-btn profile-save__btn">Save changes</button>
+						<input class="red-btn profile-save__btn" form="edit-profile-data" type="submit" value="Save changes" />
 					</div>
 				</div>
 			</div>
@@ -164,8 +161,10 @@
 							<h4>Join our community</h4>
 						</div>
 						<div class="footer-join__input">
-							<input type="email" name="email" placeholder="Type your email" />
-							<button class="btn footer-join__input_btn">Sign Up</button>
+							<form action="">
+								<input type="email" class="footer-email" name="subscribe-email" placeholder="Type your email" />
+								<input type="submit" class="btn footer-submit" value="Sign Up" />
+							</form>
 						</div>
 					</div>
 				</div>

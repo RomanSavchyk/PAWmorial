@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="css/magnific-popup.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Pawmorial</title>
-		<link rel="shortcut icon" type="image/ico" href="images/favicon/pawprint.ico">
+		<link rel="shortcut icon" type="image/ico" href="images/favicon/pawprint.ico" />
 	</head>
 	<body>
 		<!-- <header class="header">
@@ -203,10 +203,10 @@
 										<label for="birth-date">Date of birth</label>
 										<div class="section-information__birth_input">
 											<span class="section-information__birth_calendar"><img src="./images/vektor/calendar.svg" alt="calendar"/></span>
-											<input type="search" class="datepicker-here" name="birth date" id="birth-date" placeholder="Pick a date" />
+											<input type="text" class="datepicker-here" name="birth date" id="birth-date" placeholder="Pick a date" />
 										</div>
 										<label for="birth-place">Place of birth</label>
-										<input type="search" name="birth place" id="birth-place" placeholder="Type a place" />
+										<input type="text" name="birth place" id="birth-place" placeholder="Type a place" />
 									</div>
 									<div class="section-information__checkbox">
 										<input type="checkbox" name="is passed away" id="about-memorial-passed-away" />
@@ -216,19 +216,19 @@
 										<label for="passed-date">Date of passing away</label>
 										<div class="section-information__passed_input">
 											<span class="section-information__passed_calendar"><img src="./images/vektor/calendar.svg" alt="calendar"/></span>
-											<input type="search" class="datepicker-here" name="passed date" id="passed-date" placeholder="Pick a date" disabled />
+											<input type="text" class="datepicker-here" name="passed date" id="passed-date" placeholder="Pick a date" disabled />
 										</div>
 										<label for="passed-place">Place of passing away</label>
-										<input type="search" name="passed place" id="passed-place" placeholder="Type a place" disabled />
+										<input type="text" name="passed place" id="passed-place" placeholder="Type a place" disabled />
 									</div>
 									<div class="section-information__pet">
 										<div class="section-information__pet_species">
 											<label for="pet-species">Pet species</label>
-											<input type="search" name="pet species" id="pet-species" placeholder="Type species" />
+											<input type="text" name="pet species" id="pet-species" placeholder="Type species" />
 										</div>
 										<div class="section-information__pet_breed">
 											<label for="pet-breed">Pet breed</label>
-											<input type="search" name="pet breed" id="pet-breed" placeholder="Type breed" />
+											<input type="text" name="pet breed" id="pet-breed" placeholder="Type breed" />
 										</div>
 										<div class="section-information__pet_sex">
 											<label for="pet-sex">Sex</label>
@@ -244,7 +244,7 @@
 									</div>
 									<div class="section-information__color">
 										<label for="unique-feature">Wool / suit / color</label>
-										<input type="search" name="unique feature" id="unique-feature" placeholder="Unique features your pet has / had " />
+										<input type="text" name="unique feature" id="unique-feature" placeholder="Unique features your pet has / had " />
 									</div>
 								</div>
 							</div>
@@ -259,11 +259,11 @@
 								<div class="section-health">
 									<div class="section-health__clinic">
 										<label for="health-clinic">Name of veterinary clinic</label>
-										<input type="search" name="clinic" id="health-clinic" placeholder="Type a clinic" />
+										<input type="text" name="clinic" id="health-clinic" placeholder="Type a clinic" />
 									</div>
 									<div class="section-health__veterinarian">
 										<label for="health-veterinarian">Name of veterinary clinic</label>
-										<input type="search" name="veterinarian" id="health-veterinarian" placeholder="Type a name" />
+										<input type="text" name="veterinarian" id="health-veterinarian" placeholder="Type a name" />
 									</div>
 								</div>
 							</div>
@@ -293,15 +293,15 @@
 								<div class="section-data">
 									<div class="section-data__meal">
 										<label for="favourite-meal">Favourite meal</label>
-										<input type="search" name="favourite meal" id="favourite-meal" placeholder="Type a meal" />
+										<input type="text" name="favourite meal" id="favourite-meal" placeholder="Type a meal" />
 									</div>
 									<div class="section-data__person">
 										<label for="favourite-person">Favourite person (-s)</label>
-										<input type="search" name="favourite person" id="favourite-person" placeholder="Type a name (-s)" />
+										<input type="text" name="favourite person" id="favourite-person" placeholder="Type a name (-s)" />
 									</div>
 									<div class="section-data__pastime">
 										<label for="favourite-pastime">Favourite pastime</label>
-										<input type="search" name="favourite pastime" id="favourite-pastime" placeholder="Walks, eatings..." />
+										<input type="text" name="favourite pastime" id="favourite-pastime" placeholder="Walks, eatings..." />
 									</div>
 								</div>
 								<div class="section-save">
@@ -309,13 +309,13 @@
 										Type a title
 									</div>
 									<div class="section-save__input">
-										<input type="search" name="" id="" placeholder="Type a description" />
-										<button class="red-btn section-save__input_btn">Save</button>
+										<input type="text" name="" id="" placeholder="Type a description" />
+										<input class="red-btn section-save__input_btn" type="submit" value="Save">
 									</div>
 								</div>
 								<div class="section-buttons">
-									<button class="red-btn section-buttons__cancel">Cancel</button>
-									<button class="red-btn section-buttons__save">Save changes</button>
+									<input class="red-btn section-buttons__cancel" type="submit" value="Cancel">
+									<input class="red-btn section-buttons__save" type="submit" value="Save changes">
 								</div>
 							</div>
 						</div>
@@ -363,8 +363,10 @@
 							<h4>Join our community</h4>
 						</div>
 						<div class="footer-join__input">
-							<input type="email" name="email" placeholder="Type your email" />
-							<button class="btn footer-join__input_btn">Sign Up</button>
+							<form action="">
+								<input type="email" class="footer-email" name="subscribe-email" placeholder="Type your email" />
+								<input type="submit" class="btn footer-submit" value="Sign Up" />
+							</form>
 						</div>
 					</div>
 				</div>

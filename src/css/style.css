@@ -1727,23 +1727,30 @@ input[type="password"] {
   padding-top: 10px;
 }
 
-.footer-join__input input {
+.footer-join__input form .footer-email {
   border: 1px solid #DFE2E6;
   border-radius: 3px;
   width: 210px;
   height: 50px;
   padding-left: 15px;
   margin-right: 10px;
+  padding: 9px 30px 7px 30px;
+  width: unset;
+  border-radius: 8px;
+  border: 2px solid #D6B495;
 }
 
-.footer-join__input_btn {
+.footer-join__input form .footer-submit {
   font-weight: 400;
   text-transform: none;
   padding: 9px 30px 7px 30px;
   border-radius: 8px;
+  width: unset;
+  border-radius: 8px;
+  border: 2px solid #D6B495;
 }
 
-.footer-join__input_btn:hover {
+.footer-join__input form .footer-submit:hover {
   background: #ffffff;
   color: #D6B495;
 }
