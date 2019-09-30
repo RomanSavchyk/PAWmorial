@@ -1734,18 +1734,12 @@ input[type="password"] {
   height: 50px;
   padding-left: 15px;
   margin-right: 10px;
-  padding: 9px 30px 7px 30px;
-  width: unset;
-  border-radius: 8px;
-  border: 2px solid #D6B495;
 }
 
 .footer-join__input form .footer-submit {
   font-weight: 400;
   text-transform: none;
   padding: 9px 30px 7px 30px;
-  border-radius: 8px;
-  width: unset;
   border-radius: 8px;
   border: 2px solid #D6B495;
 }
@@ -1755,12 +1749,12 @@ input[type="password"] {
   color: #D6B495;
 }
 
-.copyright {
+.copy {
   background: #f9f4ef;
   margin-top: 20px;
 }
 
-.copyright-text {
+.copy-text {
   font-size: 12px;
   color: #58585D;
   margin: 0;
@@ -2293,7 +2287,7 @@ input[type="password"] {
     display: flex;
     flex-direction: column;
   }
-  .footer-join__input input {
+  .footer-join__input form .footer-email, .footer-join__input form .footer-submit {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -2777,7 +2771,8 @@ input[type="password"] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  width: 33%;
+  margin: 10px auto;
 }
 
 .jB-links .share-item-bg {
@@ -3783,7 +3778,7 @@ input[type="password"] {
   display: flex;
 }
 
-.about-memorial__section_content .section-save__input input {
+.about-memorial__section_content .section-save__input input[type="text"] {
   width: 100%;
 }
 
@@ -3792,6 +3787,15 @@ input[type="password"] {
   border-radius: 10px;
   padding: 6px 65px;
   height: 45px;
+  background: #ffffff;
+  color: #CD233E;
+  border: 2px solid #CD233E;
+}
+
+.about-memorial__section_content .section-save__input_btn:hover {
+  color: #ffffff;
+  background: #CD233E;
+  outline: none;
 }
 
 .about-memorial__section_content .section-buttons {
@@ -3800,18 +3804,22 @@ input[type="password"] {
   margin-top: 50px;
 }
 
-.about-memorial__section_content .section-buttons__cancel {
-  margin-right: 30px;
+.about-memorial__section_content .section-buttons__cancel, .about-memorial__section_content .section-buttons__save {
+  color: #CD233E;
+  border: 2px solid #CD233E;
   height: 45px;
   border-radius: 10px;
   padding: 9px 50px 6px 50px;
 }
 
-.about-memorial__section_content .section-buttons__save {
-  height: 45px;
-  transition: all 0.3s ease;
-  border-radius: 10px;
-  padding: 9px 50px 6px 50px;
+.about-memorial__section_content .section-buttons__cancel:hover, .about-memorial__section_content .section-buttons__save:hover {
+  color: #ffffff;
+  background: #CD233E;
+  outline: none;
+}
+
+.about-memorial__section_content .section-buttons__cancel {
+  margin-right: 30px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -3897,6 +3905,9 @@ input[type="password"] {
 }
 
 @media only screen and (max-width: 576px) {
+  .memorial-content {
+    margin-bottom: 0;
+  }
   .about-memorial__section_heading_title {
     font-size: 16px;
   }
@@ -3929,8 +3940,7 @@ input[type="password"] {
   .about-memorial__section_content .section-buttons__cancel {
     margin: 20px 0;
   }
-  .about-memorial__section_content .section-buttons__cancel,
-  .about-memorial__section_content .section-buttons__save {
+  .about-memorial__section_content .section-buttons__cancel, .about-memorial__section_content .section-buttons__save {
     width: 50%;
     padding: 5px 0 0 0;
     font-size: 14px;
@@ -4917,7 +4927,8 @@ progress::-moz-progress-bar {
     text-align: center;
   }
   .thanks-image img {
-    width: 300px;
+    width: 40%;
+    height: auto;
   }
 }
 
@@ -5013,7 +5024,8 @@ progress::-moz-progress-bar {
     justify-content: center;
   }
   .not-found-image img {
-    width: 250px;
+    width: 60%;
+    height: auto;
   }
 }
 

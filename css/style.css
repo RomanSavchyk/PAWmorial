@@ -2771,7 +2771,8 @@ input[type="password"] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  width: 33%;
+  margin: 10px auto;
 }
 
 .jB-links .share-item-bg {
