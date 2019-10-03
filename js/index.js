@@ -12,7 +12,7 @@ $(document).ready(function() {
     slidesToShow: 2,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
-    autoplay: true,
+    autoplay: false,
     autospeed: 300,
     dots: false,
     arrows: true,
@@ -267,8 +267,10 @@ $(document).ready(function() {
                 </div>
               </div>
               <div class="memory-popup__postcomment">
-                <input type="text" name="" id="" placeholder="Write a comment..." />
-                <button>Post</button>
+                <form action="">
+                  <input type="text" name="" id="" placeholder="Write a comment..." />
+                  <input type="submit" value="Post">
+                </form>
               </div>
             </div>
           </div>

@@ -33,7 +33,7 @@
         color: #fff
         font-size: 56px
         font-weight: 400
-        padding-right: 50px
+        padding: 0 50px
         margin: 0
     &__button
       z-index: 3
@@ -78,13 +78,30 @@
     &__info
       padding-left: 40px
       margin-top: 10px
+      max-width: 60%
       &_date
         font-size: 16px
+        padding-top: 10px
       &_subtitle
         font-family: "SFTextMedium", 'RobotoMedium', sans-serif
         font-size: 22px
-      &_description
-        font-size: 18px
+        padding-top: 10px
+      &_description 
+        & p
+          padding-top: 10px
+          font-size: 18px
+          line-height: 21px
+          display: inline-block
+          overflow: hidden
+          text-overflow: ellipsis
+          display: -webkit-box
+          -webkit-line-clamp: 4
+          -webkit-box-orient: vertical
+      & .read-more 
+        padding-top: 8px
+        & a 
+          font-family: 'SFTextSemibold', 'RobotoSemibold', sans-serif
+          text-decoration: none
 // Content
 .memorial-content
   margin-bottom: 70px
@@ -473,24 +490,26 @@
         width: 130%
         max-width: 20px
   &__postcomment
-    display: flex
-    input
-      width: 100%
-      height: 70px
-      padding: 20px
-      border: none
-      color: $title-black
-      &::placeholder
-        color: #D8D8D8
-    button
-      border: none
-      background: transparent
-      color: $button-brown
-      font-size: 18px
-      width: 100px
-      transition: all 0.3s ease
-      &:hover
-        color: #E2CBB6
+    & form
+      display: flex
+      input
+        width: 100%
+        height: 70px
+        padding: 20px
+        border: none
+        color: $title-black
+        outline: none
+        &::placeholder
+          color: #D8D8D8
+      input[type="submit"]
+        border: none
+        background: transparent
+        color: $button-brown
+        font-size: 18px
+        width: 100px
+        transition: all 0.3s ease
+        &:hover
+          color: #E2CBB6
 .jBox-pointer-bottom
   left: 56%!important
 .jB-more
@@ -627,6 +646,8 @@
           padding: 0
     &-bottom
       display: block
+      &__info
+        max-width: 100%
   .memorial-sticky-nav
     top: 59px
 @media only screen and (max-width: 768px)
@@ -640,10 +661,14 @@
         margin-top: -90px
       &__info
         padding: 0
+        &_description
+          & p
+            -webkit-line-clamp: 7
 
 @media only screen and (max-width: 576px)
   .subheader-top__button_link
     padding: 7px 10px
+    margin-bottom: 5px
   .subheader-top__title h2
     font-size: 30px
   .subheader-bottom__image img 

@@ -274,19 +274,20 @@
     flex-direction: column
     justify-content: center
     align-items: center
-    &__title
+    padding-bottom: 70px
+    width: 85%
+    margin: 0 auto
+    & h2 
       margin-bottom: 25px
-    &__text
+    & p
       text-align: center
-      line-height: 2.3
-      font-size: 17px
-    &__tldr
+      line-height: 37px
+      font-size: 18px
+      color: $title-black
+    & p:last-of-type
       font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
       text-align: center
-      font-size: 17px
-      width: 70%
-      line-height: 2.2
-      padding-bottom: 55px
+      width: 80%
     &__background
       & img
         display: block
@@ -375,11 +376,16 @@
   &__info
     padding: 0 40px
     width: 100%
+    &_text 
+      font-size: 22px
+      line-height: 32px
     &_author
       font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
       text-align: right
       color: $button-brown
       padding-right: 30px
+      font-size: 20px
+      font-style: italic
   &__image
     & img
       width: 320px
@@ -514,7 +520,7 @@
     font-size: 12px
     color: $regular-black
     margin: 0
-    padding: 10px
+    padding: 15px
     text-align: center
 .main-image
   display: flex
@@ -823,6 +829,13 @@
   .login-btn
     font-size: 13px
     padding: 7px 10px 5px 10px
+  .mission-info 
+    width: 100%
+    padding-bottom: 50px
+    & p 
+      font-size: 16px
+    & p:last-of-type
+      width: 100%
   .footer-memorials, .footer-about, .footer-join
     margin-top: 20px
   .footer-logo__image, .footer-logo__text

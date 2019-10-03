@@ -1436,25 +1436,26 @@ input[type="password"] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 70px;
+  width: 85%;
+  margin: 0 auto;
 }
 
-.mission-info__title {
+.mission-info h2 {
   margin-bottom: 25px;
 }
 
-.mission-info__text {
+.mission-info p {
   text-align: center;
-  line-height: 2.3;
-  font-size: 17px;
+  line-height: 37px;
+  font-size: 18px;
+  color: #4C4C51;
 }
 
-.mission-info__tldr {
+.mission-info p:last-of-type {
   font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   text-align: center;
-  font-size: 17px;
-  width: 70%;
-  line-height: 2.2;
-  padding-bottom: 55px;
+  width: 80%;
 }
 
 .mission-info__background img {
@@ -1575,11 +1576,18 @@ input[type="password"] {
   width: 100%;
 }
 
+.slider-item__info_text {
+  font-size: 22px;
+  line-height: 32px;
+}
+
 .slider-item__info_author {
   font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
   text-align: right;
   color: #D6B495;
   padding-right: 30px;
+  font-size: 20px;
+  font-style: italic;
 }
 
 .slider-item__image img {
@@ -1758,7 +1766,7 @@ input[type="password"] {
   font-size: 12px;
   color: #58585D;
   margin: 0;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
 }
 
@@ -2196,6 +2204,16 @@ input[type="password"] {
     font-size: 13px;
     padding: 7px 10px 5px 10px;
   }
+  .mission-info {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .mission-info p {
+    font-size: 16px;
+  }
+  .mission-info p:last-of-type {
+    width: 100%;
+  }
   .footer-memorials, .footer-about, .footer-join {
     margin-top: 20px;
   }
@@ -2381,7 +2399,8 @@ input[type="password"] {
 }
 
 .story p {
-  font-size: 19px;
+  font-size: 22px;
+  line-height: 38px;
   font-weight: 400;
   color: #4C4C51;
   padding-bottom: 25px;
@@ -2414,16 +2433,20 @@ input[type="password"] {
   .about-image img {
     width: 60%;
   }
+  .story-info p {
+    font-size: 18px;
+    line-height: 32px;
+  }
   .story-info__image {
     text-align: center;
   }
-  .story-info__image img {
+  .story-info img {
     float: none;
     margin: 0 0 30px 0;
     width: 200px;
     height: 200px;
   }
-  .story-info__image p {
+  .story-info p {
     padding: 0;
   }
 }
@@ -2474,7 +2497,7 @@ input[type="password"] {
   color: #fff;
   font-size: 56px;
   font-weight: 400;
-  padding-right: 50px;
+  padding: 0 50px;
   margin: 0;
 }
 
@@ -2540,19 +2563,39 @@ input[type="password"] {
 .subheader-bottom__info {
   padding-left: 40px;
   margin-top: 10px;
+  max-width: 60%;
 }
 
 .subheader-bottom__info_date {
   font-size: 16px;
+  padding-top: 10px;
 }
 
 .subheader-bottom__info_subtitle {
   font-family: "SFTextMedium", 'RobotoMedium', sans-serif;
   font-size: 22px;
+  padding-top: 10px;
 }
 
-.subheader-bottom__info_description {
+.subheader-bottom__info_description p {
+  padding-top: 10px;
   font-size: 18px;
+  line-height: 21px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.subheader-bottom__info .read-more {
+  padding-top: 8px;
+}
+
+.subheader-bottom__info .read-more a {
+  font-family: 'SFTextSemibold', 'RobotoSemibold', sans-serif;
+  text-decoration: none;
 }
 
 .memorial-content {
@@ -3096,23 +3139,24 @@ input[type="password"] {
   max-width: 20px;
 }
 
-.memory-popup__postcomment {
+.memory-popup__postcomment form {
   display: flex;
 }
 
-.memory-popup__postcomment input {
+.memory-popup__postcomment form input {
   width: 100%;
   height: 70px;
   padding: 20px;
   border: none;
   color: #4C4C51;
+  outline: none;
 }
 
-.memory-popup__postcomment input::placeholder {
+.memory-popup__postcomment form input::placeholder {
   color: #D8D8D8;
 }
 
-.memory-popup__postcomment button {
+.memory-popup__postcomment form input[type="submit"] {
   border: none;
   background: transparent;
   color: #D6B495;
@@ -3121,7 +3165,7 @@ input[type="password"] {
   transition: all 0.3s ease;
 }
 
-.memory-popup__postcomment button:hover {
+.memory-popup__postcomment form input[type="submit"]:hover {
   color: #E2CBB6;
 }
 
@@ -3295,6 +3339,9 @@ input[type="password"] {
   .subheader-bottom {
     display: block;
   }
+  .subheader-bottom__info {
+    max-width: 100%;
+  }
   .memorial-sticky-nav {
     top: 59px;
   }
@@ -3311,11 +3358,15 @@ input[type="password"] {
   .subheader-bottom__info {
     padding: 0;
   }
+  .subheader-bottom__info_description p {
+    -webkit-line-clamp: 7;
+  }
 }
 
 @media only screen and (max-width: 576px) {
   .subheader-top__button_link {
     padding: 7px 10px;
+    margin-bottom: 5px;
   }
   .subheader-top__title h2 {
     font-size: 30px;
@@ -3487,7 +3538,7 @@ input[type="password"] {
 }
 
 .about-memorial__section_heading_title {
-  background: rgba(214, 180, 149, 0.5);
+  background: rgba(214, 180, 149, 0.85);
   font-family: 'SFTextBold', 'RobotoBold', sans-serif;
   width: 100%;
   color: #ffffff;
@@ -4400,6 +4451,7 @@ input[type="password"] {
 }
 
 .faq-heading {
+  font-family: "SFTextSemibold";
   font-size: 56px;
   color: #CD233E;
   margin-top: 40px;
@@ -4444,7 +4496,8 @@ input[type="password"] {
 .faq-subheader__accordion p {
   color: #4C4C51;
   background: #F9F4EF;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 23px;
   position: relative;
   overflow: hidden;
   max-height: 800px;
@@ -4530,6 +4583,9 @@ input[type="password"] {
     margin: 20px 12px 100px 12px;
   }
   .faq-subheader__accordion h2 {
+    font-size: 16px;
+  }
+  .faq-subheader__accordion p {
     font-size: 16px;
   }
 }
