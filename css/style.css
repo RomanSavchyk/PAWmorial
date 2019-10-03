@@ -2427,6 +2427,9 @@ input[type="password"] {
 }
 
 @media only screen and (max-width: 768px) {
+  .story-heading {
+    margin: 35px 10px;
+  }
   #about-logo {
     min-height: 270px;
   }
