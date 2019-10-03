@@ -3412,7 +3412,7 @@ input[type="password"] {
   }
   .jB-container {
     width: 202px;
-    height: 270px;
+    height: 290px;
   }
   .jB-header {
     height: 40px;
@@ -3425,7 +3425,7 @@ input[type="password"] {
   }
   .jB-links .share-item {
     width: 47px;
-    margin: 3px;
+    margin: 7px;
   }
   .jB-links .share-item a {
     width: 30px;
