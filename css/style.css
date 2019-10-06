@@ -1564,7 +1564,7 @@ input[type="password"] {
 
 .testimonials {
   background-color: #F9F4EF;
-  padding: 70px 0 45px 0;
+  padding: 70px 0 65px 0;
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -1606,7 +1606,7 @@ input[type="password"] {
 .slider-nav {
   display: flex;
   justify-content: center;
-  width: 250px;
+  width: 400px;
   margin: 0 auto;
   visibility: hidden;
 }
@@ -1630,7 +1630,7 @@ input[type="password"] {
   font-size: 50px;
   position: absolute;
   left: -46px;
-  bottom: 25px;
+  bottom: 30px;
   cursor: pointer;
 }
 
@@ -1640,8 +1640,8 @@ input[type="password"] {
   height: 40px;
   font-size: 50px;
   position: absolute;
-  left: 265px;
-  bottom: 25px;
+  left: 415px;
+  bottom: 30px;
   cursor: pointer;
 }
 
@@ -2220,6 +2220,56 @@ input[type="password"] {
   .mission-info p:last-of-type {
     width: 100%;
   }
+  .testimonials {
+    padding: 50px 0 75px 0;
+  }
+  .testimonials-heading {
+    margin-bottom: 0;
+  }
+  .testimonials .slick-list {
+    padding-top: 20px;
+  }
+  .slider-item {
+    flex-direction: column;
+  }
+  .slider-item__info {
+    padding: 30px 20px 0 30px;
+  }
+  .slider-item__info_text {
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 10px;
+  }
+  .slider-item__image {
+    display: flex;
+    justify-content: center;
+  }
+  .slider-item__image img {
+    width: 160px;
+    height: 160px;
+  }
+  .slider-nav {
+    width: 300px;
+  }
+  .slider-nav__item {
+    padding: 0;
+  }
+  .slider-nav__item img {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+  }
+  .slider-nav .slick-list {
+    width: 100%;
+  }
+  .next1 {
+    bottom: -76%;
+    left: 57%;
+  }
+  .prev1 {
+    left: 33%;
+    bottom: -76%;
+  }
   .footer-memorials, .footer-about, .footer-join {
     margin-top: 20px;
   }
@@ -2269,40 +2319,6 @@ input[type="password"] {
     width: auto;
     height: 190px;
     max-height: 190px;
-  }
-  .slider-item {
-    flex-direction: column;
-  }
-  .slider-item__info {
-    padding: 30px 20px 0 30px;
-  }
-  .slider-item__image {
-    display: flex;
-    justify-content: center;
-  }
-  .slider-item__image img {
-    width: 180px;
-    height: 180px;
-  }
-  .slider-nav__item {
-    width: 88px;
-    padding: 0;
-  }
-  .slider-nav__item img {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
-  }
-  .slider-nav .slick-list {
-    width: 70%;
-  }
-  .next1 {
-    left: 228px;
-    bottom: 10px;
-  }
-  .prev1 {
-    left: -17px;
-    bottom: 10px;
   }
   .home-quote__text {
     font-size: 19px;
