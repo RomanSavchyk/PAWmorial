@@ -9,7 +9,7 @@ $(document).ready(function() {
   });
 
   $('.slider-nav').slick({
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     autoplay: false,

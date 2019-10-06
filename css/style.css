@@ -1513,9 +1513,15 @@ input[type="password"] {
 }
 
 .articles-item {
+  display: block;
   border-radius: 5px;
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.15);
   padding-bottom: 15px;
+  text-decoration: none;
+}
+
+.articles-item:hover {
+  text-decoration: none;
 }
 
 .articles-item__image {
