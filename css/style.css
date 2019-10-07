@@ -1452,12 +1452,6 @@ input[type="password"] {
   color: #4C4C51;
 }
 
-.mission-info p:last-of-type {
-  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
-  text-align: center;
-  width: 80%;
-}
-
 .mission-info__background img {
   display: block;
   width: 100%;
@@ -1512,6 +1506,10 @@ input[type="password"] {
   margin: 30px 0 60px 0;
 }
 
+.articles-btn:hover {
+  text-decoration: none;
+}
+
 .articles-item {
   display: block;
   border-radius: 5px;
@@ -1536,7 +1534,7 @@ input[type="password"] {
   border: 6px solid #fff;
 }
 
-.articles-item__title {
+.articles-item h5 {
   font-size: 21px;
   font-weight: 400;
   color: #4C4C51;
@@ -1549,7 +1547,7 @@ input[type="password"] {
   -webkit-box-orient: vertical;
 }
 
-.articles-item__text {
+.articles-item p {
   font-size: 18px;
   font-weight: 400;
   color: #88939E;
@@ -1646,13 +1644,6 @@ input[type="password"] {
 }
 
 .home-quote {
-  background: url("../images/quote.jpg") no-repeat center;
-  background-size: cover;
-  height: 550px;
-  max-width: 1920px;
-  margin: 0 auto;
-  display: flex;
-  align-items: flex-end;
   position: relative;
 }
 
@@ -1664,10 +1655,12 @@ input[type="password"] {
   left: 0;
   bottom: 0;
   z-index: 1;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .home-quote__container {
+  position: absolute;
+  bottom: 10px;
   padding-bottom: 40px;
   display: flex;
   justify-content: flex-end;
@@ -1675,7 +1668,7 @@ input[type="password"] {
   align-items: center;
 }
 
-.home-quote__text {
+.home-quote .quote-text {
   font-family: 'SFTextRegularItalic', 'RobotoRegular', sans-serif;
   text-align: center;
   font-size: 25px;
@@ -1683,12 +1676,18 @@ input[type="password"] {
   z-index: 1;
 }
 
-.home-quote__author {
+.home-quote .quote-author {
   font-family: 'SFTextRegularItalic', 'RobotoRegular', sans-serif;
   margin-top: 20px;
   font-size: 25px;
   font-weight: 400;
   z-index: 1;
+}
+
+.home-quote .quote-image img {
+  height: 550px;
+  object-fit: cover;
+  width: 100%;
 }
 
 .footer {
@@ -2221,7 +2220,7 @@ input[type="password"] {
     width: 100%;
   }
   .testimonials {
-    padding: 50px 0 75px 0;
+    padding: 50px 0 100px 0;
   }
   .testimonials-heading {
     margin-bottom: 0;
@@ -2269,6 +2268,9 @@ input[type="password"] {
   .prev1 {
     left: 33%;
     bottom: -76%;
+  }
+  .home-quote .quote-text, .home-quote .quote-author {
+    font-size: 20px;
   }
   .footer-memorials, .footer-about, .footer-join {
     margin-top: 20px;
@@ -4621,50 +4623,49 @@ input[type="password"] {
   margin-top: 50px;
 }
 
-.blog-pagination, .blog-pagination-mobile {
-  margin: 50px 0;
+.pagination, .pagination-mobile {
+  margin: 44px auto;
 }
 
-.blog-pagination a, .blog-pagination-mobile a {
-  padding: 9px 14px;
-  text-decoration: none;
-  color: #C79C74;
-}
-
-.blog-pagination .page, .blog-pagination-mobile .page {
-  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
-  margin: 0 5px;
-  border-radius: 5px;
-  border: 1px solid transparent;
-}
-
-.blog-pagination .page:hover, .blog-pagination-mobile .page:hover {
-  border: 1px solid #C79C74;
-}
-
-.blog-pagination .page-active, .blog-pagination-mobile .page-active {
+.pagination .current, .pagination-mobile .current {
   background: #C79C74;
   color: #fff;
 }
 
-.blog-pagination .page-arrow-prev, .blog-pagination .page-arrow-next, .blog-pagination-mobile .page-arrow-prev, .blog-pagination-mobile .page-arrow-next {
-  transition: all 0.3s ease;
+.page-numbers {
+  padding: 7px 12px;
+  color: #C79C74;
+  height: 47px;
+  width: 47px;
+  font-size: 18px;
+  line-height: 36px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif;
+  margin: 0 6px;
+  border-radius: 5px;
+  border: 1px solid transparent;
 }
 
-.blog-pagination .page-arrow-prev:hover, .blog-pagination .page-arrow-next:hover, .blog-pagination-mobile .page-arrow-prev:hover, .blog-pagination-mobile .page-arrow-next:hover {
-  color: #D6B495;
+.page-numbers:hover {
+  background: transparent;
+  border: 1px solid #C79C74;
+  text-decoration: none;
+  color: #C79C74;
 }
 
-.blog-pagination-mobile {
+.pagination-mobile {
   display: none;
 }
 
 @media only screen and (max-width: 576px) {
-  .blog-pagination {
-    display: none;
-  }
-  .blog-pagination-mobile {
+  .pagination-mobile {
     display: block;
+  }
+  .pagination {
+    display: none;
   }
 }
 

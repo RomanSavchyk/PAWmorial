@@ -3,32 +3,35 @@
 
 .articles-blog-items
   margin-top: 50px
-
-.blog-pagination, .blog-pagination-mobile
-  margin: 50px 0
-  a
-    padding: 9px 14px
-    text-decoration: none
-    color: $title-brown
-  .page
-    font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
-    margin: 0 5px
-    border-radius: 5px
-    border: 1px solid transparent
-    &:hover
-      border: 1px solid $title-brown
-  .page-active
+.pagination, .pagination-mobile 
+  margin: 44px auto
+  & .current 
     background: $title-brown
     color: #fff
-  .page-arrow-prev, .page-arrow-next
-    transition: all 0.3s ease
-    &:hover
-      color: #D6B495
-.blog-pagination-mobile
+.page-numbers 
+  padding: 7px 12px
+  color: $title-brown
+  height: 47px
+  width: 47px
+  font-size: 18px
+  line-height: 36px
+  cursor: pointer
+  display: flex
+  justify-content: center
+  align-items: center
+  font-family: 'SFTextSemibold', 'RobotoMedium', sans-serif
+  margin: 0 6px
+  border-radius: 5px
+  border: 1px solid transparent
+  &:hover 
+    background: transparent
+    border: 1px solid $title-brown
+    text-decoration: none
+    color: $title-brown
+.pagination-mobile
   display: none
 @media only screen and (max-width: 576px)
-  .blog-pagination
-    display: none
-  .blog-pagination-mobile
+  .pagination-mobile
     display: block
-  
+  .pagination
+    display: none
