@@ -4632,6 +4632,11 @@ input[type="password"] {
   color: #fff;
 }
 
+.pagination .current:hover, .pagination-mobile .current:hover {
+  background: #C79C74;
+  color: #fff;
+}
+
 .page-numbers {
   padding: 7px 12px;
   color: #C79C74;
